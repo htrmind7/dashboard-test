@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Opération Phoenix — Course en direct</title>
+<style>
+  :root {
+    --bg-0: #0a0e17;
+    --card: #151b2c;
+    --card-border: #232b42;
+    --text: #e8ecf6;
+    --text-dim: #8892b0;
+    --accent: #ff6b4a;
+    --accent-2: #4ad0ff;
+    --gold: #ffd166;
+    --good: #35d07f;
+    --bad: #ff5c6c;
+    --warn: #ffb84d;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0; min-height: 100%;
+    background: radial-gradient(circle at 20% -10%, #1a2140 0%, var(--bg-0) 45%), var(--bg-0);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    background:
+      radial-gradient(600px circle at 80% 10%, rgba(74,208,255,0.08), transparent 60%),
+      radial-gradient(500px circle at 10% 90%, rgba(255,107,74,0.08), transparent 60%);
+    pointer-events: none; z-index: 0;
+  }
+  .wrap { position: relative; z-index: 1; max-width: 1180px; margin: 0 auto; padding: 32px 24px 64px; }
+
+  header { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; }
+  h1 {
+    font-size: clamp(28px, 4vw, 44px); margin: 0; font-weight: 800; letter-spacing: -0.02em;
+    background: linear-gradient(90deg, var(--accent) 0%, var(--accent-2) 100%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .subtitle { color: var(--text-dim); margin-top: 4px; font-size: 14px; }
+  .subtitle a { color: var(--accent-2); text-decoration: none; }
+  .subtitle a:hover { text-decoration: underline; }
+  .status {
+    display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-dim);
+    background: var(--card); border: 1px solid var(--card-border); padding: 8px 14px; border-radius: 999px;
+  }
+  .dot {
+    width: 8px; height: 8px; border-radius: 50%; background: var(--good);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(53,208,127,0.55); }
+    70%  { box-shadow: 0 0 0 8px rgba(53,208,127,0); }
+    100% { box-shadow: 0 0 0 0 rgba(53,208,127,0); }
+  }
+
+  .meta-row { display: flex; gap: 24px; margin: 28px 0 8px; flex-wrap: wrap; }
+  .meta-chip { background: var(--card); border: 1px solid var(--card-border); border-radius: 14px; padding: 14px 20px; flex: 1; min-width: 150px; }
+  .meta-chip .label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-dim); }
+  .meta-chip .value { font-size: 24px; font-weight: 700; margin-top: 4px; font-variant-numeric: tabular-nums; }
+  .meta-chip .value.good { color: var(--good); }
+  .meta-chip .value.bad { color: var(--bad); }
+
+  .section-title { font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-dim); margin: 40px 0 16px; }
+
+  /* ---------- RACE TRACK ---------- */
+  .track-panel {
+    background: var(--card); border: 1px solid var(--card-border);
+    border-radius: 18px; padding: 24px 28px 20px;
+    position: relative;
+  }
+  .lanes { display: flex; flex-direction: column; gap: 10px; }
+
+  .lane { display: flex; align-items: center; gap: 14px; }
+  .lane-label { width: 100px; flex-shrink: 0; text-align: right; }
+  .lane-label .n { font-weight: 700; font-size: 13.5px; }
+  .lane-label .p { font-size: 11px; color: var(--text-dim); font-variant-numeric: tabular-nums; }
+
+  .track {
+    flex: 1; position: relative; height: 46px;
+    border-radius: 10px; overflow: hidden;
+    border: 1px solid var(--card-border);
+    background:
+      repeating-linear-gradient(90deg, rgba(255,255,255,0.025) 0 2px, transparent 2px 48px),
+      linear-gradient(180deg, #10141f, #0c0f18);
+  }
+  .track-fill {
+    position: absolute; top: 0; left: 0; bottom: 0;
+    border-radius: 10px 0 0 10px;
+    background: linear-gradient(90deg, var(--lane-color-a, var(--accent-2)), var(--lane-color-b, var(--accent)));
+    opacity: 0.16;
+    width: 0%;
+    transition: width 1.2s cubic-bezier(.22,1,.36,1);
+  }
+  .finish-flag {
+    position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+    font-size: 18px; opacity: 0.55;
+  }
+  .runner {
+    position: absolute; top: 50%; left: 0%;
+    transform: translate(-50%, -50%);
+    transition: left 1.2s cubic-bezier(.22,1,.36,1);
+    display: flex; align-items: center; gap: 6px;
+    z-index: 2;
+  }
+  .runner-badge {
+    width: 34px; height: 34px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 800; font-size: 13px; color: #0a0e17;
+    background: var(--lane-color-a, var(--accent-2));
+    box-shadow: 0 2px 10px -2px rgba(0,0,0,0.6), 0 0 0 3px rgba(10,14,23,0.9);
+    transition: transform 0.25s ease;
+  }
+  .lane.leader .runner-badge {
+    box-shadow: 0 0 0 3px rgba(10,14,23,0.9), 0 0 18px 2px var(--lane-color-a, var(--gold));
+    animation: leader-pulse 1.6s ease-in-out infinite;
+  }
+  @keyframes leader-pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.08); } }
+  .runner-crown { position: absolute; top: -16px; left: 50%; transform: translateX(-50%); font-size: 14px; }
+
+  .float-gain {
+    position: absolute; font-weight: 800; font-size: 13px; color: var(--good);
+    pointer-events: none; white-space: nowrap;
+    animation: float-up 1.4s ease forwards;
+    z-index: 3;
+  }
+  @keyframes float-up {
+    0%   { opacity: 0; transform: translate(-50%, -10px); }
+    15%  { opacity: 1; }
+    100% { opacity: 0; transform: translate(-50%, -50px); }
+  }
+
+  /* ---------- ACTIVITY FEED ---------- */
+  .panel { background: var(--card); border: 1px solid var(--card-border); border-radius: 16px; padding: 18px 20px; margin-top: 20px; }
+  .feed { max-height: 340px; overflow-y: auto; padding-right: 4px; }
+  .feed::-webkit-scrollbar { width: 6px; }
+  .feed::-webkit-scrollbar-thumb { background: var(--card-border); border-radius: 999px; }
+  .feed-item {
+    display: flex; gap: 12px; padding: 12px 4px; border-bottom: 1px solid var(--card-border);
+    opacity: 0; transform: translateX(-8px); animation: slide-in 0.4s ease forwards;
+  }
+  .feed-item:last-child { border-bottom: none; }
+  @keyframes slide-in { to { opacity: 1; transform: translateX(0); } }
+  .feed-badge { width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0; background: rgba(255,255,255,0.04); }
+  .feed-item.PASS .feed-badge { background: rgba(53,208,127,0.14); }
+  .feed-item.FAIL .feed-badge { background: rgba(255,92,108,0.14); }
+  .feed-item.PARTIEL .feed-badge { background: rgba(255,184,77,0.14); }
+  .feed-body { flex: 1; min-width: 0; }
+  .feed-title { font-size: 13.5px; line-height: 1.4; }
+  .feed-code { color: var(--text-dim); font-size: 12px; }
+  .feed-meta { display: flex; align-items: center; gap: 8px; margin-top: 3px; font-size: 11.5px; color: var(--text-dim); }
+  .feed-points { font-weight: 700; font-variant-numeric: tabular-nums; }
+  .feed-item.PASS .feed-points { color: var(--good); }
+  .feed-item.FAIL .feed-points { color: var(--bad); }
+  .feed-item.PARTIEL .feed-points { color: var(--warn); }
+  .feed-reason { margin-top: 5px; font-size: 12px; color: var(--text-dim); background: rgba(255,255,255,0.03); border-radius: 8px; padding: 6px 9px; border-left: 2px solid var(--card-border); }
+  .feed-item.FAIL .feed-reason { border-left-color: var(--bad); }
+  .feed-item.PARTIEL .feed-reason { border-left-color: var(--warn); }
+
+  footer { text-align: center; color: var(--text-dim); font-size: 12px; margin-top: 48px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Opération Phoenix</h1>
+        <div class="subtitle">Hackathon IA Mind7 · Course en direct — <a href="index.html">voir la version podium</a></div>
+      </div>
+      <div class="status"><span class="dot"></span><span id="status-text">connecté</span></div>
+    </header>
+
+    <div class="meta-row">
+      <div class="meta-chip"><div class="label">Dernière MAJ</div><div class="value" id="updated-at">—</div></div>
+      <div class="meta-chip"><div class="label">Score max</div><div class="value" id="max-points">—</div></div>
+      <div class="meta-chip"><div class="label">Réussites</div><div class="value good" id="pass-count">—</div></div>
+      <div class="meta-chip"><div class="label">Échecs</div><div class="value bad" id="fail-count">—</div></div>
+    </div>
+
+    <div class="section-title">🏁 Course en direct</div>
+    <div class="track-panel">
+      <div class="lanes" id="lanes"></div>
+    </div>
+
+    <div class="panel">
+      <div class="section-title" style="margin-top:0">🔥 Dernières actions</div>
+      <div class="feed" id="feed"></div>
+    </div>
+
+    <footer>Données : <code>score.json</code> — généré par l'agent d'évaluation Mind7</footer>
+  </div>
+
+<script>
+  const REFRESH_MS = 15000;
+  const statusText = document.getElementById('status-text');
+  const PALETTE = [
+    ['#ff6b4a', '#ff9a6b'], ['#4ad0ff', '#7fe3ff'], ['#c792ea', '#e0b3ff'],
+    ['#35d07f', '#7ce8ab'], ['#ffd166', '#ffe19a'], ['#ff5c6c', '#ff8f99'],
+  ];
+  let prevPoints = {}; // team_id -> points, to animate gains
+
+  function fmtTime(iso) {
+    try { return new Date(iso).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit', second: '2-digit' }); }
+    catch (e) { return iso; }
+  }
+  function escapeHtml(s) {
+    return String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  }
+
+  function renderLanes(teams, maxPoints) {
+    const lanesEl = document.getElementById('lanes');
+    const leaderPoints = Math.max(...teams.map(t => t.points));
+    const isFirstRender = lanesEl.children.length === 0;
+
+    // build once, then only update positions on subsequent renders to keep transitions smooth
+    if (isFirstRender) {
+      lanesEl.innerHTML = teams.map((team, idx) => {
+        const color = PALETTE[idx % PALETTE.length];
+        return `
+          <div class="lane" id="lane-${team.id}" style="--lane-color-a:${color[0]};--lane-color-b:${color[1]}">
+            <div class="lane-label">
+              <div class="n">${escapeHtml(team.name)}</div>
+              <div class="p"><span id="pts-${team.id}">${team.points}</span> / ${maxPoints}</div>
+            </div>
+            <div class="track">
+              <div class="track-fill" id="fill-${team.id}" style="width:0%"></div>
+              <div class="finish-flag">🏁</div>
+              <div class="runner" id="runner-${team.id}" style="left:0%">
+                <div class="runner-badge">${escapeHtml(team.name).slice(-1)}</div>
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    teams.forEach(team => {
+      const pct = Math.max(2, Math.min(96, (team.points / maxPoints) * 100));
+      const laneEl = document.getElementById(`lane-${team.id}`);
+      const runnerEl = document.getElementById(`runner-${team.id}`);
+      const fillEl = document.getElementById(`fill-${team.id}`);
+      const ptsEl = document.getElementById(`pts-${team.id}`);
+      if (!laneEl) return;
+
+      laneEl.classList.toggle('leader', team.points === leaderPoints && leaderPoints > 0);
+      runnerEl.style.left = pct + '%';
+      fillEl.style.width = pct + '%';
+      ptsEl.textContent = team.points;
+
+      const prev = prevPoints[team.id];
+      if (prev !== undefined && team.points > prev) {
+        const gain = document.createElement('div');
+        gain.className = 'float-gain';
+        gain.style.left = pct + '%';
+        gain.style.top = '0px';
+        gain.textContent = '+' + (team.points - prev);
+        laneEl.querySelector('.track').appendChild(gain);
+        setTimeout(() => gain.remove(), 1500);
+      }
+      prevPoints[team.id] = team.points;
+    });
+
+    // re-sync leader crown
+    document.querySelectorAll('.runner-crown').forEach(el => el.remove());
+    teams.forEach(team => {
+      if (team.points === leaderPoints && leaderPoints > 0) {
+        const runnerEl = document.getElementById(`runner-${team.id}`);
+        const crown = document.createElement('div');
+        crown.className = 'runner-crown';
+        crown.textContent = '👑';
+        runnerEl.appendChild(crown);
+      }
+    });
+  }
+
+  function renderFeed(events) {
+    const feed = document.getElementById('feed');
+    const sorted = [...(events || [])].sort((a, b) => new Date(b.ts) - new Date(a.ts)).slice(0, 12);
+    if (!sorted.length) { feed.innerHTML = '<div style="color:var(--text-dim);font-size:13px;">Aucune action pour le moment.</div>'; return; }
+    feed.innerHTML = sorted.map((ev, i) => {
+      const icon = ev.result === 'PASS' ? '✅' : ev.result === 'FAIL' ? '❌' : '🟡';
+      const sign = ev.points > 0 ? '+' : '';
+      const reason = ev.reason ? `<div class="feed-reason">${escapeHtml(ev.reason)}</div>` : '';
+      return `
+        <div class="feed-item ${ev.result}" style="animation-delay:${i * 0.04}s">
+          <div class="feed-badge">${icon}</div>
+          <div class="feed-body">
+            <div class="feed-title"><b>${escapeHtml(ev.team_name)}</b> — ${escapeHtml(ev.task_title)} <span class="feed-code">(${escapeHtml(ev.task_code)})</span></div>
+            <div class="feed-meta"><span>${fmtTime(ev.ts)}</span><span class="feed-points">${sign}${ev.points} pts</span></div>
+            ${reason}
+          </div>
+        </div>
+      `;
+    }).join('');
+  }
+
+  function render(data) {
+    document.getElementById('updated-at').textContent = fmtTime(data.updated_at);
+    document.getElementById('max-points').textContent = data.max_points + ' pts';
+    const events = data.events || [];
+    document.getElementById('pass-count').textContent = events.filter(e => e.result === 'PASS').length;
+    document.getElementById('fail-count').textContent = events.filter(e => e.result === 'FAIL').length;
+
+    renderLanes(data.teams, data.max_points);
+    renderFeed(events);
+  }
+
+  async function poll() {
+    try {
+      const res = await fetch('score.json?_=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const data = await res.json();
+      render(data);
+      statusText.textContent = 'connecté';
+    } catch (e) {
+      statusText.textContent = 'erreur de chargement — nouvelle tentative...';
+      console.error(e);
+    }
+  }
+
+  poll();
+  setInterval(poll, REFRESH_MS);
+</script>
+</body>
+</html>
