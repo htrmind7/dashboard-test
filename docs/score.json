@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-09-23T14:32:00Z",
+  "updated_at": "2026-09-23T14:40:00Z",
   "max_points": 317,
   "teams": [
-    { "id": 1, "name": "Team 1", "points": 142, "tasks_done": 18, "tasks_total": 40, "last_push": "2026-09-23T14:28:00Z" },
+    { "id": 1, "name": "Team 1", "points": 155, "tasks_done": 19, "tasks_total": 40, "last_push": "2026-09-23T14:39:00Z" },
     { "id": 2, "name": "Team 2", "points": 167, "tasks_done": 21, "tasks_total": 40, "last_push": "2026-09-23T14:30:00Z" },
-    { "id": 3, "name": "Team 3", "points": 98,  "tasks_done": 14, "tasks_total": 40, "last_push": "2026-09-23T14:15:00Z" },
-    { "id": 4, "name": "Team 4", "points": 203, "tasks_done": 25, "tasks_total": 40, "last_push": "2026-09-23T14:31:00Z" },
+    { "id": 3, "name": "Team 3", "points": 112, "tasks_done": 15, "tasks_total": 40, "last_push": "2026-09-23T14:38:00Z" },
+    { "id": 4, "name": "Team 4", "points": 218, "tasks_done": 27, "tasks_total": 40, "last_push": "2026-09-23T14:39:30Z" },
     { "id": 5, "name": "Team 5", "points": 121, "tasks_done": 16, "tasks_total": 40, "last_push": "2026-09-23T14:20:00Z" },
-    { "id": 6, "name": "Team 6", "points": 176, "tasks_done": 22, "tasks_total": 40, "last_push": "2026-09-23T14:29:00Z" }
+    { "id": 6, "name": "Team 6", "points": 189, "tasks_done": 23, "tasks_total": 40, "last_push": "2026-09-23T14:37:00Z" }
   ]
 }
