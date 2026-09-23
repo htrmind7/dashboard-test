@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Opération Phoenix — Live Dashboard</title>
+<style>
+  :root {
+    --bg-0: #0a0e17;
+    --bg-1: #10141f;
+    --card: #151b2c;
+    --card-border: #232b42;
+    --text: #e8ecf6;
+    --text-dim: #8892b0;
+    --accent: #ff6b4a;
+    --accent-2: #4ad0ff;
+    --gold: #ffd166;
+    --silver: #c9d1e0;
+    --bronze: #d98e5a;
+    --good: #35d07f;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0; min-height: 100%;
+    background: radial-gradient(circle at 20% -10%, #1a2140 0%, var(--bg-0) 45%), var(--bg-0);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+  }
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    background:
+      radial-gradient(600px circle at 80% 10%, rgba(74,208,255,0.08), transparent 60%),
+      radial-gradient(500px circle at 10% 90%, rgba(255,107,74,0.08), transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .wrap { position: relative; z-index: 1; max-width: 1200px; margin: 0 auto; padding: 32px 24px 64px; }
+
+  header { display: flex; align-items: flex-end; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; }
+  h1 {
+    font-size: clamp(28px, 4vw, 44px);
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    background: linear-gradient(90deg, var(--accent) 0%, var(--accent-2) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .subtitle { color: var(--text-dim); margin-top: 4px; font-size: 14px; }
+  .status {
+    display: flex; align-items: center; gap: 8px;
+    font-size: 13px; color: var(--text-dim);
+    background: var(--card); border: 1px solid var(--card-border);
+    padding: 8px 14px; border-radius: 999px;
+  }
+  .dot {
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--good);
+    box-shadow: 0 0 0 0 rgba(53,208,127,0.6);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%   { box-shadow: 0 0 0 0 rgba(53,208,127,0.55); }
+    70%  { box-shadow: 0 0 0 8px rgba(53,208,127,0); }
+    100% { box-shadow: 0 0 0 0 rgba(53,208,127,0); }
+  }
+
+  .meta-row { display: flex; gap: 24px; margin: 28px 0 8px; flex-wrap: wrap; }
+  .meta-chip {
+    background: var(--card); border: 1px solid var(--card-border);
+    border-radius: 14px; padding: 14px 20px; flex: 1; min-width: 160px;
+  }
+  .meta-chip .label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-dim); }
+  .meta-chip .value { font-size: 26px; font-weight: 700; margin-top: 4px; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 16px;
+    margin-top: 28px;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 18px;
+    padding: 20px 22px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(14px);
+    animation: rise 0.5s ease forwards;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+  }
+  .card:hover { border-color: var(--accent-2); transform: translateY(-2px); }
+  @keyframes rise { to { opacity: 1; transform: translateY(0); } }
+
+  .rank-badge {
+    position: absolute; top: 18px; right: 20px;
+    font-size: 13px; font-weight: 700; color: var(--text-dim);
+  }
+  .rank-1 .rank-badge { color: var(--gold); }
+  .rank-2 .rank-badge { color: var(--silver); }
+  .rank-3 .rank-badge { color: var(--bronze); }
+  .rank-1 { border-color: rgba(255,209,102,0.5); box-shadow: 0 0 32px -12px rgba(255,209,102,0.35); }
+
+  .team-name { font-size: 19px; font-weight: 700; margin: 0 0 2px; }
+  .team-sub { font-size: 12px; color: var(--text-dim); margin-bottom: 14px; }
+
+  .points-row { display: flex; align-items: baseline; gap: 6px; margin-bottom: 12px; }
+  .points { font-size: 34px; font-weight: 800; font-variant-numeric: tabular-nums; }
+  .points-max { font-size: 14px; color: var(--text-dim); }
+
+  .bar-track {
+    height: 8px; border-radius: 999px; background: #0e1320;
+    overflow: hidden; border: 1px solid var(--card-border);
+  }
+  .bar-fill {
+    height: 100%; border-radius: 999px;
+    background: linear-gradient(90deg, var(--accent-2), var(--accent));
+    width: 0%;
+    transition: width 1s cubic-bezier(.2,.8,.2,1);
+  }
+  .tasks-row {
+    display: flex; justify-content: space-between; margin-top: 8px;
+    font-size: 12px; color: var(--text-dim);
+  }
+
+  footer { text-align: center; color: var(--text-dim); font-size: 12px; margin-top: 48px; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Opération Phoenix</h1>
+        <div class="subtitle">Hackathon IA Mind7 · Classement en direct</div>
+      </div>
+      <div class="status"><span class="dot"></span><span id="status-text">connecté · mise à jour toutes les 5s</span></div>
+    </header>
+
+    <div class="meta-row">
+      <div class="meta-chip"><div class="label">Dernière MAJ</div><div class="value" id="updated-at">—</div></div>
+      <div class="meta-chip"><div class="label">Équipes</div><div class="value" id="team-count">—</div></div>
+      <div class="meta-chip"><div class="label">Score max</div><div class="value" id="max-points">—</div></div>
+    </div>
+
+    <div class="grid" id="grid"></div>
+
+    <footer>Données : <code>score.json</code> — généré par l'agent d'évaluation Mind7</footer>
+  </div>
+
+<script>
+  const REFRESH_MS = 5000;
+  const grid = document.getElementById('grid');
+  const statusText = document.getElementById('status-text');
+
+  function fmtTime(iso) {
+    try {
+      return new Date(iso).toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    } catch (e) { return iso; }
+  }
+
+  function render(data) {
+    document.getElementById('updated-at').textContent = fmtTime(data.updated_at);
+    document.getElementById('team-count').textContent = data.teams.length;
+    document.getElementById('max-points').textContent = data.max_points + ' pts';
+
+    const ranked = [...data.teams].sort((a, b) => b.points - a.points);
+
+    grid.innerHTML = '';
+    ranked.forEach((team, i) => {
+      const rank = i + 1;
+      const pct = Math.min(100, Math.round((team.points / data.max_points) * 100));
+      const medal = rank === 1 ? '🥇' : rank === 2 ? '🥈' : rank === 3 ? '🥉' : `#${rank}`;
+
+      const card = document.createElement('div');
+      card.className = `card rank-${rank}`;
+      card.style.animationDelay = (i * 0.06) + 's';
+      card.innerHTML = `
+        <div class="rank-badge">${medal}</div>
+        <div class="team-name">${team.name}</div>
+        <div class="team-sub">Dernier push · ${fmtTime(team.last_push)}</div>
+        <div class="points-row">
+          <span class="points">${team.points}</span>
+          <span class="points-max">/ ${data.max_points} pts</span>
+        </div>
+        <div class="bar-track"><div class="bar-fill" style="width:0%" data-pct="${pct}"></div></div>
+        <div class="tasks-row">
+          <span>${team.tasks_done}/${team.tasks_total} tâches</span>
+          <span>${pct}%</span>
+        </div>
+      `;
+      grid.appendChild(card);
+    });
+
+    requestAnimationFrame(() => {
+      document.querySelectorAll('.bar-fill').forEach(el => {
+        el.style.width = el.dataset.pct + '%';
+      });
+    });
+  }
+
+  async function poll() {
+    try {
+      const res = await fetch('score.json?_=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const data = await res.json();
+      render(data);
+      statusText.textContent = 'connecté · mise à jour toutes les 5s';
+    } catch (e) {
+      statusText.textContent = 'erreur de chargement — nouvelle tentative...';
+      console.error(e);
+    }
+  }
+
+  poll();
+  setInterval(poll, REFRESH_MS);
+</script>
+</body>
+</html>
