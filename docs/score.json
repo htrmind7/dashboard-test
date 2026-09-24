@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:35:06Z",
+  "updated_at": "2026-09-24T13:35:15Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,10 +11,10 @@
         "Chloé",
         "David"
       ],
-      "points": 54,
-      "tasks_done": 14,
+      "points": 62,
+      "tasks_done": 15,
       "tasks_total": 34,
-      "last_push": "2026-09-24T13:35:06Z"
+      "last_push": "2026-09-24T13:35:15Z"
     },
     {
       "id": 2,
@@ -88,6 +88,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T13:35:15Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "FE-01",
+      "task_title": "Remplacer l'éditeur Markdown vendored",
+      "result": "PASS",
+      "points": 8,
+      "reason": "✓ editormd remplacé par ngx-markdown",
+      "source": "manual"
+    },
     {
       "ts": "2026-09-24T13:35:06Z",
       "team_id": 1,
