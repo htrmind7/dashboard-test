@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:33:20Z",
+  "updated_at": "2026-09-24T13:33:46Z",
   "max_points": 129,
   "teams": [
     {
@@ -14,7 +14,7 @@
       "points": 5,
       "tasks_done": 2,
       "tasks_total": 34,
-      "last_push": "2026-09-24T13:33:20Z"
+      "last_push": "2026-09-24T13:33:46Z"
     },
     {
       "id": 2,
@@ -89,14 +89,14 @@
   ],
   "events": [
     {
-      "ts": "2026-09-24T13:33:20Z",
+      "ts": "2026-09-24T13:33:46Z",
       "team_id": 1,
       "team_name": "Team 1",
       "task_code": "SEC-01",
       "task_title": "Sortir .env du suivi Git",
       "result": "PASS",
       "points": 3,
-      "reason": ".env sorti du suivi Git",
+      "reason": "✓ .env sorti du suivi Git, .env.example créé",
       "source": "manual"
     },
     {
