@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:35:32Z",
+  "updated_at": "2026-09-24T13:35:39Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,10 +11,10 @@
         "Chloé",
         "David"
       ],
-      "points": 69,
-      "tasks_done": 18,
+      "points": 74,
+      "tasks_done": 19,
       "tasks_total": 34,
-      "last_push": "2026-09-24T13:35:32Z"
+      "last_push": "2026-09-24T13:35:39Z"
     },
     {
       "id": 2,
@@ -88,6 +88,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T13:35:39Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "REF-01",
+      "task_title": "Extraire IssueTransitionService",
+      "result": "PASS",
+      "points": 5,
+      "reason": "✓ IssueTransitionService extrait",
+      "source": "manual"
+    },
     {
       "ts": "2026-09-24T13:35:32Z",
       "team_id": 1,
