@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:34:38Z",
+  "updated_at": "2026-09-24T13:34:42Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,10 +11,10 @@
         "Chloé",
         "David"
       ],
-      "points": 30,
-      "tasks_done": 8,
+      "points": 35,
+      "tasks_done": 9,
       "tasks_total": 34,
-      "last_push": "2026-09-24T13:34:38Z"
+      "last_push": "2026-09-24T13:34:42Z"
     },
     {
       "id": 2,
@@ -88,6 +88,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T13:34:42Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "MIG-04",
+      "task_title": "Angular 8 → 9",
+      "result": "PASS",
+      "points": 5,
+      "reason": "✓ Angular 8 → 9",
+      "source": "manual"
+    },
     {
       "ts": "2026-09-24T13:34:38Z",
       "team_id": 1,
