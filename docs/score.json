@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:35:41Z",
+  "updated_at": "2026-09-24T13:35:43Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,10 +11,10 @@
         "Chloé",
         "David"
       ],
-      "points": 77,
-      "tasks_done": 20,
+      "points": 82,
+      "tasks_done": 21,
       "tasks_total": 34,
-      "last_push": "2026-09-24T13:35:41Z"
+      "last_push": "2026-09-24T13:35:43Z"
     },
     {
       "id": 2,
@@ -88,6 +88,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T13:35:43Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "API-02",
+      "task_title": "Endpoint de statistiques projet",
+      "result": "PASS",
+      "points": 5,
+      "reason": "✓ StatsController endpoint de stats",
+      "source": "manual"
+    },
     {
       "ts": "2026-09-24T13:35:41Z",
       "team_id": 1,
