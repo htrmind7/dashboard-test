@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:48:03Z",
+  "updated_at": "2026-09-24T13:48:31Z",
   "max_points": 129,
   "teams": [
     {
@@ -28,7 +28,7 @@
       "points": 10,
       "tasks_done": 4,
       "tasks_total": 34,
-      "last_push": "2026-09-24T15:39:20.897215"
+      "last_push": "2026-09-24T15:48:27.176649"
     },
     {
       "id": 3,
@@ -89,6 +89,50 @@
   ],
   "events": [
     {
+      "ts": "2026-09-24T15:48:27.176649",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "SEC-01",
+      "task_title": "Sortir .env du suivi Git",
+      "result": "PASS",
+      "points": 3,
+      "reason": "GitHub Actions build success verified",
+      "source": "manual_build_verified"
+    },
+    {
+      "ts": "2026-09-24T15:48:27.176649",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "SEC-03",
+      "task_title": "Nettoyer la doc des credentials de démo",
+      "result": "PASS",
+      "points": 2,
+      "reason": "GitHub Actions build success verified",
+      "source": "manual_build_verified"
+    },
+    {
+      "ts": "2026-09-24T15:48:27.176649",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "FE-02",
+      "task_title": "Migrer tslint vers eslint",
+      "result": "PASS",
+      "points": 3,
+      "reason": "GitHub Actions build success verified",
+      "source": "manual_build_verified"
+    },
+    {
+      "ts": "2026-09-24T15:48:27.176649",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "FE-03",
+      "task_title": "Ajouter des budgets de build à angular.json",
+      "result": "PASS",
+      "points": 2,
+      "reason": "GitHub Actions build success verified",
+      "source": "manual_build_verified"
+    },
+    {
       "ts": "2026-09-24T15:39:45.634170",
       "team_id": 1,
       "team_name": "Claude Haiku",
@@ -96,50 +140,6 @@
       "task_title": "Ajouter les headers de sécurité HTTP",
       "result": "PASS",
       "points": 3,
-      "reason": "Detected from git commit",
-      "source": "auto_commit"
-    },
-    {
-      "ts": "2026-09-24T15:39:20.897215",
-      "team_id": 2,
-      "team_name": "Copilot Haiku",
-      "task_code": "FE-02",
-      "task_title": "Migrer tslint vers eslint",
-      "result": "PASS",
-      "points": 3,
-      "reason": "Detected from git commit",
-      "source": "auto_commit"
-    },
-    {
-      "ts": "2026-09-24T15:39:20.897215",
-      "team_id": 2,
-      "team_name": "Copilot Haiku",
-      "task_code": "FE-03",
-      "task_title": "Ajouter des budgets de build à angular.json",
-      "result": "PASS",
-      "points": 2,
-      "reason": "Detected from git commit",
-      "source": "auto_commit"
-    },
-    {
-      "ts": "2026-09-24T15:39:15.012799",
-      "team_id": 2,
-      "team_name": "Copilot Haiku",
-      "task_code": "SEC-01",
-      "task_title": "Sortir .env du suivi Git",
-      "result": "PASS",
-      "points": 3,
-      "reason": "Detected from git commit",
-      "source": "auto_commit"
-    },
-    {
-      "ts": "2026-09-24T15:39:15.012799",
-      "team_id": 2,
-      "team_name": "Copilot Haiku",
-      "task_code": "SEC-03",
-      "task_title": "Nettoyer la doc des credentials de démo",
-      "result": "PASS",
-      "points": 2,
       "reason": "Detected from git commit",
       "source": "auto_commit"
     },
