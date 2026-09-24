@@ -78,6 +78,8 @@
 
   .lane { display: flex; align-items: center; gap: 14px; transition: transform 0.4s ease; }
   .lane-label { width: 100px; flex-shrink: 0; text-align: right; transition: all 0.4s ease; }
+  .lane-label.has-members { cursor: help; }
+  .lane-label.has-members .n { border-bottom: 1px dotted var(--text-dim); }
   .lane-label .n { font-weight: 700; font-size: 13.5px; transition: all 0.4s ease; }
   .lane-label .p { font-size: 11px; color: var(--text-dim); font-variant-numeric: tabular-nums; }
   .lane.leader .lane-label .n { font-size: 16px; color: var(--gold); }
@@ -271,9 +273,12 @@
     if (isFirstRender) {
       lanesEl.innerHTML = teams.map((team, idx) => {
         const color = PALETTE[idx % PALETTE.length];
+        const members = Array.isArray(team.members) ? team.members.filter(Boolean) : [];
+        const titleAttr = members.length ? ` title="${escapeHtml(members.join(', '))}"` : '';
+        const labelClass = members.length ? 'lane-label has-members' : 'lane-label';
         return `
           <div class="lane" id="lane-${team.id}" style="--lane-color-a:${color[0]};--lane-color-b:${color[1]}">
-            <div class="lane-label">
+            <div class="${labelClass}"${titleAttr}>
               <div class="n">${escapeHtml(team.name)}</div>
               <div class="p"><span id="pts-${team.id}">${team.points}</span> / ${maxPoints}</div>
             </div>
