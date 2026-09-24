@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:35:00Z",
+  "updated_at": "2026-09-24T13:35:06Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,10 +11,10 @@
         "Chloé",
         "David"
       ],
-      "points": 49,
-      "tasks_done": 13,
+      "points": 54,
+      "tasks_done": 14,
       "tasks_total": 34,
-      "last_push": "2026-09-24T13:35:00Z"
+      "last_push": "2026-09-24T13:35:06Z"
     },
     {
       "id": 2,
@@ -88,6 +88,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T13:35:06Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "CI-05",
+      "task_title": "Scan de dépendances OWASP en CI",
+      "result": "PASS",
+      "points": 5,
+      "reason": "✓ dependency-check OWASP",
+      "source": "manual"
+    },
     {
       "ts": "2026-09-24T13:35:00Z",
       "team_id": 1,
