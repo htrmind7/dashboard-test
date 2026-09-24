@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:34:02Z",
+  "updated_at": "2026-09-24T13:34:10Z",
   "max_points": 129,
   "teams": [
     {
@@ -14,7 +14,7 @@
       "points": 11,
       "tasks_done": 4,
       "tasks_total": 34,
-      "last_push": "2026-09-24T13:34:02Z"
+      "last_push": "2026-09-24T13:34:10Z"
     },
     {
       "id": 2,
@@ -89,6 +89,17 @@
   ],
   "events": [
     {
+      "ts": "2026-09-24T13:34:10Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "SEC-06",
+      "task_title": "Scanner les secrets en pre-commit",
+      "result": "PASS",
+      "points": 2,
+      "reason": "✓ gitleaks en pre-commit",
+      "source": "manual"
+    },
+    {
       "ts": "2026-09-24T13:34:02Z",
       "team_id": 1,
       "team_name": "Team 1",
@@ -142,17 +153,6 @@
       "points": 5,
       "reason": "vérifié à la main, faux négatif de l'agent (412 sur reporter non résolu, code réellement correct)",
       "source": "manual"
-    },
-    {
-      "ts": "2026-09-24T07:27:24Z",
-      "team_id": 1,
-      "team_name": "Team 1",
-      "task_code": "SEC-06",
-      "task_title": "Scanner les secrets en pre-commit",
-      "result": "PASS",
-      "points": 2,
-      "reason": "agent: .pre-commit-config.yaml présent avec gitleaks",
-      "source": "auto"
     },
     {
       "ts": "2026-09-24T07:27:24Z",
