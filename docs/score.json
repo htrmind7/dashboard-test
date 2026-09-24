@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:33:56Z",
+  "updated_at": "2026-09-24T13:34:02Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,10 +11,10 @@
         "Chloé",
         "David"
       ],
-      "points": 7,
-      "tasks_done": 3,
+      "points": 11,
+      "tasks_done": 4,
       "tasks_total": 34,
-      "last_push": "2026-09-24T13:33:56Z"
+      "last_push": "2026-09-24T13:34:02Z"
     },
     {
       "id": 2,
@@ -88,6 +88,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T13:34:02Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "SEC-05",
+      "task_title": "Corriger la validation d'origine CORS",
+      "result": "PASS",
+      "points": 4,
+      "reason": "✓ CORS validation corrigée avec allowlist stricte",
+      "source": "manual"
+    },
     {
       "ts": "2026-09-24T13:33:56Z",
       "team_id": 1,
