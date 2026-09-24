@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:33:46Z",
+  "updated_at": "2026-09-24T13:33:56Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,10 +11,10 @@
         "Chloé",
         "David"
       ],
-      "points": 5,
-      "tasks_done": 2,
+      "points": 7,
+      "tasks_done": 3,
       "tasks_total": 34,
-      "last_push": "2026-09-24T13:33:46Z"
+      "last_push": "2026-09-24T13:33:56Z"
     },
     {
       "id": 2,
@@ -88,6 +88,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T13:33:56Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "SEC-03",
+      "task_title": "Nettoyer la doc des credentials de démo",
+      "result": "PASS",
+      "points": 2,
+      "reason": "✓ Demo@123 retiré du README, /setup documenté",
+      "source": "manual"
+    },
     {
       "ts": "2026-09-24T13:33:46Z",
       "team_id": 1,
