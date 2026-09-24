@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-09-24T13:39:45Z",
+  "updated_at": "2026-09-24T13:42:54Z",
   "max_points": 129,
   "teams": [
     {
       "id": 1,
-      "name": "Team 1",
+      "name": "Claude Haiku",
       "members": [
         "Alice",
         "Bilal",
@@ -18,17 +18,17 @@
     },
     {
       "id": 2,
-      "name": "Team 2",
+      "name": "Copilot Haiku",
       "members": [
         "Emma",
         "Farid",
         "Garance",
         "Hugo"
       ],
-      "points": 39,
-      "tasks_done": 14,
+      "points": 49,
+      "tasks_done": 16,
       "tasks_total": 34,
-      "last_push": "2026-09-24T15:39:20.897215"
+      "last_push": "2026-09-24T15:41:59.974200"
     },
     {
       "id": 3,
@@ -89,9 +89,31 @@
   ],
   "events": [
     {
+      "ts": "2026-09-24T15:41:59.974200",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "CI-05",
+      "task_title": "Scan de dépendances OWASP en CI",
+      "result": "PASS",
+      "points": 5,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:41:59.974200",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "CI-04",
+      "task_title": "Rapport de couverture JaCoCo publié en CI",
+      "result": "PASS",
+      "points": 5,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
       "ts": "2026-09-24T15:39:45.634170",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "SEC-04",
       "task_title": "Ajouter les headers de sécurité HTTP",
       "result": "PASS",
@@ -102,7 +124,7 @@
     {
       "ts": "2026-09-24T15:39:20.897215",
       "team_id": 2,
-      "team_name": "Team 2",
+      "team_name": "Copilot Haiku",
       "task_code": "CI-03",
       "task_title": "Bloquer les CVE critiques npm en CI",
       "result": "PASS",
@@ -113,7 +135,7 @@
     {
       "ts": "2026-09-24T15:39:20.897215",
       "team_id": 2,
-      "team_name": "Team 2",
+      "team_name": "Copilot Haiku",
       "task_code": "FE-02",
       "task_title": "Migrer tslint vers eslint",
       "result": "PASS",
@@ -124,7 +146,7 @@
     {
       "ts": "2026-09-24T15:39:20.897215",
       "team_id": 2,
-      "team_name": "Team 2",
+      "team_name": "Copilot Haiku",
       "task_code": "FE-03",
       "task_title": "Ajouter des budgets de build à angular.json",
       "result": "PASS",
@@ -135,7 +157,7 @@
     {
       "ts": "2026-09-24T15:39:20.897215",
       "team_id": 2,
-      "team_name": "Team 2",
+      "team_name": "Copilot Haiku",
       "task_code": "TEST-05",
       "task_title": "Seuil de couverture frontend",
       "result": "PASS",
@@ -146,7 +168,7 @@
     {
       "ts": "2026-09-24T15:39:15.012799",
       "team_id": 2,
-      "team_name": "Team 2",
+      "team_name": "Copilot Haiku",
       "task_code": "API-01",
       "task_title": "Pagination sur la recherche d'issues",
       "result": "PASS",
@@ -157,7 +179,7 @@
     {
       "ts": "2026-09-24T15:39:15.012799",
       "team_id": 2,
-      "team_name": "Team 2",
+      "team_name": "Copilot Haiku",
       "task_code": "BUG-03",
       "task_title": "415 sur un GET sans corps à cause d'un consumes de classe",
       "result": "PASS",
@@ -168,7 +190,7 @@
     {
       "ts": "2026-09-24T15:39:15.012799",
       "team_id": 2,
-      "team_name": "Team 2",
+      "team_name": "Copilot Haiku",
       "task_code": "MIG-05",
       "task_title": "Mettre à jour core-js et font-awesome",
       "result": "PASS",
@@ -179,7 +201,7 @@
     {
       "ts": "2026-09-24T15:39:15.012799",
       "team_id": 2,
-      "team_name": "Team 2",
+      "team_name": "Copilot Haiku",
       "task_code": "SEC-01",
       "task_title": "Sortir .env du suivi Git",
       "result": "PASS",
@@ -190,7 +212,7 @@
     {
       "ts": "2026-09-24T15:39:15.012799",
       "team_id": 2,
-      "team_name": "Team 2",
+      "team_name": "Copilot Haiku",
       "task_code": "SEC-03",
       "task_title": "Nettoyer la doc des credentials de démo",
       "result": "PASS",
@@ -201,7 +223,7 @@
     {
       "ts": "2026-09-24T15:39:15.012799",
       "team_id": 2,
-      "team_name": "Team 2",
+      "team_name": "Copilot Haiku",
       "task_code": "SEC-04",
       "task_title": "Ajouter les headers de sécurité HTTP",
       "result": "PASS",
@@ -212,7 +234,7 @@
     {
       "ts": "2026-09-24T15:39:15.012799",
       "team_id": 2,
-      "team_name": "Team 2",
+      "team_name": "Copilot Haiku",
       "task_code": "SEC-05",
       "task_title": "Corriger la validation d'origine CORS",
       "result": "PASS",
@@ -223,7 +245,7 @@
     {
       "ts": "2026-09-24T15:39:15.012799",
       "team_id": 2,
-      "team_name": "Team 2",
+      "team_name": "Copilot Haiku",
       "task_code": "SEC-07",
       "task_title": "Scanner les secrets côté CI",
       "result": "PASS",
@@ -234,7 +256,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "SEC-01",
       "task_title": "Sortir .env du suivi Git",
       "result": "PASS",
@@ -245,7 +267,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "SEC-06",
       "task_title": "Scanner les secrets en pre-commit",
       "result": "PASS",
@@ -256,7 +278,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "SEC-03",
       "task_title": "Nettoyer la doc des credentials de démo",
       "result": "PASS",
@@ -267,7 +289,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "SEC-05",
       "task_title": "Corriger la validation d'origine CORS",
       "result": "PASS",
@@ -278,7 +300,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "SEC-07",
       "task_title": "Scanner les secrets côté CI",
       "result": "PASS",
@@ -289,7 +311,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "MIG-01",
       "task_title": "Spring Boot 2.4.4 → 3.x",
       "result": "PASS",
@@ -300,7 +322,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "MIG-02",
       "task_title": "javax.* → jakarta.* (99 fichiers confirmés)",
       "result": "PASS",
@@ -311,7 +333,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "MIG-03",
       "task_title": "WebSecurityConfig : migrer vers la DSL lambda Spring Security 6",
       "result": "PASS",
@@ -322,7 +344,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "MIG-04",
       "task_title": "Angular 8 → 9",
       "result": "PASS",
@@ -333,7 +355,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "MIG-05",
       "task_title": "Mettre à jour core-js et font-awesome",
       "result": "PASS",
@@ -344,7 +366,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "CI-01",
       "task_title": "Pipeline CI backend",
       "result": "PASS",
@@ -355,7 +377,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "CI-02",
       "task_title": "Pipeline CI frontend",
       "result": "PASS",
@@ -366,7 +388,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "CI-04",
       "task_title": "Rapport de couverture JaCoCo publié en CI",
       "result": "PASS",
@@ -377,7 +399,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "CI-05",
       "task_title": "Scan de dépendances OWASP en CI",
       "result": "PASS",
@@ -388,7 +410,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "FE-01",
       "task_title": "Remplacer l'éditeur Markdown vendored",
       "result": "PASS",
@@ -399,7 +421,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "FE-02",
       "task_title": "Migrer tslint vers eslint",
       "result": "PASS",
@@ -410,7 +432,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "FE-03",
       "task_title": "Ajouter des budgets de build à angular.json",
       "result": "PASS",
@@ -421,7 +443,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "TEST-05",
       "task_title": "Seuil de couverture frontend",
       "result": "PASS",
@@ -432,7 +454,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "REF-01",
       "task_title": "Extraire IssueTransitionService",
       "result": "PASS",
@@ -443,7 +465,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "REF-02",
       "task_title": "Extraire IssueCommentService",
       "result": "PASS",
@@ -454,7 +476,7 @@
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
-      "team_name": "Team 1",
+      "team_name": "Claude Haiku",
       "task_code": "API-02",
       "task_title": "Endpoint de statistiques projet",
       "result": "PASS",
@@ -476,7 +498,7 @@
     {
       "ts": "2026-09-24T07:27:30Z",
       "team_id": 2,
-      "team_name": "Team 2",
+      "team_name": "Copilot Haiku",
       "task_code": "BUG-04",
       "task_title": "Création d'issue sans reporter explicite échoue",
       "result": "PASS",
@@ -553,7 +575,7 @@
     {
       "ts": "2026-09-24T07:27:24Z",
       "team_id": 2,
-      "team_name": "Team 2",
+      "team_name": "Copilot Haiku",
       "task_code": "SEC-06",
       "task_title": "Scanner les secrets en pre-commit",
       "result": "PASS",
