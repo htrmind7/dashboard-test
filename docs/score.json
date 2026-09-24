@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:35:15Z",
+  "updated_at": "2026-09-24T13:35:24Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,10 +11,10 @@
         "Chloé",
         "David"
       ],
-      "points": 62,
-      "tasks_done": 15,
+      "points": 65,
+      "tasks_done": 16,
       "tasks_total": 34,
-      "last_push": "2026-09-24T13:35:15Z"
+      "last_push": "2026-09-24T13:35:24Z"
     },
     {
       "id": 2,
@@ -88,6 +88,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T13:35:24Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "FE-02",
+      "task_title": "Migrer tslint vers eslint",
+      "result": "PASS",
+      "points": 3,
+      "reason": "✓ tslint → eslint",
+      "source": "manual"
+    },
     {
       "ts": "2026-09-24T13:35:15Z",
       "team_id": 1,
