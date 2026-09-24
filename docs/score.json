@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:34:16Z",
+  "updated_at": "2026-09-24T13:34:22Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,10 +11,10 @@
         "Chloé",
         "David"
       ],
-      "points": 13,
-      "tasks_done": 5,
+      "points": 17,
+      "tasks_done": 6,
       "tasks_total": 34,
-      "last_push": "2026-09-24T13:34:16Z"
+      "last_push": "2026-09-24T13:34:22Z"
     },
     {
       "id": 2,
@@ -88,6 +88,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T13:34:22Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "MIG-01",
+      "task_title": "Spring Boot 2.4.4 → 3.x",
+      "result": "PASS",
+      "points": 4,
+      "reason": "✓ Spring Boot 3.x",
+      "source": "manual"
+    },
     {
       "ts": "2026-09-24T13:34:16Z",
       "team_id": 1,
