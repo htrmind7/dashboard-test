@@ -1,10 +1,16 @@
 {
-  "updated_at": "2026-09-24T07:29:23Z",
+  "updated_at": "2026-09-24T07:32:51Z",
   "max_points": 129,
   "teams": [
     {
       "id": 1,
       "name": "Team 1",
+      "members": [
+        "Alice",
+        "Bilal",
+        "Chloé",
+        "David"
+      ],
       "points": 5,
       "tasks_done": 2,
       "tasks_total": 34,
@@ -13,6 +19,12 @@
     {
       "id": 2,
       "name": "Team 2",
+      "members": [
+        "Emma",
+        "Farid",
+        "Garance",
+        "Hugo"
+      ],
       "points": 7,
       "tasks_done": 2,
       "tasks_total": 34,
@@ -21,6 +33,12 @@
     {
       "id": 3,
       "name": "Team 3",
+      "members": [
+        "Inès",
+        "Julien",
+        "Karim",
+        "Léa"
+      ],
       "points": 6,
       "tasks_done": 2,
       "tasks_total": 34,
@@ -29,6 +47,12 @@
     {
       "id": 4,
       "name": "Team 4",
+      "members": [
+        "Manon",
+        "Nassim",
+        "Olivia",
+        "Paul"
+      ],
       "points": 5,
       "tasks_done": 2,
       "tasks_total": 34,
@@ -37,6 +61,12 @@
     {
       "id": 5,
       "name": "Team 5",
+      "members": [
+        "Quentin",
+        "Rania",
+        "Samuel",
+        "Théa"
+      ],
       "points": 3,
       "tasks_done": 1,
       "tasks_total": 34,
@@ -45,6 +75,12 @@
     {
       "id": 6,
       "name": "Team 6",
+      "members": [
+        "Ugo",
+        "Valentine",
+        "Wassim",
+        "Yasmine"
+      ],
       "points": 12,
       "tasks_done": 2,
       "tasks_total": 34,
