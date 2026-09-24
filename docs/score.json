@@ -1,22 +1,166 @@
 {
-  "updated_at": "2026-09-23T15:10:00Z",
-  "max_points": 317,
+  "updated_at": "2026-09-24T07:27:30Z",
+  "max_points": 129,
   "teams": [
-    { "id": 1, "name": "Team 1", "points": 178, "tasks_done": 22, "tasks_total": 40, "last_push": "2026-09-23T14:49:00Z" },
-    { "id": 2, "name": "Team 2", "points": 270, "tasks_done": 33, "tasks_total": 40, "last_push": "2026-09-23T15:00:00Z" },
-    { "id": 3, "name": "Team 3", "points": 140, "tasks_done": 17, "tasks_total": 40, "last_push": "2026-09-23T14:48:00Z" },
-    { "id": 4, "name": "Team 4", "points": 285, "tasks_done": 35, "tasks_total": 40, "last_push": "2026-09-23T15:05:00Z" },
-    { "id": 5, "name": "Team 5", "points": 143, "tasks_done": 18, "tasks_total": 40, "last_push": "2026-09-23T14:43:00Z" },
-    { "id": 6, "name": "Team 6", "points": 298, "tasks_done": 37, "tasks_total": 40, "last_push": "2026-09-23T15:10:00Z" }
+    {
+      "id": 1,
+      "name": "Team 1",
+      "points": 5,
+      "tasks_done": 2,
+      "tasks_total": 34,
+      "last_push": "2026-09-24T07:27:24Z"
+    },
+    {
+      "id": 2,
+      "name": "Team 2",
+      "points": 7,
+      "tasks_done": 2,
+      "tasks_total": 34,
+      "last_push": "2026-09-24T07:27:30Z"
+    },
+    {
+      "id": 3,
+      "name": "Team 3",
+      "points": 4,
+      "tasks_done": 1,
+      "tasks_total": 34,
+      "last_push": "2026-09-24T07:27:24Z"
+    },
+    {
+      "id": 4,
+      "name": "Team 4",
+      "points": 5,
+      "tasks_done": 2,
+      "tasks_total": 34,
+      "last_push": "2026-09-24T07:27:24Z"
+    },
+    {
+      "id": 5,
+      "name": "Team 5",
+      "points": 3,
+      "tasks_done": 1,
+      "tasks_total": 34,
+      "last_push": "2026-09-24T07:27:24Z"
+    },
+    {
+      "id": 6,
+      "name": "Team 6",
+      "points": 12,
+      "tasks_done": 2,
+      "tasks_total": 34,
+      "last_push": "2026-09-24T07:27:24Z"
+    }
   ],
   "events": [
-    { "ts": "2026-09-23T15:10:00Z", "team_id": 6, "team_name": "Team 6", "task_code": "D03", "task_title": "Migration javax.* → jakarta.* (229 fichiers)", "result": "PASS", "points": 8, "reason": "" },
-    { "ts": "2026-09-23T15:09:00Z", "team_id": 6, "team_name": "Team 6", "task_code": "D07", "task_title": "Non-régression endpoints REST post-migration", "result": "PASS", "points": 8, "reason": "" },
-    { "ts": "2026-09-23T15:08:00Z", "team_id": 6, "team_name": "Team 6", "task_code": "G02", "task_title": "Remplacer l'éditeur Markdown vendored (50k lignes)", "result": "PASS", "points": 8, "reason": "" },
-    { "ts": "2026-09-23T15:07:00Z", "team_id": 6, "team_name": "Team 6", "task_code": "AC5", "task_title": "🚨 Alerte CTO — Webhooks dupliqués", "result": "PASS", "points": 10, "reason": "" },
-    { "ts": "2026-09-23T15:06:00Z", "team_id": 1, "team_name": "Team 1", "task_code": "H01", "task_title": "Pagination GET /api/issues", "result": "PASS", "points": 3, "reason": "" },
-    { "ts": "2026-09-23T15:05:00Z", "team_id": 4, "team_name": "Team 4", "task_code": "AC5", "task_title": "🚨 Alerte CTO — Webhooks dupliqués", "result": "PASS", "points": 10, "reason": "" },
-    { "ts": "2026-09-23T15:04:00Z", "team_id": 4, "team_name": "Team 4", "task_code": "I06", "task_title": "Webhook retry × 3 avec backoff exponentiel", "result": "PASS", "points": 5, "reason": "" },
-    { "ts": "2026-09-23T15:03:00Z", "team_id": 4, "team_name": "Team 4", "task_code": "I07", "task_title": "Corriger les requêtes N+1 sur IssueService", "result": "PASS", "points": 5, "reason": "" }
+    {
+      "ts": "2026-09-24T07:27:30Z",
+      "team_id": 2,
+      "team_name": "Team 2",
+      "task_code": "BUG-04",
+      "task_title": "Création d'issue sans reporter explicite échoue",
+      "result": "PASS",
+      "points": 5,
+      "reason": "vérifié à la main, faux négatif de l'agent (412 sur reporter non résolu, code réellement correct)",
+      "source": "manual"
+    },
+    {
+      "ts": "2026-09-24T07:27:24Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "SEC-01",
+      "task_title": "Sortir .env du suivi Git",
+      "result": "PASS",
+      "points": 3,
+      "reason": "agent: .env absent de git ls-files, .gitignore OK",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-09-24T07:27:24Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "SEC-06",
+      "task_title": "Scanner les secrets en pre-commit",
+      "result": "PASS",
+      "points": 2,
+      "reason": "agent: .pre-commit-config.yaml présent avec gitleaks",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-09-24T07:27:24Z",
+      "team_id": 3,
+      "team_name": "Team 3",
+      "task_code": "MIG-01",
+      "task_title": "Spring Boot 2.4.4 → 3.x",
+      "result": "PASS",
+      "points": 4,
+      "reason": "agent: spring-boot-starter-parent >= 3.0.0, mvn compile OK",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-09-24T07:27:24Z",
+      "team_id": 4,
+      "team_name": "Team 4",
+      "task_code": "CI-01",
+      "task_title": "Pipeline CI backend",
+      "result": "PASS",
+      "points": 3,
+      "reason": "agent: backend.yml présent avec mvn test",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-09-24T07:27:24Z",
+      "team_id": 4,
+      "team_name": "Team 4",
+      "task_code": "TEST-05",
+      "task_title": "Seuil de couverture frontend",
+      "result": "PASS",
+      "points": 2,
+      "reason": "agent: karma.conf.js contient thresholds",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-09-24T07:27:24Z",
+      "team_id": 5,
+      "team_name": "Team 5",
+      "task_code": "SEC-04",
+      "task_title": "Ajouter les headers de sécurité HTTP",
+      "result": "PASS",
+      "points": 3,
+      "reason": "agent: 4 headers de sécurité présents sur /api/health",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-09-24T07:27:24Z",
+      "team_id": 6,
+      "team_name": "Team 6",
+      "task_code": "MIG-02",
+      "task_title": "javax.* → jakarta.* (99 fichiers confirmés)",
+      "result": "PASS",
+      "points": 8,
+      "reason": "agent: 0 import javax résiduel dans Backend/src/main/java/",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-09-24T07:27:24Z",
+      "team_id": 6,
+      "team_name": "Team 6",
+      "task_code": "SEC-05",
+      "task_title": "Corriger la validation d'origine CORS",
+      "result": "PASS",
+      "points": 4,
+      "reason": "agent: origin evil-appdomain non reflétée dans CORS",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-09-24T07:27:24Z",
+      "team_id": 2,
+      "team_name": "Team 2",
+      "task_code": "SEC-06",
+      "task_title": "Scanner les secrets en pre-commit",
+      "result": "PASS",
+      "points": 2,
+      "reason": "agent: pre-commit gitleaks présent",
+      "source": "auto"
+    }
   ]
 }
