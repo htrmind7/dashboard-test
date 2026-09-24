@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:34:28Z",
+  "updated_at": "2026-09-24T13:34:38Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,10 +11,10 @@
         "Chloé",
         "David"
       ],
-      "points": 25,
-      "tasks_done": 7,
+      "points": 30,
+      "tasks_done": 8,
       "tasks_total": 34,
-      "last_push": "2026-09-24T13:34:28Z"
+      "last_push": "2026-09-24T13:34:38Z"
     },
     {
       "id": 2,
@@ -88,6 +88,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T13:34:38Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "MIG-03",
+      "task_title": "WebSecurityConfig : migrer vers la DSL lambda Spring Security 6",
+      "result": "PASS",
+      "points": 5,
+      "reason": "✓ WebSecurityConfig DSL lambda Spring Security 6",
+      "source": "manual"
+    },
     {
       "ts": "2026-09-24T13:34:28Z",
       "team_id": 1,
