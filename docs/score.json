@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:34:22Z",
+  "updated_at": "2026-09-24T13:34:28Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,10 +11,10 @@
         "Chloé",
         "David"
       ],
-      "points": 17,
-      "tasks_done": 6,
+      "points": 25,
+      "tasks_done": 7,
       "tasks_total": 34,
-      "last_push": "2026-09-24T13:34:22Z"
+      "last_push": "2026-09-24T13:34:28Z"
     },
     {
       "id": 2,
@@ -88,6 +88,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T13:34:28Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "MIG-02",
+      "task_title": "javax.* → jakarta.* (99 fichiers confirmés)",
+      "result": "PASS",
+      "points": 8,
+      "reason": "✓ javax → jakarta (236 imports migrés)",
+      "source": "manual"
+    },
     {
       "ts": "2026-09-24T13:34:22Z",
       "team_id": 1,
