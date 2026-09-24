@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:35:24Z",
+  "updated_at": "2026-09-24T13:35:30Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,10 +11,10 @@
         "Chloé",
         "David"
       ],
-      "points": 65,
-      "tasks_done": 16,
+      "points": 67,
+      "tasks_done": 17,
       "tasks_total": 34,
-      "last_push": "2026-09-24T13:35:24Z"
+      "last_push": "2026-09-24T13:35:30Z"
     },
     {
       "id": 2,
@@ -88,6 +88,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T13:35:30Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "FE-03",
+      "task_title": "Ajouter des budgets de build à angular.json",
+      "result": "PASS",
+      "points": 2,
+      "reason": "✓ Budgets de build angular.json",
+      "source": "manual"
+    },
     {
       "ts": "2026-09-24T13:35:24Z",
       "team_id": 1,
