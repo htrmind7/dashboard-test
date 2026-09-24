@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:35:30Z",
+  "updated_at": "2026-09-24T13:35:32Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,10 +11,10 @@
         "Chloé",
         "David"
       ],
-      "points": 67,
-      "tasks_done": 17,
+      "points": 69,
+      "tasks_done": 18,
       "tasks_total": 34,
-      "last_push": "2026-09-24T13:35:30Z"
+      "last_push": "2026-09-24T13:35:32Z"
     },
     {
       "id": 2,
@@ -88,6 +88,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T13:35:32Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "TEST-05",
+      "task_title": "Seuil de couverture frontend",
+      "result": "PASS",
+      "points": 2,
+      "reason": "✓ Seuil de couverture frontend karma.conf.js",
+      "source": "manual"
+    },
     {
       "ts": "2026-09-24T13:35:30Z",
       "team_id": 1,
