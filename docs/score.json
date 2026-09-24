@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:34:54Z",
+  "updated_at": "2026-09-24T13:34:57Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,10 +11,10 @@
         "Chloé",
         "David"
       ],
-      "points": 41,
-      "tasks_done": 11,
+      "points": 44,
+      "tasks_done": 12,
       "tasks_total": 34,
-      "last_push": "2026-09-24T13:34:54Z"
+      "last_push": "2026-09-24T13:34:57Z"
     },
     {
       "id": 2,
@@ -88,6 +88,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T13:34:57Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "CI-02",
+      "task_title": "Pipeline CI frontend",
+      "result": "PASS",
+      "points": 3,
+      "reason": "✓ Pipeline CI frontend",
+      "source": "manual"
+    },
     {
       "ts": "2026-09-24T13:34:54Z",
       "team_id": 1,
