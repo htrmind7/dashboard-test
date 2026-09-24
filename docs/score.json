@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:34:10Z",
+  "updated_at": "2026-09-24T13:34:16Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,10 +11,10 @@
         "Chloé",
         "David"
       ],
-      "points": 11,
-      "tasks_done": 4,
+      "points": 13,
+      "tasks_done": 5,
       "tasks_total": 34,
-      "last_push": "2026-09-24T13:34:10Z"
+      "last_push": "2026-09-24T13:34:16Z"
     },
     {
       "id": 2,
@@ -88,6 +88,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T13:34:16Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "SEC-07",
+      "task_title": "Scanner les secrets côté CI",
+      "result": "PASS",
+      "points": 2,
+      "reason": "✓ gitleaks en CI/CD",
+      "source": "manual"
+    },
     {
       "ts": "2026-09-24T13:34:10Z",
       "team_id": 1,
