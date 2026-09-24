@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:34:42Z",
+  "updated_at": "2026-09-24T13:34:47Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,10 +11,10 @@
         "Chloé",
         "David"
       ],
-      "points": 35,
-      "tasks_done": 9,
+      "points": 38,
+      "tasks_done": 10,
       "tasks_total": 34,
-      "last_push": "2026-09-24T13:34:42Z"
+      "last_push": "2026-09-24T13:34:47Z"
     },
     {
       "id": 2,
@@ -88,6 +88,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T13:34:47Z",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "MIG-05",
+      "task_title": "Mettre à jour core-js et font-awesome",
+      "result": "PASS",
+      "points": 3,
+      "reason": "✓ core-js v3 + font-awesome",
+      "source": "manual"
+    },
     {
       "ts": "2026-09-24T13:34:42Z",
       "team_id": 1,
