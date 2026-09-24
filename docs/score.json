@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:36:03Z",
+  "updated_at": "2026-09-24T13:39:45Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,10 +11,10 @@
         "Chloé",
         "David"
       ],
-      "points": 82,
-      "tasks_done": 21,
+      "points": 85,
+      "tasks_done": 22,
       "tasks_total": 34,
-      "last_push": "2026-09-24T15:36:00.947390"
+      "last_push": "2026-09-24T15:39:45.634170"
     },
     {
       "id": 2,
@@ -25,10 +25,10 @@
         "Garance",
         "Hugo"
       ],
-      "points": 7,
-      "tasks_done": 2,
+      "points": 39,
+      "tasks_done": 14,
       "tasks_total": 34,
-      "last_push": "2026-09-24T07:27:30Z"
+      "last_push": "2026-09-24T15:39:20.897215"
     },
     {
       "id": 3,
@@ -88,6 +88,149 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-09-24T15:39:45.634170",
+      "team_id": 1,
+      "team_name": "Team 1",
+      "task_code": "SEC-04",
+      "task_title": "Ajouter les headers de sécurité HTTP",
+      "result": "PASS",
+      "points": 3,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:39:20.897215",
+      "team_id": 2,
+      "team_name": "Team 2",
+      "task_code": "CI-03",
+      "task_title": "Bloquer les CVE critiques npm en CI",
+      "result": "PASS",
+      "points": 2,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:39:20.897215",
+      "team_id": 2,
+      "team_name": "Team 2",
+      "task_code": "FE-02",
+      "task_title": "Migrer tslint vers eslint",
+      "result": "PASS",
+      "points": 3,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:39:20.897215",
+      "team_id": 2,
+      "team_name": "Team 2",
+      "task_code": "FE-03",
+      "task_title": "Ajouter des budgets de build à angular.json",
+      "result": "PASS",
+      "points": 2,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:39:20.897215",
+      "team_id": 2,
+      "team_name": "Team 2",
+      "task_code": "TEST-05",
+      "task_title": "Seuil de couverture frontend",
+      "result": "PASS",
+      "points": 2,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:39:15.012799",
+      "team_id": 2,
+      "team_name": "Team 2",
+      "task_code": "API-01",
+      "task_title": "Pagination sur la recherche d'issues",
+      "result": "PASS",
+      "points": 3,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:39:15.012799",
+      "team_id": 2,
+      "team_name": "Team 2",
+      "task_code": "BUG-03",
+      "task_title": "415 sur un GET sans corps à cause d'un consumes de classe",
+      "result": "PASS",
+      "points": 3,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:39:15.012799",
+      "team_id": 2,
+      "team_name": "Team 2",
+      "task_code": "MIG-05",
+      "task_title": "Mettre à jour core-js et font-awesome",
+      "result": "PASS",
+      "points": 3,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:39:15.012799",
+      "team_id": 2,
+      "team_name": "Team 2",
+      "task_code": "SEC-01",
+      "task_title": "Sortir .env du suivi Git",
+      "result": "PASS",
+      "points": 3,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:39:15.012799",
+      "team_id": 2,
+      "team_name": "Team 2",
+      "task_code": "SEC-03",
+      "task_title": "Nettoyer la doc des credentials de démo",
+      "result": "PASS",
+      "points": 2,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:39:15.012799",
+      "team_id": 2,
+      "team_name": "Team 2",
+      "task_code": "SEC-04",
+      "task_title": "Ajouter les headers de sécurité HTTP",
+      "result": "PASS",
+      "points": 3,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:39:15.012799",
+      "team_id": 2,
+      "team_name": "Team 2",
+      "task_code": "SEC-05",
+      "task_title": "Corriger la validation d'origine CORS",
+      "result": "PASS",
+      "points": 4,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:39:15.012799",
+      "team_id": 2,
+      "team_name": "Team 2",
+      "task_code": "SEC-07",
+      "task_title": "Scanner les secrets côté CI",
+      "result": "PASS",
+      "points": 2,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
     {
       "ts": "2026-09-24T15:36:00.947390",
       "team_id": 1,
