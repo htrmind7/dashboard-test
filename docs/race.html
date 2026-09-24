@@ -78,8 +78,6 @@
 
   .lane { display: flex; align-items: center; gap: 14px; transition: transform 0.4s ease; }
   .lane-label { width: 100px; flex-shrink: 0; text-align: right; transition: all 0.4s ease; }
-  .lane-label.has-members { cursor: help; }
-  .lane-label.has-members .n { border-bottom: 1px dotted var(--text-dim); }
   .lane-label .n { font-weight: 700; font-size: 13.5px; transition: all 0.4s ease; }
   .lane-label .p { font-size: 11px; color: var(--text-dim); font-variant-numeric: tabular-nums; }
   .lane.leader .lane-label .n { font-size: 16px; color: var(--gold); }
@@ -125,6 +123,7 @@
     box-shadow: 0 2px 10px -2px rgba(0,0,0,0.6), 0 0 0 3px rgba(10,14,23,0.9);
     transition: transform 0.25s ease, width 0.4s ease, height 0.4s ease, font-size 0.4s ease;
   }
+  .runner-badge.has-members { cursor: help; box-shadow: 0 2px 10px -2px rgba(0,0,0,0.6), 0 0 0 3px rgba(10,14,23,0.9), 0 0 0 5px rgba(255,255,255,0.18); }
   .lane.leader .runner-badge {
     width: 46px; height: 46px; font-size: 16px;
     box-shadow: 0 0 0 3px rgba(10,14,23,0.9), 0 0 20px 3px var(--lane-color-a, var(--gold));
@@ -275,10 +274,10 @@
         const color = PALETTE[idx % PALETTE.length];
         const members = Array.isArray(team.members) ? team.members.filter(Boolean) : [];
         const titleAttr = members.length ? ` title="${escapeHtml(members.join(', '))}"` : '';
-        const labelClass = members.length ? 'lane-label has-members' : 'lane-label';
+        const badgeClass = members.length ? 'runner-badge has-members' : 'runner-badge';
         return `
           <div class="lane" id="lane-${team.id}" style="--lane-color-a:${color[0]};--lane-color-b:${color[1]}">
-            <div class="${labelClass}"${titleAttr}>
+            <div class="lane-label">
               <div class="n">${escapeHtml(team.name)}</div>
               <div class="p"><span id="pts-${team.id}">${team.points}</span> / ${maxPoints}</div>
             </div>
@@ -286,7 +285,7 @@
               <div class="track-fill" id="fill-${team.id}" style="width:0%"></div>
               <div class="finish-flag">🏁</div>
               <div class="runner" id="runner-${team.id}" style="left:0%">
-                <div class="runner-badge">${escapeHtml(team.name).slice(-1)}</div>
+                <div class="${badgeClass}"${titleAttr}>${escapeHtml(team.name).slice(-1)}</div>
               </div>
             </div>
           </div>
