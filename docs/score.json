@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T13:41:57Z",
+  "updated_at": "2026-10-14T13:46:05Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,13 +92,24 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 19,
-      "tasks_done": 8,
+      "points": 21,
+      "tasks_done": 9,
       "tasks_total": 34,
-      "last_push": "2026-10-14T13:40:44Z"
+      "last_push": "2026-10-14T13:44:48Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T13:44:48Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "TEST-05",
+      "task_title": "Seuil de couverture frontend",
+      "result": "PASS",
+      "points": 2,
+      "reason": "[aaa2630] karma.conf.js définit coverageReporter.check / thresholds chiffrés.",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-14T13:40:44Z",
       "team_id": 7,
