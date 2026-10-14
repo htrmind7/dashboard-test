@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T14:21:05Z",
+  "updated_at": "2026-10-14T14:25:13Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,13 +92,24 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 46,
-      "tasks_done": 16,
+      "points": 51,
+      "tasks_done": 17,
       "tasks_total": 34,
-      "last_push": "2026-10-14T14:19:44Z"
+      "last_push": "2026-10-14T14:24:08Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T14:24:08Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "TEST-02",
+      "task_title": "Suite de tests IssueService",
+      "result": "PASS",
+      "points": 5,
+      "reason": "[e6f78db] 17 tests sur 9 méthodes de IssueService",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-14T14:19:44Z",
       "team_id": 7,
