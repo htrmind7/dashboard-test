@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T14:45:49Z",
+  "updated_at": "2026-10-14T14:49:55Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,13 +92,24 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 64,
-      "tasks_done": 20,
+      "points": 69,
+      "tasks_done": 21,
       "tasks_total": 34,
-      "last_push": "2026-10-14T14:43:56Z"
+      "last_push": "2026-10-14T14:49:51Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T14:49:51Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "MIG-03",
+      "task_title": "WebSecurityConfig : migrer vers la DSL lambda Spring Security 6",
+      "result": "PASS",
+      "points": 5,
+      "reason": "[7fd272c] Plus de WebSecurityConfigurerAdapter.",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-14T14:43:56Z",
       "team_id": 7,
@@ -959,6 +970,27 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-14T14:45:50Z",
+      "team_id": 7,
+      "sha": "7fd272c",
+      "msg": "MIG-03: replace WebSecurityConfigurerAdapter with SecurityFilterChain bean and lambda DSL (security tests added)",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 7fd272c (3 run(s))",
+      "ci_at": "2026-10-14T14:49:51Z",
+      "changes": [
+        {
+          "task_code": "MIG-03",
+          "title": "WebSecurityConfig : migrer vers la DSL lambda Spring Security 6",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 5,
+          "capped": false,
+          "reason": "Plus de WebSecurityConfigurerAdapter."
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
     {
       "ts": "2026-10-14T14:40:52Z",
       "team_id": 7,
