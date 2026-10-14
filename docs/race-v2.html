@@ -342,12 +342,13 @@
     const ico = c.to === 'PASS' ? '✅' : c.to === 'PARTIEL' ? '🟡' : '❌';
     const arrow = c.from ? `<span class="v-${c.from}">${c.from}</span><span class="arrow">→</span>` : '';
     const sign = c.points > 0 ? '+' : '';
+    const reg = (c.regression || isRegression(c)) ? '<span class="cap-tag" title="Ce commit a dégradé une tâche déjà validée">↘ régression</span>' : '';
     const cap = c.capped ? '<span class="cap-tag" title="Tâche faite mais plafonnée à 50 % : la CI de ce commit est rouge">plafonné — CI rouge</span>' : '';
     const reason = c.reason ? escapeHtml(c.reason) : (c.to === 'PASS' ? 'Tous les critères sont remplis.' : '');
     return `<div class="change to-${c.to}">
       <div class="ico">${ico}</div>
       <div class="task"><b>${escapeHtml(c.task_code)}</b><span>${escapeHtml(c.title)}</span></div>
-      <div class="verdict">${arrow}<span class="v-${c.to}">${c.to}</span>${cap}</div>
+      <div class="verdict">${arrow}<span class="v-${c.to}">${c.to}</span>${reg}${cap}</div>
       <div class="pts">${sign}${c.points} pt${Math.abs(c.points) > 1 ? 's' : ''}</div>
       <div class="reason">${reason}</div>
     </div>`;
