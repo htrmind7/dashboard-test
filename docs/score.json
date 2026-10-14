@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T14:25:13Z",
+  "updated_at": "2026-10-14T14:35:27Z",
   "max_points": 129,
   "teams": [
     {
@@ -923,6 +923,451 @@
       "points": 4,
       "reason": "agent: origin evil-appdomain non reflétée dans CORS",
       "source": "auto"
+    }
+  ],
+  "feed": [
+    {
+      "ts": "2026-10-14T14:20:30Z",
+      "team_id": 7,
+      "sha": "e6f78db",
+      "msg": "TEST-02: IssueService test suite (create, findByProject, tasks, watchers, key pair parsing)",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur e6f78db (3 run(s))",
+      "ci_at": "2026-10-14T14:24:08Z",
+      "changes": [
+        {
+          "task_code": "TEST-02",
+          "title": "Suite de tests IssueService",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 5,
+          "capped": false,
+          "reason": "17 tests sur 9 méthodes de IssueService"
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T14:16:40Z",
+      "team_id": 7,
+      "sha": "f81dbd6",
+      "msg": "TEST-01: AuthService tests (login, wrong password, locked, inactive, IP denied, checkUser)",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur f81dbd6 (3 run(s))",
+      "ci_at": "2026-10-14T14:19:44Z",
+      "changes": [
+        {
+          "task_code": "BUG-01",
+          "title": "NPE si le header X-TZ est absent au login",
+          "from": "PARTIEL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "reason": "Garde ajoutée sur X-TZ et test présent"
+        },
+        {
+          "task_code": "TEST-01",
+          "title": "Tests unitaires AuthService",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "reason": "9 test(s) hors X-TZ."
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T14:12:16Z",
+      "team_id": 7,
+      "sha": "394b3a6",
+      "msg": "SEC-04: add X-Content-Type-Options, X-Frame-Options, CSP and HSTS headers on all responses",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 394b3a6 (3 run(s))",
+      "ci_at": "2026-10-14T14:16:02Z",
+      "changes": [
+        {
+          "task_code": "SEC-04",
+          "title": "Ajouter les headers de sécurité HTTP",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "reason": "Les 4 headers sont configurés dans le code Java."
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T14:08:19Z",
+      "team_id": 7,
+      "sha": "9268967",
+      "msg": "SEC-05: strict CORS origin allowlist instead of substring match",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 9268967 (3 run(s))",
+      "ci_at": "2026-10-14T14:11:53Z",
+      "changes": [
+        {
+          "task_code": "SEC-05",
+          "title": "Corriger la validation d'origine CORS",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 4,
+          "capped": false,
+          "reason": "Validation d'origine par égalité / allowlist stricte."
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T14:03:46Z",
+      "team_id": 7,
+      "sha": "73f8459",
+      "msg": "BUG-04: use the resolved reporter for the creator watcher on issue creation (test fails before the fix: watcher was null)",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 73f8459 (3 run(s))",
+      "ci_at": "2026-10-14T14:07:19Z",
+      "changes": [
+        {
+          "task_code": "BUG-04",
+          "title": "Création d'issue sans reporter explicite échoue",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 5,
+          "capped": false,
+          "reason": "Reporter par défaut utilisé pour le watcher et test présent"
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T13:58:11Z",
+      "team_id": 7,
+      "sha": "e534f33",
+      "msg": "BUG-02: explicit 401 guard for missing X-JD-D fingerprint in TokenAuthenticationFilter, with tests (original code already returned 401 via the generic branch, so the test passes before and after; the guard makes the null case explicit)",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur e534f33 (3 run(s))",
+      "ci_at": "2026-10-14T14:01:56Z",
+      "changes": [
+        {
+          "task_code": "BUG-02",
+          "title": "Aucun garde-fou sur le fingerprint d'appareil manquant",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 4,
+          "capped": false,
+          "reason": "Fingerprint manquant rejeté et test présent"
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T13:54:33Z",
+      "team_id": 7,
+      "sha": "a381d48",
+      "msg": "BUG-01: default to UTC when X-TZ header is missing at login (test fails with NPE before the fix)",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur a381d48 (3 run(s))",
+      "ci_at": "2026-10-14T13:57:36Z",
+      "changes": [
+        {
+          "task_code": "BUG-01",
+          "title": "NPE si le header X-TZ est absent au login",
+          "from": "FAIL",
+          "to": "PARTIEL",
+          "points": 1,
+          "capped": false,
+          "reason": "aucun test Java ne couvre l'absence de X-TZ"
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T13:49:37Z",
+      "team_id": 7,
+      "sha": "1cb7485",
+      "msg": "BUG-03: move consumes from UserController class to POST methods (test included)",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 1cb7485 (3 run(s))",
+      "ci_at": "2026-10-14T13:53:23Z",
+      "changes": [
+        {
+          "task_code": "BUG-03",
+          "title": "415 sur un GET sans corps à cause d'un consumes de classe",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "reason": "consumes retiré de la classe, POST/PUT toujours en JSON"
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T13:45:03Z",
+      "team_id": 7,
+      "sha": "faf6635",
+      "msg": "TEST-05: nest thresholds under global as expected by the istanbul reporter",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur faf6635 (3 run(s))",
+      "ci_at": "2026-10-14T13:48:39Z",
+      "changes": [],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T13:41:00Z",
+      "team_id": 7,
+      "sha": "aaa2630",
+      "msg": "TEST-05: add coverage thresholds to karma config",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur aaa2630 (3 run(s))",
+      "ci_at": "2026-10-14T13:44:48Z",
+      "changes": [
+        {
+          "task_code": "TEST-05",
+          "title": "Seuil de couverture frontend",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 2,
+          "capped": false,
+          "reason": "karma.conf.js définit coverageReporter.check / thresholds chiffrés."
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T13:37:00Z",
+      "team_id": 7,
+      "sha": "f498355",
+      "msg": "FE-03: add build budgets to production config",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur f498355 (3 run(s))",
+      "ci_at": "2026-10-14T13:40:44Z",
+      "changes": [
+        {
+          "task_code": "FE-03",
+          "title": "Ajouter des budgets de build à angular.json",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 2,
+          "capped": false,
+          "reason": "budgets définis dans la configuration production."
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T13:30:41Z",
+      "team_id": 7,
+      "sha": "2fccda6",
+      "msg": "SEC-07: add gitleaks scan job in CI",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 2fccda6 (3 run(s))",
+      "ci_at": "2026-10-14T13:33:56Z",
+      "changes": [
+        {
+          "task_code": "SEC-07",
+          "title": "Scanner les secrets côté CI",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 2,
+          "capped": false,
+          "reason": "Un workflow référence gitleaks."
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T13:25:04Z",
+      "team_id": 7,
+      "sha": "9fa83bb",
+      "msg": "SEC-06: add gitleaks pre-commit hook",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 9fa83bb (2 run(s))",
+      "ci_at": "2026-10-14T13:27:56Z",
+      "changes": [
+        {
+          "task_code": "SEC-06",
+          "title": "Scanner les secrets en pre-commit",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 2,
+          "capped": false,
+          "reason": ".pre-commit-config.yaml référence un scanner de secrets."
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T13:21:08Z",
+      "team_id": 7,
+      "sha": "c47d364",
+      "msg": "SEC-03: replace demo credentials in README with /setup flow",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur c47d364 (2 run(s))",
+      "ci_at": "2026-10-14T13:24:58Z",
+      "changes": [
+        {
+          "task_code": "SEC-03",
+          "title": "Nettoyer la doc des credentials de démo",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 2,
+          "capped": false,
+          "reason": "README nettoyé et flux /setup documenté"
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T13:17:50Z",
+      "team_id": 7,
+      "sha": "cd7ba40",
+      "msg": "SEC-01: untrack .env, ignore it, add .env.example",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur cd7ba40 (2 run(s))",
+      "ci_at": "2026-10-14T13:20:53Z",
+      "changes": [
+        {
+          "task_code": "SEC-01",
+          "title": "Sortir .env du suivi Git",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "reason": ".env sorti du suivi, ignoré, .env.example propre"
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T13:13:25Z",
+      "team_id": 7,
+      "sha": "6bcdf60",
+      "msg": "CI-03: fix build, restore net dependency required by stompjs",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 6bcdf60 (2 run(s))",
+      "ci_at": "2026-10-14T13:17:36Z",
+      "changes": [
+        {
+          "task_code": "CI-01",
+          "title": "Pipeline CI backend",
+          "from": "PARTIEL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "reason": "Workflow backend complet (checkout, java ≥17, mvn test)"
+        },
+        {
+          "task_code": "CI-02",
+          "title": "Pipeline CI frontend",
+          "from": "PARTIEL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "reason": "Workflow frontend complet (node, npm ci, build)"
+        },
+        {
+          "task_code": "CI-03",
+          "title": "Bloquer les CVE critiques npm en CI",
+          "from": "PARTIEL",
+          "to": "PASS",
+          "points": 2,
+          "capped": false,
+          "reason": "npm audit --audit-level=critical présent."
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T12:53:20Z",
+      "team_id": 7,
+      "sha": "32e4ca7",
+      "msg": "CI-03: fail frontend pipeline on critical npm CVEs",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur 32e4ca7 : Frontend CI",
+      "ci_at": "2026-10-14T12:57:26Z",
+      "changes": [
+        {
+          "task_code": "CI-01",
+          "title": "Pipeline CI backend",
+          "from": "PASS",
+          "to": "PARTIEL",
+          "points": 1,
+          "capped": true,
+          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+        },
+        {
+          "task_code": "CI-02",
+          "title": "Pipeline CI frontend",
+          "from": "PASS",
+          "to": "PARTIEL",
+          "points": 1,
+          "capped": true,
+          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+        },
+        {
+          "task_code": "CI-03",
+          "title": "Bloquer les CVE critiques npm en CI",
+          "from": "FAIL",
+          "to": "PARTIEL",
+          "points": 1,
+          "capped": true,
+          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T12:45:42Z",
+      "team_id": 7,
+      "sha": "d0cae9d",
+      "msg": "CI-02: frontend CI workflow (npm ci + ng build)",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur d0cae9d (2 run(s))",
+      "ci_at": "2026-10-14T12:50:11Z",
+      "changes": [
+        {
+          "task_code": "CI-02",
+          "title": "Pipeline CI frontend",
+          "from": "PARTIEL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "reason": "Workflow frontend complet (node, npm ci, build)"
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T12:39:04Z",
+      "team_id": 7,
+      "sha": "5109010",
+      "msg": "CI-01: backend CI workflow (build + mvn test)",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 5109010 (1 run(s))",
+      "ci_at": "2026-10-14T12:39:43Z",
+      "changes": [
+        {
+          "task_code": "CI-01",
+          "title": "Pipeline CI backend",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "reason": "Workflow backend complet (checkout, java ≥17, mvn test)"
+        },
+        {
+          "task_code": "CI-02",
+          "title": "Pipeline CI frontend",
+          "from": "FAIL",
+          "to": "PARTIEL",
+          "points": 1,
+          "capped": false,
+          "reason": "pas de setup-node ; pas de `npm ci` ; pas de `ng build`/`npm run build`"
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
     }
   ]
 }
