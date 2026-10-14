@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T13:58:25Z",
+  "updated_at": "2026-10-14T14:02:34Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,13 +92,24 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 24,
-      "tasks_done": 10,
+      "points": 28,
+      "tasks_done": 11,
       "tasks_total": 34,
-      "last_push": "2026-10-14T13:54:33Z"
+      "last_push": "2026-10-14T14:01:56Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T14:01:56Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "BUG-02",
+      "task_title": "Aucun garde-fou sur le fingerprint d'appareil manquant",
+      "result": "PASS",
+      "points": 4,
+      "reason": "[e534f33] Fingerprint manquant rejeté et test présent",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-14T13:54:33Z",
       "team_id": 7,
