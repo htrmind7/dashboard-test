@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T12:06:45Z",
+  "updated_at": "2026-10-14T12:10:51Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,15 +92,15 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 14,
-      "tasks_done": 5,
+      "points": 17,
+      "tasks_done": 6,
       "tasks_total": 34,
-      "last_push": "2026-10-14T12:06:45Z"
+      "last_push": "2026-10-14T12:10:51Z"
     }
   ],
   "events": [
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "SEC-01",
@@ -111,7 +111,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "SEC-02",
@@ -122,7 +122,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "SEC-03",
@@ -133,7 +133,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "SEC-04",
@@ -144,7 +144,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "SEC-05",
@@ -155,7 +155,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "SEC-06",
@@ -166,7 +166,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "SEC-07",
@@ -177,7 +177,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "BUG-01",
@@ -188,7 +188,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "BUG-02",
@@ -199,7 +199,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "BUG-03",
@@ -210,7 +210,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "BUG-04",
@@ -221,7 +221,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "MIG-01",
@@ -232,7 +232,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "MIG-02",
@@ -243,7 +243,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "MIG-03",
@@ -254,7 +254,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "MIG-04",
@@ -265,7 +265,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "MIG-05",
@@ -276,7 +276,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "CI-01",
@@ -287,18 +287,18 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "CI-02",
       "task_title": "Pipeline CI frontend",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "Workflow frontend complet (node, npm ci, build) | plafonné: 1 run(s) en cours pour 0e4cecf",
+      "result": "PASS",
+      "points": 3,
+      "reason": "Workflow frontend complet (node, npm ci, build)",
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "CI-03",
@@ -309,7 +309,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "CI-04",
@@ -320,7 +320,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "CI-05",
@@ -331,7 +331,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "TEST-01",
@@ -342,7 +342,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "TEST-02",
@@ -353,7 +353,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "TEST-03",
@@ -364,7 +364,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "TEST-04",
@@ -375,7 +375,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "TEST-05",
@@ -386,7 +386,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "REF-01",
@@ -397,7 +397,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "REF-02",
@@ -408,7 +408,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "REF-03",
@@ -419,7 +419,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "FE-01",
@@ -430,7 +430,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "FE-02",
@@ -441,7 +441,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "FE-03",
@@ -452,7 +452,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "API-01",
@@ -463,7 +463,7 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:06:45Z",
+      "ts": "2026-10-14T12:10:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "API-02",
