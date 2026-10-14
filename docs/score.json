@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T13:21:22Z",
+  "updated_at": "2026-10-14T13:25:30Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,13 +92,24 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 11,
-      "tasks_done": 4,
+      "points": 13,
+      "tasks_done": 5,
       "tasks_total": 34,
-      "last_push": "2026-10-14T13:20:53Z"
+      "last_push": "2026-10-14T13:24:58Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T13:24:58Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "SEC-03",
+      "task_title": "Nettoyer la doc des credentials de démo",
+      "result": "PASS",
+      "points": 2,
+      "reason": "[c47d364] README nettoyé et flux /setup documenté",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-14T13:20:53Z",
       "team_id": 7,
