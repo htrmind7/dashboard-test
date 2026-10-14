@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T18:10:14Z",
+  "updated_at": "2026-10-14T18:14:56Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,231 +92,33 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 0,
-      "tasks_done": 0,
+      "points": 67,
+      "tasks_done": 21,
       "tasks_total": 34,
-      "last_push": "2026-10-14T15:13:42Z"
+      "last_push": "2026-10-14T15:17:30Z"
     }
   ],
   "events": [
     {
-      "ts": "2026-10-14T15:13:42Z",
+      "ts": "2026-10-14T15:17:30Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
-      "task_code": "CI-01",
-      "task_title": "Pipeline CI backend",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] Workflow backend complet (checkout, java ≥17, mvn test) | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
+      "task_code": "REF-02",
+      "task_title": "Extraire IssueCommentService",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[82e2b85] IssueCommentService extrait, injecté, sans dépendance circulaire",
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T15:13:42Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "CI-02",
-      "task_title": "Pipeline CI frontend",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] Workflow frontend complet (node, npm ci, build) | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T15:13:42Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "CI-03",
-      "task_title": "Bloquer les CVE critiques npm en CI",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] npm audit --audit-level=critical présent. | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T15:13:42Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "SEC-01",
-      "task_title": "Sortir .env du suivi Git",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] .env sorti du suivi, ignoré, .env.example propre | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T15:13:42Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "SEC-03",
-      "task_title": "Nettoyer la doc des credentials de démo",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] README nettoyé et flux /setup documenté | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T15:13:42Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "SEC-06",
-      "task_title": "Scanner les secrets en pre-commit",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] .pre-commit-config.yaml référence un scanner de secrets. | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T15:13:42Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "SEC-07",
-      "task_title": "Scanner les secrets côté CI",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] Un workflow référence gitleaks. | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T15:13:42Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "FE-03",
-      "task_title": "Ajouter des budgets de build à angular.json",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] budgets définis dans la configuration production. | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T15:13:42Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "TEST-05",
-      "task_title": "Seuil de couverture frontend",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] karma.conf.js définit coverageReporter.check / thresholds chiffrés. | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T15:13:42Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "BUG-03",
-      "task_title": "415 sur un GET sans corps à cause d'un consumes de classe",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] consumes retiré de la classe, POST/PUT toujours en JSON | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T15:13:42Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "BUG-01",
-      "task_title": "NPE si le header X-TZ est absent au login",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] Garde ajoutée sur X-TZ et test présent | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T15:13:42Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "BUG-02",
-      "task_title": "Aucun garde-fou sur le fingerprint d'appareil manquant",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] Fingerprint manquant rejeté et test présent | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T15:13:42Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "BUG-04",
-      "task_title": "Création d'issue sans reporter explicite échoue",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] Reporter par défaut utilisé pour le watcher et test présent | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T15:13:42Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "SEC-05",
-      "task_title": "Corriger la validation d'origine CORS",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] Validation d'origine par égalité / allowlist stricte. | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T15:13:42Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "SEC-04",
-      "task_title": "Ajouter les headers de sécurité HTTP",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] Les 4 headers sont configurés dans le code Java. | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T15:13:42Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "TEST-01",
-      "task_title": "Tests unitaires AuthService",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] 9 test(s) hors X-TZ. | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T15:13:42Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "TEST-02",
-      "task_title": "Suite de tests IssueService",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] 18 tests sur 10 méthodes de IssueService | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T15:13:42Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "CI-04",
-      "task_title": "Rapport de couverture JaCoCo publié en CI",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] JaCoCo configuré et rapport publié | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T15:13:42Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "MIG-03",
-      "task_title": "WebSecurityConfig : migrer vers la DSL lambda Spring Security 6",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] Plus de WebSecurityConfigurerAdapter. | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T15:13:42Z",
+      "ts": "2026-10-14T15:08:11Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "MIG-05",
       "task_title": "Mettre à jour core-js et font-awesome",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[82e2b85] core-js ≥3 et FontAwesome migré | plafonné: gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[81780dc] core-js ≥3 et FontAwesome migré",
       "source": "auto"
     },
     {
@@ -342,14 +144,25 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T14:40:52Z",
+      "ts": "2026-10-14T14:49:51Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
-      "task_code": "REF-02",
-      "task_title": "Extraire IssueCommentService",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[c2b08c3] IssueCommentService extrait, injecté, sans dépendance circulaire | tests : MISSING — aucun test unitaire exploitable",
+      "task_code": "SEC-04",
+      "task_title": "Ajouter les headers de sécurité HTTP",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[7fd272c] Les 4 headers sont configurés dans le code Java.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T14:49:51Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "MIG-03",
+      "task_title": "WebSecurityConfig : migrer vers la DSL lambda Spring Security 6",
+      "result": "PASS",
+      "points": 5,
+      "reason": "[7fd272c] Plus de WebSecurityConfigurerAdapter.",
       "source": "auto"
     },
     {
@@ -361,6 +174,193 @@
       "result": "PARTIEL",
       "points": 0,
       "reason": "[855b97c] IssueTransitionService extrait, injecté, sans dépendance circulaire | tests : MISSING — aucun test unitaire exploitable",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T14:35:35Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "CI-04",
+      "task_title": "Rapport de couverture JaCoCo publié en CI",
+      "result": "PASS",
+      "points": 5,
+      "reason": "[913e637] JaCoCo configuré et rapport publié",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T14:24:08Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "TEST-02",
+      "task_title": "Suite de tests IssueService",
+      "result": "PASS",
+      "points": 5,
+      "reason": "[e6f78db] 17 tests sur 9 méthodes de IssueService",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T14:19:44Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "BUG-01",
+      "task_title": "NPE si le header X-TZ est absent au login",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[f81dbd6] Garde ajoutée sur X-TZ et test présent",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T14:19:44Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "TEST-01",
+      "task_title": "Tests unitaires AuthService",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[f81dbd6] 9 test(s) hors X-TZ.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T14:11:53Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "SEC-05",
+      "task_title": "Corriger la validation d'origine CORS",
+      "result": "PASS",
+      "points": 4,
+      "reason": "[9268967] Validation d'origine par égalité / allowlist stricte.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T14:07:19Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "BUG-04",
+      "task_title": "Création d'issue sans reporter explicite échoue",
+      "result": "PASS",
+      "points": 5,
+      "reason": "[73f8459] Reporter par défaut utilisé pour le watcher et test présent",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T14:01:56Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "BUG-02",
+      "task_title": "Aucun garde-fou sur le fingerprint d'appareil manquant",
+      "result": "PASS",
+      "points": 4,
+      "reason": "[e534f33] Fingerprint manquant rejeté et test présent",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T13:53:23Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "BUG-03",
+      "task_title": "415 sur un GET sans corps à cause d'un consumes de classe",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[1cb7485] consumes retiré de la classe, POST/PUT toujours en JSON",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T13:44:48Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "TEST-05",
+      "task_title": "Seuil de couverture frontend",
+      "result": "PASS",
+      "points": 2,
+      "reason": "[aaa2630] karma.conf.js définit coverageReporter.check / thresholds chiffrés.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T13:40:44Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "FE-03",
+      "task_title": "Ajouter des budgets de build à angular.json",
+      "result": "PASS",
+      "points": 2,
+      "reason": "[f498355] budgets définis dans la configuration production.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T13:33:56Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "SEC-07",
+      "task_title": "Scanner les secrets côté CI",
+      "result": "PASS",
+      "points": 2,
+      "reason": "[2fccda6] Un workflow référence gitleaks.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T13:27:56Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "SEC-06",
+      "task_title": "Scanner les secrets en pre-commit",
+      "result": "PASS",
+      "points": 2,
+      "reason": "[9fa83bb] .pre-commit-config.yaml référence un scanner de secrets.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T13:24:58Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "SEC-03",
+      "task_title": "Nettoyer la doc des credentials de démo",
+      "result": "PASS",
+      "points": 2,
+      "reason": "[c47d364] README nettoyé et flux /setup documenté",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T13:20:53Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "SEC-01",
+      "task_title": "Sortir .env du suivi Git",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[cd7ba40] .env sorti du suivi, ignoré, .env.example propre",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T13:17:36Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "CI-01",
+      "task_title": "Pipeline CI backend",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[6bcdf60] Workflow backend complet (checkout, java ≥17, mvn test)",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T13:17:36Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "CI-02",
+      "task_title": "Pipeline CI frontend",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[6bcdf60] Workflow frontend complet (node, npm ci, build)",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T13:17:36Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "CI-03",
+      "task_title": "Bloquer les CVE critiques npm en CI",
+      "result": "PASS",
+      "points": 2,
+      "reason": "[6bcdf60] npm audit --audit-level=critical présent.",
       "source": "auto"
     },
     {
@@ -1008,209 +1008,19 @@
       "team_id": 7,
       "sha": "82e2b85",
       "msg": "REF-02: add unit tests for IssueCommentService",
-      "ci_state": "unknown",
-      "ci_detail": "gh indisponible (failed to get runs: Get \"https://api.github.com/repos/htrmind7/joindesk-hackatho)",
-      "ci_at": null,
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 82e2b85 (3 run(s))",
+      "ci_at": "2026-10-14T15:17:30Z",
       "changes": [
         {
-          "task_code": "SEC-01",
-          "title": "Sortir .env du suivi Git",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 1,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "SEC-03",
-          "title": "Nettoyer la doc des credentials de démo",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 1,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "SEC-04",
-          "title": "Ajouter les headers de sécurité HTTP",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 1,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "SEC-05",
-          "title": "Corriger la validation d'origine CORS",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 2,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "SEC-06",
-          "title": "Scanner les secrets en pre-commit",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 1,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "SEC-07",
-          "title": "Scanner les secrets côté CI",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 1,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "BUG-01",
-          "title": "NPE si le header X-TZ est absent au login",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 1,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "BUG-02",
-          "title": "Aucun garde-fou sur le fingerprint d'appareil manquant",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 2,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "BUG-03",
-          "title": "415 sur un GET sans corps à cause d'un consumes de classe",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 1,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "BUG-04",
-          "title": "Création d'issue sans reporter explicite échoue",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 2,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "MIG-03",
-          "title": "WebSecurityConfig : migrer vers la DSL lambda Spring Security 6",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 2,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "MIG-05",
-          "title": "Mettre à jour core-js et font-awesome",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 1,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "CI-01",
-          "title": "Pipeline CI backend",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 1,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "CI-02",
-          "title": "Pipeline CI frontend",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 1,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "CI-03",
-          "title": "Bloquer les CVE critiques npm en CI",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 1,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "CI-04",
-          "title": "Rapport de couverture JaCoCo publié en CI",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 2,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "TEST-01",
-          "title": "Tests unitaires AuthService",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 1,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "TEST-02",
-          "title": "Suite de tests IssueService",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 2,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "TEST-05",
-          "title": "Seuil de couverture frontend",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 1,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
-        },
-        {
-          "task_code": "FE-03",
-          "title": "Ajouter des budgets de build à angular.json",
-          "from": "PASS",
-          "to": "PARTIEL",
-          "points": 1,
-          "capped": true,
-          "regression": true,
-          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+          "task_code": "REF-02",
+          "title": "Extraire IssueCommentService",
+          "from": "PARTIEL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "IssueCommentService extrait, injecté, sans dépendance circulaire"
         }
       ],
       "team_name": "Claude Sonnet 5.5"
