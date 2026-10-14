@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T14:12:51Z",
+  "updated_at": "2026-10-14T14:16:58Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,13 +92,24 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 37,
-      "tasks_done": 13,
+      "points": 40,
+      "tasks_done": 14,
       "tasks_total": 34,
-      "last_push": "2026-10-14T14:11:53Z"
+      "last_push": "2026-10-14T14:16:02Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T14:16:02Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "SEC-04",
+      "task_title": "Ajouter les headers de sécurité HTTP",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[394b3a6] Les 4 headers sont configurés dans le code Java.",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-14T14:11:53Z",
       "team_id": 7,
