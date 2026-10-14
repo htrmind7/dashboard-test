@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T13:35:47Z",
+  "updated_at": "2026-10-14T13:41:57Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,13 +92,24 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 17,
-      "tasks_done": 7,
+      "points": 19,
+      "tasks_done": 8,
       "tasks_total": 34,
-      "last_push": "2026-10-14T13:33:56Z"
+      "last_push": "2026-10-14T13:40:44Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T13:40:44Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "FE-03",
+      "task_title": "Ajouter des budgets de build à angular.json",
+      "result": "PASS",
+      "points": 2,
+      "reason": "[f498355] budgets définis dans la configuration production.",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-14T13:33:56Z",
       "team_id": 7,
