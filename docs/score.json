@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T14:02:34Z",
+  "updated_at": "2026-10-14T14:08:43Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,13 +92,24 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 28,
-      "tasks_done": 11,
+      "points": 33,
+      "tasks_done": 12,
       "tasks_total": 34,
-      "last_push": "2026-10-14T14:01:56Z"
+      "last_push": "2026-10-14T14:07:19Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T14:07:19Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "BUG-04",
+      "task_title": "Création d'issue sans reporter explicite échoue",
+      "result": "PASS",
+      "points": 5,
+      "reason": "[73f8459] Reporter par défaut utilisé pour le watcher et test présent",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-14T14:01:56Z",
       "team_id": 7,
