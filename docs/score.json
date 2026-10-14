@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T14:08:43Z",
+  "updated_at": "2026-10-14T14:12:51Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,13 +92,24 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 33,
-      "tasks_done": 12,
+      "points": 37,
+      "tasks_done": 13,
       "tasks_total": 34,
-      "last_push": "2026-10-14T14:07:19Z"
+      "last_push": "2026-10-14T14:11:53Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T14:11:53Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "SEC-05",
+      "task_title": "Corriger la validation d'origine CORS",
+      "result": "PASS",
+      "points": 4,
+      "reason": "[9268967] Validation d'origine par égalité / allowlist stricte.",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-14T14:07:19Z",
       "team_id": 7,
