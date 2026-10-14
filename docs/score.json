@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T12:37:47Z",
+  "updated_at": "2026-10-14T12:39:56Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,13 +92,35 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 0,
-      "tasks_done": 0,
+      "points": 3,
+      "tasks_done": 1,
       "tasks_total": 34,
-      "last_push": null
+      "last_push": "2026-10-14T12:39:43Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T12:39:43Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "CI-01",
+      "task_title": "Pipeline CI backend",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[5109010] Workflow backend complet (checkout, java ≥17, mvn test)",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:39:04Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "CI-02",
+      "task_title": "Pipeline CI frontend",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[5109010] pas de setup-node ; pas de `npm ci` ; pas de `ng build`/`npm run build`",
+      "source": "auto"
+    },
     {
       "ts": "2026-09-24T16:10:12.816423",
       "team_id": 2,
