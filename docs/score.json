@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T15:04:03Z",
+  "updated_at": "2026-10-14T15:10:14Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,13 +92,24 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 61,
-      "tasks_done": 19,
+      "points": 64,
+      "tasks_done": 20,
       "tasks_total": 34,
-      "last_push": "2026-10-14T14:56:57Z"
+      "last_push": "2026-10-14T15:08:11Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T15:08:11Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "MIG-05",
+      "task_title": "Mettre à jour core-js et font-awesome",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[81780dc] core-js ≥3 et FontAwesome migré",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-14T14:56:57Z",
       "team_id": 7,
@@ -992,6 +1003,28 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-14T15:04:42Z",
+      "team_id": 7,
+      "sha": "81780dc",
+      "msg": "MIG-05: core-js 3 and @fortawesome/fontawesome-free 5 replace core-js 2 and font-awesome 4",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 81780dc (3 run(s))",
+      "ci_at": "2026-10-14T15:08:11Z",
+      "changes": [
+        {
+          "task_code": "MIG-05",
+          "title": "Mettre à jour core-js et font-awesome",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "core-js ≥3 et FontAwesome migré"
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
     {
       "ts": "2026-10-14T14:56:57Z",
       "team_id": 7,
