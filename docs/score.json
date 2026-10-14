@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T12:32:07Z",
+  "updated_at": "2026-10-14T12:34:11Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,8 +92,8 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 3,
-      "tasks_done": 1,
+      "points": 6,
+      "tasks_done": 2,
       "tasks_total": 34,
       "last_push": "2026-10-14T12:31:43Z"
     }
@@ -111,14 +111,14 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:26:34Z",
+      "ts": "2026-10-14T12:27:09Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "CI-01",
       "task_title": "Pipeline CI backend",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[51f8bea] pas de `mvn test` (ou verify/package)",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[51f8bea] Workflow backend complet (checkout, java ≥17, mvn test)",
       "source": "auto"
     },
     {
