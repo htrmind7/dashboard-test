@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T15:02:12Z",
+  "updated_at": "2026-10-14T15:04:03Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,8 +92,8 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 72,
-      "tasks_done": 22,
+      "points": 61,
+      "tasks_done": 19,
       "tasks_total": 34,
       "last_push": "2026-10-14T14:56:57Z"
     }
@@ -111,14 +111,25 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T14:55:03Z",
+      "ts": "2026-10-14T14:51:27Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "API-01",
       "task_title": "Pagination sur la recherche d'issues",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[48b72ca] Recherche paginée (content, totalElements, totalPages, size=20) | tests : MISSING — aucun test unitaire exploitable",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T14:49:51Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "SEC-04",
+      "task_title": "Ajouter les headers de sécurité HTTP",
       "result": "PASS",
       "points": 3,
-      "reason": "[48b72ca] Recherche paginée (content, totalElements, totalPages, size=20)",
+      "reason": "[7fd272c] Les 4 headers sont configurés dans le code Java.",
       "source": "auto"
     },
     {
@@ -133,25 +144,25 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T14:43:56Z",
+      "ts": "2026-10-14T14:40:52Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "REF-02",
       "task_title": "Extraire IssueCommentService",
-      "result": "PASS",
-      "points": 3,
-      "reason": "[c2b08c3] IssueCommentService extrait, injecté, sans dépendance circulaire",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[c2b08c3] IssueCommentService extrait, injecté, sans dépendance circulaire | tests : MISSING — aucun test unitaire exploitable",
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T14:40:10Z",
+      "ts": "2026-10-14T14:36:25Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "REF-01",
       "task_title": "Extraire IssueTransitionService",
-      "result": "PASS",
-      "points": 5,
-      "reason": "[855b97c] IssueTransitionService extrait, injecté, sans dépendance circulaire",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[855b97c] IssueTransitionService extrait, injecté, sans dépendance circulaire | tests : MISSING — aucun test unitaire exploitable",
       "source": "auto"
     },
     {
@@ -196,17 +207,6 @@
       "result": "PASS",
       "points": 3,
       "reason": "[f81dbd6] 9 test(s) hors X-TZ.",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T14:16:02Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "SEC-04",
-      "task_title": "Ajouter les headers de sécurité HTTP",
-      "result": "PASS",
-      "points": 3,
-      "reason": "[394b3a6] Les 4 headers sont configurés dans le code Java.",
       "source": "auto"
     },
     {
@@ -323,33 +323,33 @@
       "ts": "2026-10-14T13:17:36Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
-      "task_code": "CI-03",
-      "task_title": "Bloquer les CVE critiques npm en CI",
+      "task_code": "CI-01",
+      "task_title": "Pipeline CI backend",
       "result": "PASS",
-      "points": 2,
-      "reason": "[6bcdf60] npm audit --audit-level=critical présent.",
+      "points": 3,
+      "reason": "[6bcdf60] Workflow backend complet (checkout, java ≥17, mvn test)",
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:50:11Z",
+      "ts": "2026-10-14T13:17:36Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
       "task_code": "CI-02",
       "task_title": "Pipeline CI frontend",
       "result": "PASS",
       "points": 3,
-      "reason": "[d0cae9d] Workflow frontend complet (node, npm ci, build)",
+      "reason": "[6bcdf60] Workflow frontend complet (node, npm ci, build)",
       "source": "auto"
     },
     {
-      "ts": "2026-10-14T12:39:43Z",
+      "ts": "2026-10-14T13:17:36Z",
       "team_id": 7,
       "team_name": "Claude Sonnet 5.5",
-      "task_code": "CI-01",
-      "task_title": "Pipeline CI backend",
+      "task_code": "CI-03",
+      "task_title": "Bloquer les CVE critiques npm en CI",
       "result": "PASS",
-      "points": 3,
-      "reason": "[5109010] Workflow backend complet (checkout, java ≥17, mvn test)",
+      "points": 2,
+      "reason": "[6bcdf60] npm audit --audit-level=critical présent.",
       "source": "auto"
     },
     {
@@ -1008,6 +1008,7 @@
           "to": "PARTIEL",
           "points": 2,
           "capped": false,
+          "regression": false,
           "reason": "404/403 non gérés dans l'endpoint stats"
         }
       ],
@@ -1026,10 +1027,11 @@
           "task_code": "API-01",
           "title": "Pagination sur la recherche d'issues",
           "from": "FAIL",
-          "to": "PASS",
-          "points": 3,
+          "to": "PARTIEL",
+          "points": 1,
           "capped": false,
-          "reason": "Recherche paginée (content, totalElements, totalPages, size=20)"
+          "regression": false,
+          "reason": "Recherche paginée (content, totalElements, totalPages, size=20) | tests : MISSING — aucun test unitaire exploitable"
         }
       ],
       "team_name": "Claude Sonnet 5.5"
@@ -1044,12 +1046,23 @@
       "ci_at": "2026-10-14T14:49:51Z",
       "changes": [
         {
+          "task_code": "SEC-04",
+          "title": "Ajouter les headers de sécurité HTTP",
+          "from": "PARTIEL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "Les 4 headers sont configurés dans le code Java."
+        },
+        {
           "task_code": "MIG-03",
           "title": "WebSecurityConfig : migrer vers la DSL lambda Spring Security 6",
           "from": "FAIL",
           "to": "PASS",
           "points": 5,
           "capped": false,
+          "regression": false,
           "reason": "Plus de WebSecurityConfigurerAdapter."
         }
       ],
@@ -1068,10 +1081,11 @@
           "task_code": "REF-02",
           "title": "Extraire IssueCommentService",
           "from": "FAIL",
-          "to": "PASS",
-          "points": 3,
+          "to": "PARTIEL",
+          "points": 1,
           "capped": false,
-          "reason": "IssueCommentService extrait, injecté, sans dépendance circulaire"
+          "regression": false,
+          "reason": "IssueCommentService extrait, injecté, sans dépendance circulaire | tests : MISSING — aucun test unitaire exploitable"
         }
       ],
       "team_name": "Claude Sonnet 5.5"
@@ -1089,10 +1103,11 @@
           "task_code": "REF-01",
           "title": "Extraire IssueTransitionService",
           "from": "FAIL",
-          "to": "PASS",
-          "points": 5,
+          "to": "PARTIEL",
+          "points": 2,
           "capped": false,
-          "reason": "IssueTransitionService extrait, injecté, sans dépendance circulaire"
+          "regression": false,
+          "reason": "IssueTransitionService extrait, injecté, sans dépendance circulaire | tests : MISSING — aucun test unitaire exploitable"
         }
       ],
       "team_name": "Claude Sonnet 5.5"
@@ -1124,6 +1139,7 @@
           "to": "PASS",
           "points": 5,
           "capped": false,
+          "regression": false,
           "reason": "JaCoCo configuré et rapport publié"
         }
       ],
@@ -1145,6 +1161,7 @@
           "to": "PASS",
           "points": 5,
           "capped": false,
+          "regression": false,
           "reason": "17 tests sur 9 méthodes de IssueService"
         }
       ],
@@ -1166,6 +1183,7 @@
           "to": "PASS",
           "points": 3,
           "capped": false,
+          "regression": false,
           "reason": "Garde ajoutée sur X-TZ et test présent"
         },
         {
@@ -1175,6 +1193,7 @@
           "to": "PASS",
           "points": 3,
           "capped": false,
+          "regression": false,
           "reason": "9 test(s) hors X-TZ."
         }
       ],
@@ -1193,10 +1212,11 @@
           "task_code": "SEC-04",
           "title": "Ajouter les headers de sécurité HTTP",
           "from": "FAIL",
-          "to": "PASS",
-          "points": 3,
+          "to": "PARTIEL",
+          "points": 1,
           "capped": false,
-          "reason": "Les 4 headers sont configurés dans le code Java."
+          "regression": false,
+          "reason": "Les 4 headers sont configurés dans le code Java. | tests : MISSING — aucun test unitaire exploitable"
         }
       ],
       "team_name": "Claude Sonnet 5.5"
@@ -1217,6 +1237,7 @@
           "to": "PASS",
           "points": 4,
           "capped": false,
+          "regression": false,
           "reason": "Validation d'origine par égalité / allowlist stricte."
         }
       ],
@@ -1238,6 +1259,7 @@
           "to": "PASS",
           "points": 5,
           "capped": false,
+          "regression": false,
           "reason": "Reporter par défaut utilisé pour le watcher et test présent"
         }
       ],
@@ -1259,6 +1281,7 @@
           "to": "PASS",
           "points": 4,
           "capped": false,
+          "regression": false,
           "reason": "Fingerprint manquant rejeté et test présent"
         }
       ],
@@ -1280,6 +1303,7 @@
           "to": "PARTIEL",
           "points": 1,
           "capped": false,
+          "regression": false,
           "reason": "aucun test Java ne couvre l'absence de X-TZ"
         }
       ],
@@ -1301,6 +1325,7 @@
           "to": "PASS",
           "points": 3,
           "capped": false,
+          "regression": false,
           "reason": "consumes retiré de la classe, POST/PUT toujours en JSON"
         }
       ],
@@ -1333,6 +1358,7 @@
           "to": "PASS",
           "points": 2,
           "capped": false,
+          "regression": false,
           "reason": "karma.conf.js définit coverageReporter.check / thresholds chiffrés."
         }
       ],
@@ -1354,6 +1380,7 @@
           "to": "PASS",
           "points": 2,
           "capped": false,
+          "regression": false,
           "reason": "budgets définis dans la configuration production."
         }
       ],
@@ -1375,6 +1402,7 @@
           "to": "PASS",
           "points": 2,
           "capped": false,
+          "regression": false,
           "reason": "Un workflow référence gitleaks."
         }
       ],
@@ -1396,6 +1424,7 @@
           "to": "PASS",
           "points": 2,
           "capped": false,
+          "regression": false,
           "reason": ".pre-commit-config.yaml référence un scanner de secrets."
         }
       ],
@@ -1417,6 +1446,7 @@
           "to": "PASS",
           "points": 2,
           "capped": false,
+          "regression": false,
           "reason": "README nettoyé et flux /setup documenté"
         }
       ],
@@ -1438,6 +1468,7 @@
           "to": "PASS",
           "points": 3,
           "capped": false,
+          "regression": false,
           "reason": ".env sorti du suivi, ignoré, .env.example propre"
         }
       ],
@@ -1459,6 +1490,7 @@
           "to": "PASS",
           "points": 3,
           "capped": false,
+          "regression": false,
           "reason": "Workflow backend complet (checkout, java ≥17, mvn test)"
         },
         {
@@ -1468,6 +1500,7 @@
           "to": "PASS",
           "points": 3,
           "capped": false,
+          "regression": false,
           "reason": "Workflow frontend complet (node, npm ci, build)"
         },
         {
@@ -1477,6 +1510,7 @@
           "to": "PASS",
           "points": 2,
           "capped": false,
+          "regression": false,
           "reason": "npm audit --audit-level=critical présent."
         }
       ],
@@ -1498,6 +1532,7 @@
           "to": "PARTIEL",
           "points": 1,
           "capped": true,
+          "regression": true,
           "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
         },
         {
@@ -1507,6 +1542,7 @@
           "to": "PARTIEL",
           "points": 1,
           "capped": true,
+          "regression": true,
           "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
         },
         {
@@ -1516,6 +1552,7 @@
           "to": "PARTIEL",
           "points": 1,
           "capped": true,
+          "regression": false,
           "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
         }
       ],
@@ -1537,6 +1574,7 @@
           "to": "PASS",
           "points": 3,
           "capped": false,
+          "regression": false,
           "reason": "Workflow frontend complet (node, npm ci, build)"
         }
       ],
@@ -1558,6 +1596,7 @@
           "to": "PASS",
           "points": 3,
           "capped": false,
+          "regression": false,
           "reason": "Workflow backend complet (checkout, java ≥17, mvn test)"
         },
         {
@@ -1567,6 +1606,7 @@
           "to": "PARTIEL",
           "points": 1,
           "capped": false,
+          "regression": false,
           "reason": "pas de setup-node ; pas de `npm ci` ; pas de `ng build`/`npm run build`"
         }
       ],
