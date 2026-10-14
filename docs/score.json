@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-24T13:48:31Z",
+  "updated_at": "2026-10-14T12:02:39Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,10 +11,10 @@
         "Chloé",
         "David"
       ],
-      "points": 85,
-      "tasks_done": 22,
+      "points": 87,
+      "tasks_done": 23,
       "tasks_total": 34,
-      "last_push": "2026-09-24T15:39:45.634170"
+      "last_push": "2026-09-24T16:00:56.435477"
     },
     {
       "id": 2,
@@ -25,10 +25,10 @@
         "Garance",
         "Hugo"
       ],
-      "points": 10,
-      "tasks_done": 4,
+      "points": 102,
+      "tasks_done": 28,
       "tasks_total": 34,
-      "last_push": "2026-09-24T15:48:27.176649"
+      "last_push": "2026-09-24T16:10:12.816423"
     },
     {
       "id": 3,
@@ -85,9 +85,669 @@
       "tasks_done": 2,
       "tasks_total": 34,
       "last_push": "2026-09-24T07:27:24Z"
+    },
+    {
+      "id": 7,
+      "name": "Claude Sonnet 5.5",
+      "members": [
+        "Sonnet 5.5"
+      ],
+      "points": 0,
+      "tasks_done": 0,
+      "tasks_total": 34,
+      "last_push": "2026-10-14T12:02:39Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "SEC-01",
+      "task_title": "Sortir .env du suivi Git",
+      "result": "FAIL",
+      "points": 0,
+      "reason": ".env est toujours suivi par git ; .env absent de .gitignore ; .env.example absent, <5 clés, ou contient de vraies valeurs de secrets",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "SEC-02",
+      "task_title": "Purger l'historique Git des secrets",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "SEC-01 non fait : .env encore suivi.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "SEC-03",
+      "task_title": "Nettoyer la doc des credentials de démo",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "Demo@123 encore dans README.md ; README ne documente pas le flux /setup",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "SEC-04",
+      "task_title": "Ajouter les headers de sécurité HTTP",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "Headers non configurés : X-Content-Type-Options, X-Frame-Options, Content-Security-Policy, Strict-Transport-Security.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "SEC-05",
+      "task_title": "Corriger la validation d'origine CORS",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "CorsFilter valide encore l'origine de la requête par sous-chaîne (String.contains).",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "SEC-06",
+      "task_title": "Scanner les secrets en pre-commit",
+      "result": "FAIL",
+      "points": 0,
+      "reason": ".pre-commit-config.yaml absent.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "SEC-07",
+      "task_title": "Scanner les secrets côté CI",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "Aucun workflow GitHub ne référence gitleaks.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "BUG-01",
+      "task_title": "NPE si le header X-TZ est absent au login",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "AuthService utilise X-TZ sans garde null/vide ; aucun test Java ne couvre l'absence de X-TZ",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "BUG-02",
+      "task_title": "Aucun garde-fou sur le fingerprint d'appareil manquant",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "le filtre ne rejette pas (401) une requête sans fingerprint X-JD-D ; aucun test Java ne couvre l'absence de X-JD-D",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "BUG-03",
+      "task_title": "415 sur un GET sans corps à cause d'un consumes de classe",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "`consumes` toujours au niveau classe de UserController.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "BUG-04",
+      "task_title": "Création d'issue sans reporter explicite échoue",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "IssueService ajoute encore issue.getReporter() (nullable) comme watcher ; aucun test Java ne crée une issue sans reporter",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "MIG-01",
+      "task_title": "Spring Boot 2.4.4 → 3.x",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "spring-boot-starter-parent encore en 2.4.4.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "MIG-02",
+      "task_title": "javax.* → jakarta.* (99 fichiers confirmés)",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "220 import(s) javax.(servlet|persistence|validation|mail) restants.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "MIG-03",
+      "task_title": "WebSecurityConfig : migrer vers la DSL lambda Spring Security 6",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "WebSecurityConfigurerAdapter encore utilisé dans 1 fichier(s).",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "MIG-04",
+      "task_title": "Angular 8 → 9",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "@angular/core en ^8.0.0 (<9).",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "MIG-05",
+      "task_title": "Mettre à jour core-js et font-awesome",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "core-js < 3 ; @fortawesome/fontawesome-free absent ou ancien font-awesome encore présent",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "CI-01",
+      "task_title": "Pipeline CI backend",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "pas de checkout ; pas de setup-java ≥17 ; pas de `mvn test` (ou verify/package)",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "CI-02",
+      "task_title": "Pipeline CI frontend",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "pas de checkout ; pas de setup-node ; pas de `npm ci` ; pas de `ng build`/`npm run build`",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "CI-03",
+      "task_title": "Bloquer les CVE critiques npm en CI",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "Aucune étape `npm audit --audit-level=critical` dans les workflows.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "CI-04",
+      "task_title": "Rapport de couverture JaCoCo publié en CI",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "jacoco-maven-plugin absent de pom.xml ; le workflow ne publie pas le rapport",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "CI-05",
+      "task_title": "Scan de dépendances OWASP en CI",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "dependency-check-maven absent de pom.xml ; le workflow ne référence pas dependency-check",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "TEST-01",
+      "task_title": "Tests unitaires AuthService",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "AuthServiceTest.java absent.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "TEST-02",
+      "task_title": "Suite de tests IssueService",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "IssueServiceTest.java absent.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "TEST-03",
+      "task_title": "Seuil de couverture JaCoCo backend",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "jacoco-maven-plugin absent.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "TEST-04",
+      "task_title": "Premiers tests sur IssueViewComponent",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "0 bloc(s) it() sous issue/ (≥3 requis).",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "TEST-05",
+      "task_title": "Seuil de couverture frontend",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "Aucun `thresholds` chiffré dans karma.conf.js (coverageReporter seul ne suffit pas).",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "REF-01",
+      "task_title": "Extraire IssueTransitionService",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "IssueTransitionService.java absent.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "REF-02",
+      "task_title": "Extraire IssueCommentService",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "IssueCommentService.java absent.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "REF-03",
+      "task_title": "Réduire les dépendances directes de IssueService",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "37 dépendances injectées (≤25 requis).",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "FE-01",
+      "task_title": "Remplacer l'éditeur Markdown vendored",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "Frontend/src/assets/editormd existe encore ; aucune dépendance markdown maintenue dans package.json",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "FE-02",
+      "task_title": "Migrer tslint vers eslint",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "Frontend/tslint.json existe encore ; aucune config eslint dans Frontend/",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "FE-03",
+      "task_title": "Ajouter des budgets de build à angular.json",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "Aucun `budgets` dans la configuration production d'angular.json.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "API-01",
+      "task_title": "Pagination sur la recherche d'issues",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "aucune pagination (Pageable/PageRequest) sur la recherche ; réponse sans content/totalElements/totalPages ; pas de défaut size=20",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T12:02:39Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "API-02",
+      "task_title": "Endpoint de statistiques projet",
+      "result": "FAIL",
+      "points": 0,
+      "reason": "Aucun mapping /stats dans les contrôleurs.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-09-24T16:10:12.816423",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "TEST-04",
+      "task_title": "Premiers tests sur IssueViewComponent",
+      "result": "PASS",
+      "points": 5,
+      "reason": "Build OK - git commit detected",
+      "source": "auto_with_build_check"
+    },
+    {
+      "ts": "2026-09-24T16:08:06.964025",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "TEST-02",
+      "task_title": "Suite de tests IssueService",
+      "result": "PASS",
+      "points": 5,
+      "reason": "Build OK - git commit detected",
+      "source": "auto_with_build_check"
+    },
+    {
+      "ts": "2026-09-24T16:08:06.964025",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "TEST-01",
+      "task_title": "Tests unitaires AuthService",
+      "result": "PASS",
+      "points": 3,
+      "reason": "Build OK - git commit detected",
+      "source": "auto_with_build_check"
+    },
+    {
+      "ts": "2026-09-24T16:03:52.975203",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "REF-03",
+      "task_title": "Réduire les dépendances directes de IssueService",
+      "result": "PASS",
+      "points": 3,
+      "reason": "Build OK - git commit detected",
+      "source": "auto_with_build_check"
+    },
+    {
+      "ts": "2026-09-24T16:00:56.435477",
+      "team_id": 1,
+      "team_name": "Claude Haiku",
+      "task_code": "CI-03",
+      "task_title": "Bloquer les CVE critiques npm en CI",
+      "result": "PASS",
+      "points": 2,
+      "reason": "Detected from git commit, build OK",
+      "source": "auto_commit_with_build_check"
+    },
+    {
+      "ts": "2026-09-24T15:52:08.155196",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "REF-01",
+      "task_title": "Extraire IssueTransitionService",
+      "result": "PASS",
+      "points": 5,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "REF-02",
+      "task_title": "Extraire IssueCommentService",
+      "result": "PASS",
+      "points": 3,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "MIG-03",
+      "task_title": "WebSecurityConfig : migrer vers la DSL lambda Spring Security 6",
+      "result": "PASS",
+      "points": 5,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "MIG-02",
+      "task_title": "javax.* → jakarta.* (99 fichiers confirmés)",
+      "result": "PASS",
+      "points": 8,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "MIG-01",
+      "task_title": "Spring Boot 2.4.4 → 3.x",
+      "result": "PASS",
+      "points": 4,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "BUG-04",
+      "task_title": "Création d'issue sans reporter explicite échoue",
+      "result": "PASS",
+      "points": 5,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "BUG-02",
+      "task_title": "Aucun garde-fou sur le fingerprint d'appareil manquant",
+      "result": "PASS",
+      "points": 4,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "BUG-01",
+      "task_title": "NPE si le header X-TZ est absent au login",
+      "result": "PASS",
+      "points": 3,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "API-02",
+      "task_title": "Endpoint de statistiques projet",
+      "result": "PASS",
+      "points": 5,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "CI-05",
+      "task_title": "Scan de dépendances OWASP en CI",
+      "result": "PASS",
+      "points": 5,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "CI-04",
+      "task_title": "Rapport de couverture JaCoCo publié en CI",
+      "result": "PASS",
+      "points": 5,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "BUG-03",
+      "task_title": "415 sur un GET sans corps à cause d'un consumes de classe",
+      "result": "PASS",
+      "points": 3,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "MIG-05",
+      "task_title": "Mettre à jour core-js et font-awesome",
+      "result": "PASS",
+      "points": 3,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "CI-03",
+      "task_title": "Bloquer les CVE critiques npm en CI",
+      "result": "PASS",
+      "points": 2,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "API-01",
+      "task_title": "Pagination sur la recherche d'issues",
+      "result": "PASS",
+      "points": 3,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "TEST-05",
+      "task_title": "Seuil de couverture frontend",
+      "result": "PASS",
+      "points": 2,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "SEC-07",
+      "task_title": "Scanner les secrets côté CI",
+      "result": "PASS",
+      "points": 2,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "SEC-06",
+      "task_title": "Scanner les secrets en pre-commit",
+      "result": "PASS",
+      "points": 2,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "SEC-05",
+      "task_title": "Corriger la validation d'origine CORS",
+      "result": "PASS",
+      "points": 4,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
+    {
+      "ts": "2026-09-24T15:50:06.711358",
+      "team_id": 2,
+      "team_name": "Copilot Haiku",
+      "task_code": "SEC-04",
+      "task_title": "Ajouter les headers de sécurité HTTP",
+      "result": "PASS",
+      "points": 3,
+      "reason": "Detected from git commit",
+      "source": "auto_commit"
+    },
     {
       "ts": "2026-09-24T15:48:27.176649",
       "team_id": 2,
