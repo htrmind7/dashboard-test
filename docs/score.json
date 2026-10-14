@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T13:25:30Z",
+  "updated_at": "2026-10-14T13:29:37Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,13 +92,24 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 13,
-      "tasks_done": 5,
+      "points": 15,
+      "tasks_done": 6,
       "tasks_total": 34,
-      "last_push": "2026-10-14T13:24:58Z"
+      "last_push": "2026-10-14T13:27:56Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T13:27:56Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "SEC-06",
+      "task_title": "Scanner les secrets en pre-commit",
+      "result": "PASS",
+      "points": 2,
+      "reason": "[9fa83bb] .pre-commit-config.yaml référence un scanner de secrets.",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-14T13:24:58Z",
       "team_id": 7,
