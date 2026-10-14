@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T14:16:58Z",
+  "updated_at": "2026-10-14T14:21:05Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,13 +92,35 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 40,
-      "tasks_done": 14,
+      "points": 46,
+      "tasks_done": 16,
       "tasks_total": 34,
-      "last_push": "2026-10-14T14:16:02Z"
+      "last_push": "2026-10-14T14:19:44Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T14:19:44Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "BUG-01",
+      "task_title": "NPE si le header X-TZ est absent au login",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[f81dbd6] Garde ajoutée sur X-TZ et test présent",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-14T14:19:44Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "TEST-01",
+      "task_title": "Tests unitaires AuthService",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[f81dbd6] 9 test(s) hors X-TZ.",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-14T14:16:02Z",
       "team_id": 7,
@@ -141,17 +163,6 @@
       "result": "PASS",
       "points": 4,
       "reason": "[e534f33] Fingerprint manquant rejeté et test présent",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T13:54:33Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "BUG-01",
-      "task_title": "NPE si le header X-TZ est absent au login",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[a381d48] aucun test Java ne couvre l'absence de X-TZ",
       "source": "auto"
     },
     {
