@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T13:54:18Z",
+  "updated_at": "2026-10-14T13:58:25Z",
   "max_points": 129,
   "teams": [
     {
@@ -95,10 +95,21 @@
       "points": 24,
       "tasks_done": 10,
       "tasks_total": 34,
-      "last_push": "2026-10-14T13:53:23Z"
+      "last_push": "2026-10-14T13:54:33Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T13:54:33Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "BUG-01",
+      "task_title": "NPE si le header X-TZ est absent au login",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[a381d48] aucun test Java ne couvre l'absence de X-TZ",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-14T13:53:23Z",
       "team_id": 7,
