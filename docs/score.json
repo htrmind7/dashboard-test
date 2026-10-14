@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T14:56:03Z",
+  "updated_at": "2026-10-14T15:02:12Z",
   "max_points": 129,
   "teams": [
     {
@@ -95,10 +95,21 @@
       "points": 72,
       "tasks_done": 22,
       "tasks_total": 34,
-      "last_push": "2026-10-14T14:55:03Z"
+      "last_push": "2026-10-14T14:56:57Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T14:56:57Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "API-02",
+      "task_title": "Endpoint de statistiques projet",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[1698dc0] 404/403 non gérés dans l'endpoint stats",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-14T14:55:03Z",
       "team_id": 7,
@@ -981,6 +992,27 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-14T14:56:57Z",
+      "team_id": 7,
+      "sha": "1698dc0",
+      "msg": "API-02: add GET /project/{key}/stats endpoint reusing ReportService and WorkLogService",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 1698dc0 (3 run(s))",
+      "ci_at": "2026-10-14T15:00:42Z",
+      "changes": [
+        {
+          "task_code": "API-02",
+          "title": "Endpoint de statistiques projet",
+          "from": "FAIL",
+          "to": "PARTIEL",
+          "points": 2,
+          "capped": false,
+          "reason": "404/403 non gérés dans l'endpoint stats"
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
     {
       "ts": "2026-10-14T14:51:27Z",
       "team_id": 7,
