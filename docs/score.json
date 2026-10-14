@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T14:35:27Z",
+  "updated_at": "2026-10-14T14:37:35Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,13 +92,24 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 51,
-      "tasks_done": 17,
+      "points": 56,
+      "tasks_done": 18,
       "tasks_total": 34,
-      "last_push": "2026-10-14T14:24:08Z"
+      "last_push": "2026-10-14T14:35:35Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T14:35:35Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "CI-04",
+      "task_title": "Rapport de couverture JaCoCo publié en CI",
+      "result": "PASS",
+      "points": 5,
+      "reason": "[913e637] JaCoCo configuré et rapport publié",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-14T14:24:08Z",
       "team_id": 7,
@@ -926,6 +937,38 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-14T14:28:16Z",
+      "team_id": 7,
+      "sha": "214a82b",
+      "msg": "add mandatory CI to .gitignore",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 214a82b (3 run(s))",
+      "ci_at": "2026-10-14T14:31:32Z",
+      "changes": [],
+      "team_name": "Claude Sonnet 5.5"
+    },
+    {
+      "ts": "2026-10-14T14:24:47Z",
+      "team_id": 7,
+      "sha": "913e637",
+      "msg": "CI-04: JaCoCo plugin and coverage report published as CI artifact",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 913e637 (3 run(s))",
+      "ci_at": "2026-10-14T14:35:35Z",
+      "changes": [
+        {
+          "task_code": "CI-04",
+          "title": "Rapport de couverture JaCoCo publié en CI",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 5,
+          "capped": false,
+          "reason": "JaCoCo configuré et rapport publié"
+        }
+      ],
+      "team_name": "Claude Sonnet 5.5"
+    },
     {
       "ts": "2026-10-14T14:20:30Z",
       "team_id": 7,
