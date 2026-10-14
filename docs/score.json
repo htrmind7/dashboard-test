@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T12:28:01Z",
+  "updated_at": "2026-10-14T12:32:07Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,13 +92,24 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 0,
-      "tasks_done": 0,
+      "points": 3,
+      "tasks_done": 1,
       "tasks_total": 34,
-      "last_push": "2026-10-14T12:26:34Z"
+      "last_push": "2026-10-14T12:31:43Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T12:31:43Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "CI-02",
+      "task_title": "Pipeline CI frontend",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[91a8efb] Workflow frontend complet (node, npm ci, build)",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-14T12:26:34Z",
       "team_id": 7,
@@ -108,17 +119,6 @@
       "result": "PARTIEL",
       "points": 0,
       "reason": "[51f8bea] pas de `mvn test` (ou verify/package)",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-14T12:26:34Z",
-      "team_id": 7,
-      "team_name": "Claude Sonnet 5.5",
-      "task_code": "CI-02",
-      "task_title": "Pipeline CI frontend",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[51f8bea] pas de setup-node ; pas de `npm ci` ; pas de `ng build`/`npm run build`",
       "source": "auto"
     },
     {
