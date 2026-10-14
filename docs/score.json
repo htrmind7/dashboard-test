@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-14T13:50:12Z",
+  "updated_at": "2026-10-14T13:54:18Z",
   "max_points": 129,
   "teams": [
     {
@@ -92,13 +92,24 @@
       "members": [
         "Sonnet 5.5"
       ],
-      "points": 21,
-      "tasks_done": 9,
+      "points": 24,
+      "tasks_done": 10,
       "tasks_total": 34,
-      "last_push": "2026-10-14T13:44:48Z"
+      "last_push": "2026-10-14T13:53:23Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-14T13:53:23Z",
+      "team_id": 7,
+      "team_name": "Claude Sonnet 5.5",
+      "task_code": "BUG-03",
+      "task_title": "415 sur un GET sans corps à cause d'un consumes de classe",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[1cb7485] consumes retiré de la classe, POST/PUT toujours en JSON",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-14T13:44:48Z",
       "team_id": 7,
