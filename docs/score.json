@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:46:30Z",
+  "updated_at": "2026-10-30T14:47:59Z",
   "max_points": 123,
   "teams": [
     {
@@ -8,10 +8,10 @@
       "members": [
         "Han"
       ],
-      "points": 6,
-      "tasks_done": 2,
+      "points": 9,
+      "tasks_done": 3,
       "tasks_total": 32,
-      "last_push": "2026-10-30T14:36:02Z"
+      "last_push": "2026-10-30T14:46:53Z"
     },
     {
       "id": 2,
@@ -37,6 +37,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-30T14:46:53Z",
+      "team_id": 1,
+      "team_name": "Han",
+      "task_code": "TEST-01",
+      "task_title": "Tests unitaires AuthService",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[20a74d3] 8 test(s) hors X-TZ.",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-30T14:42:22Z",
       "team_id": 3,
@@ -127,6 +138,28 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T14:43:06Z",
+      "team_id": 1,
+      "sha": "20a74d3",
+      "msg": "TEST-01: add AuthService unit tests",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 20a74d3 (2 run(s))",
+      "ci_at": "2026-10-30T14:46:53Z",
+      "changes": [
+        {
+          "task_code": "TEST-01",
+          "title": "Tests unitaires AuthService",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "8 test(s) hors X-TZ."
+        }
+      ],
+      "team_name": "Han"
+    },
     {
       "ts": "2026-10-30T14:42:22Z",
       "team_id": 3,
