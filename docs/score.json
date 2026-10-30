@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:32:10Z",
+  "updated_at": "2026-10-30T15:35:00Z",
   "max_points": 123,
   "teams": [
     {
@@ -30,13 +30,24 @@
       "members": [
         "Mélissa"
       ],
-      "points": 33,
-      "tasks_done": 8,
+      "points": 35,
+      "tasks_done": 9,
       "tasks_total": 32,
-      "last_push": "2026-10-30T15:13:15Z"
+      "last_push": "2026-10-30T15:29:14Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-30T15:29:14Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "FE-03",
+      "task_title": "Ajouter des budgets de build à angular.json",
+      "result": "PASS",
+      "points": 2,
+      "reason": "[591b604] budgets définis dans la configuration production.",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-30T15:26:32Z",
       "team_id": 2,
@@ -215,6 +226,29 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T15:29:14Z",
+      "team_id": 3,
+      "sha": "591b604",
+      "msg": "FE-03: add production build budgets",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 591b604 (2 run(s))",
+      "ci_at": "2026-10-30T15:33:47Z",
+      "changes": [
+        {
+          "task_code": "FE-03",
+          "title": "Ajouter des budgets de build à angular.json",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 2,
+          "capped": false,
+          "regression": false,
+          "reason": "budgets définis dans la configuration production."
+        }
+      ],
+      "feedback": [],
+      "team_name": "Mélissa"
+    },
     {
       "ts": "2026-10-30T15:26:39Z",
       "team_id": 1,
