@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:40:27Z",
+  "updated_at": "2026-10-30T15:43:08Z",
   "max_points": 123,
   "teams": [
     {
@@ -277,6 +277,19 @@
       ],
       "feedback": [],
       "team_name": "Han"
+    },
+    {
+      "ts": "2026-10-30T15:32:21Z",
+      "team_id": 3,
+      "sha": "411c1ad",
+      "msg": "TEST-03: restore blocking JaCoCo coverage threshold",
+      "ci_state": "none",
+      "ci_detail": "aucun run GitHub Actions pour 411c1ad",
+      "ci_at": null,
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Mélissa"
     },
     {
       "ts": "2026-10-30T15:30:58Z",
