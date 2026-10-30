@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:30:15Z",
+  "updated_at": "2026-10-30T14:31:24Z",
   "max_points": 129,
   "teams": [
     {
@@ -160,6 +160,17 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T14:26:46Z",
+      "team_id": 2,
+      "sha": "f40f498",
+      "msg": "SEC-02: merge sec-02-purge-secrets",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur f40f498 : Frontend CI",
+      "ci_at": "2026-10-30T14:30:56Z",
+      "changes": [],
+      "team_name": "Hamza"
+    },
     {
       "ts": "2026-10-30T14:26:31Z",
       "team_id": 3,
