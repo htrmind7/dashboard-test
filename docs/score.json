@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:17:59Z",
+  "updated_at": "2026-10-30T15:19:51Z",
   "max_points": 123,
   "teams": [
     {
@@ -127,6 +127,19 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T15:15:51Z",
+      "team_id": 2,
+      "sha": "4d21287",
+      "msg": "MIG-01: merge mig-01-spring-boot-3",
+      "ci_state": "none",
+      "ci_detail": "aucun run GitHub Actions pour 4d21287",
+      "ci_at": null,
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Hamza"
+    },
     {
       "ts": "2026-10-30T15:13:15Z",
       "team_id": 3,
