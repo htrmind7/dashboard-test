@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:12:18Z",
+  "updated_at": "2026-10-30T15:14:25Z",
   "max_points": 123,
   "teams": [
     {
@@ -127,6 +127,32 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T15:07:46Z",
+      "team_id": 3,
+      "sha": "48c45f5",
+      "msg": "REF-02: extract issue comment operations and permissions",
+      "ci_state": "none",
+      "ci_detail": "aucun run GitHub Actions pour 48c45f5",
+      "ci_at": null,
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Mélissa"
+    },
+    {
+      "ts": "2026-10-30T15:06:35Z",
+      "team_id": 3,
+      "sha": "17fba16",
+      "msg": "REF-01: extract issue transition logic and shared custom-field validation",
+      "ci_state": "none",
+      "ci_detail": "aucun run GitHub Actions pour 17fba16",
+      "ci_at": null,
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Mélissa"
+    },
     {
       "ts": "2026-10-30T15:00:20Z",
       "team_id": 3,
