@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:40:19Z",
+  "updated_at": "2026-10-30T15:40:27Z",
   "max_points": 123,
   "teams": [
     {
@@ -8,10 +8,10 @@
       "members": [
         "Han"
       ],
-      "points": 17,
-      "tasks_done": 4,
+      "points": 22,
+      "tasks_done": 5,
       "tasks_total": 32,
-      "last_push": "2026-10-30T15:18:08Z"
+      "last_push": "2026-10-30T15:36:11Z"
     },
     {
       "id": 2,
@@ -37,6 +37,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-30T15:36:11Z",
+      "team_id": 1,
+      "team_name": "Han",
+      "task_code": "REF-01",
+      "task_title": "Extraire IssueTransitionService",
+      "result": "PASS",
+      "points": 5,
+      "reason": "[9a9b62a] IssueTransitionService extrait, injecté, sans dépendance circulaire",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-30T15:29:14Z",
       "team_id": 3,
@@ -243,6 +254,29 @@
         }
       ],
       "team_name": "Hamza"
+    },
+    {
+      "ts": "2026-10-30T15:36:11Z",
+      "team_id": 1,
+      "sha": "9a9b62a",
+      "msg": "REF-01: cover transition happy path/conditions/post-functions; fix enum filter",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 9a9b62a (2 run(s))",
+      "ci_at": "2026-10-30T15:39:34Z",
+      "changes": [
+        {
+          "task_code": "REF-01",
+          "title": "Extraire IssueTransitionService",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 5,
+          "capped": false,
+          "regression": false,
+          "reason": "IssueTransitionService extrait, injecté, sans dépendance circulaire"
+        }
+      ],
+      "feedback": [],
+      "team_name": "Han"
     },
     {
       "ts": "2026-10-30T15:30:58Z",
