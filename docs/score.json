@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:19:51Z",
+  "updated_at": "2026-10-30T15:21:40Z",
   "max_points": 123,
   "teams": [
     {
@@ -8,10 +8,10 @@
       "members": [
         "Han"
       ],
-      "points": 9,
-      "tasks_done": 3,
+      "points": 17,
+      "tasks_done": 4,
       "tasks_total": 32,
-      "last_push": "2026-10-30T14:43:06Z"
+      "last_push": "2026-10-30T15:18:08Z"
     },
     {
       "id": 2,
@@ -37,6 +37,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-30T15:18:08Z",
+      "team_id": 1,
+      "team_name": "Han",
+      "task_code": "FE-01",
+      "task_title": "Remplacer l'éditeur Markdown vendored",
+      "result": "PASS",
+      "points": 8,
+      "reason": "[d85d1b7] editormd supprimé, dépendance markdown maintenue présente",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-30T14:43:06Z",
       "team_id": 1,
@@ -127,6 +138,29 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T15:18:08Z",
+      "team_id": 1,
+      "sha": "d85d1b7",
+      "msg": "FE-01: replace vendored editor.md with marked + DOMPurify",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur d85d1b7 (2 run(s))",
+      "ci_at": "2026-10-30T15:21:42Z",
+      "changes": [
+        {
+          "task_code": "FE-01",
+          "title": "Remplacer l'éditeur Markdown vendored",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 8,
+          "capped": false,
+          "regression": false,
+          "reason": "editormd supprimé, dépendance markdown maintenue présente"
+        }
+      ],
+      "feedback": [],
+      "team_name": "Han"
+    },
     {
       "ts": "2026-10-30T15:15:51Z",
       "team_id": 2,
