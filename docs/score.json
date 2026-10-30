@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:43:08Z",
+  "updated_at": "2026-10-30T15:44:24Z",
   "max_points": 123,
   "teams": [
     {
@@ -237,6 +237,24 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T15:39:54Z",
+      "team_id": 2,
+      "sha": "efff935",
+      "msg": "REF-02: merge ref-02-issue-comment-service",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur efff935 (2 run(s))",
+      "ci_at": "2026-10-30T15:44:00Z",
+      "changes": [],
+      "feedback": [
+        {
+          "task_code": "REF-02",
+          "title": "Extraire IssueCommentService",
+          "reason": "IssueService n'injecte/utilise pas IssueCommentService; IssueCommentService dépend de IssueService : simple délégation, pas une extraction"
+        }
+      ],
+      "team_name": "Hamza"
+    },
     {
       "ts": "2026-10-30T15:36:15Z",
       "team_id": 2,
