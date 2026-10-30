@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:24:01Z",
+  "updated_at": "2026-10-30T15:32:07Z",
   "max_points": 123,
   "teams": [
     {
@@ -204,6 +204,24 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T15:26:39Z",
+      "team_id": 1,
+      "sha": "0a25554",
+      "msg": "REF-01: make IssueTransitionService truly standalone",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 0a25554 (2 run(s))",
+      "ci_at": "2026-10-30T15:29:57Z",
+      "changes": [],
+      "feedback": [
+        {
+          "task_code": "REF-01",
+          "title": "Extraire IssueTransitionService",
+          "reason": "IssueTransitionService extrait, injecté, sans dépendance circulaire | tests : WEAK — Les tests couvrent bien les gardes de permission (FORBIDDEN, assignee, autorité projet) et le rejet d'une transition inconnue, avec des assertions qui échoueraient si ces gardes cassaient, mais aucun ne vérifie le chemin nominal où la transition est appliquée, ni les branches CONDITION_CURRENT_USER "
+        }
+      ],
+      "team_name": "Han"
+    },
     {
       "ts": "2026-10-30T15:18:43Z",
       "team_id": 2,
