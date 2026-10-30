@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:37:23Z",
+  "updated_at": "2026-10-30T14:37:37Z",
   "max_points": 129,
   "teams": [
     {
@@ -160,6 +160,17 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T14:33:23Z",
+      "team_id": 2,
+      "sha": "7ea54e5",
+      "msg": "CI: merge ci-fix-frontend-theme-path",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur 7ea54e5 : Frontend CI",
+      "ci_at": "2026-10-30T14:35:37Z",
+      "changes": [],
+      "team_name": "Hamza"
+    },
     {
       "ts": "2026-10-30T14:32:28Z",
       "team_id": 1,
