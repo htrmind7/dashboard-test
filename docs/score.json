@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:15:43Z",
+  "updated_at": "2026-10-30T15:15:54Z",
   "max_points": 123,
   "teams": [
     {
@@ -30,10 +30,10 @@
       "members": [
         "Mélissa"
       ],
-      "points": 0,
-      "tasks_done": 0,
+      "points": 22,
+      "tasks_done": 5,
       "tasks_total": 32,
-      "last_push": null
+      "last_push": "2026-10-30T14:42:22Z"
     }
   ],
   "events": [
@@ -49,6 +49,39 @@
       "source": "auto"
     },
     {
+      "ts": "2026-10-30T14:42:22Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "MIG-01",
+      "task_title": "Spring Boot 2.4.4 → 3.x",
+      "result": "PASS",
+      "points": 4,
+      "reason": "[099adb8] spring-boot-starter-parent 3.5.16",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:42:22Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "MIG-02",
+      "task_title": "javax.* → jakarta.* (99 fichiers confirmés)",
+      "result": "PASS",
+      "points": 8,
+      "reason": "[099adb8] 0 import javax.* restant.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:42:22Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "MIG-03",
+      "task_title": "WebSecurityConfig : migrer vers la DSL lambda Spring Security 6",
+      "result": "PASS",
+      "points": 5,
+      "reason": "[099adb8] Plus de WebSecurityConfigurerAdapter.",
+      "source": "auto"
+    },
+    {
       "ts": "2026-10-30T14:23:28Z",
       "team_id": 1,
       "team_name": "Han",
@@ -57,6 +90,17 @@
       "result": "PASS",
       "points": 3,
       "reason": "[5d5330f] .env sorti du suivi, ignoré, .env.example propre",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:22:15Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "BUG-03",
+      "task_title": "415 sur un GET sans corps à cause d'un consumes de classe",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[40b1494] consumes retiré de la classe, POST/PUT toujours en JSON",
       "source": "auto"
     },
     {
@@ -69,9 +113,59 @@
       "points": 3,
       "reason": "[ba7482c] Garde ajoutée sur X-TZ et test présent",
       "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:16:44Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "SEC-03",
+      "task_title": "Nettoyer la doc des credentials de démo",
+      "result": "PASS",
+      "points": 2,
+      "reason": "[e2836a6] README nettoyé et flux /setup documenté",
+      "source": "auto"
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T15:07:46Z",
+      "team_id": 3,
+      "sha": "48c45f5",
+      "msg": "REF-02: extract issue comment operations and permissions",
+      "ci_state": "none",
+      "ci_detail": "aucun run GitHub Actions pour 48c45f5",
+      "ci_at": null,
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Mélissa"
+    },
+    {
+      "ts": "2026-10-30T15:06:35Z",
+      "team_id": 3,
+      "sha": "17fba16",
+      "msg": "REF-01: extract issue transition logic and shared custom-field validation",
+      "ci_state": "none",
+      "ci_detail": "aucun run GitHub Actions pour 17fba16",
+      "ci_at": null,
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Mélissa"
+    },
+    {
+      "ts": "2026-10-30T15:00:20Z",
+      "team_id": 3,
+      "sha": "d836daa",
+      "msg": "TEST-03: enforce 15 percent backend line coverage with JaCoCo",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur d836daa : Backend CI",
+      "ci_at": "2026-10-30T15:05:04Z",
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Mélissa"
+    },
     {
       "ts": "2026-10-30T14:59:46Z",
       "team_id": 2,
@@ -127,6 +221,65 @@
       "team_name": "Hamza"
     },
     {
+      "ts": "2026-10-30T14:45:19Z",
+      "team_id": 3,
+      "sha": "dd0d6bc",
+      "msg": "MIG-03: migrate security configuration to the Spring Security 6 lambda DSL",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur dd0d6bc (2 run(s))",
+      "ci_at": "2026-10-30T14:50:01Z",
+      "changes": [
+        {
+          "task_code": "MIG-01",
+          "title": "Spring Boot 2.4.4 → 3.x",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 4,
+          "capped": false,
+          "regression": false,
+          "reason": "Crédité rétroactivement : CI verte au commit dd0d6bc. spring-boot-starter-parent 3.5.16",
+          "retro_sha": "099adb8"
+        },
+        {
+          "task_code": "MIG-02",
+          "title": "javax.* → jakarta.* (99 fichiers confirmés)",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 8,
+          "capped": false,
+          "regression": false,
+          "reason": "Crédité rétroactivement : CI verte au commit dd0d6bc. 0 import javax.* restant.",
+          "retro_sha": "099adb8"
+        },
+        {
+          "task_code": "MIG-03",
+          "title": "WebSecurityConfig : migrer vers la DSL lambda Spring Security 6",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 5,
+          "capped": false,
+          "regression": false,
+          "reason": "Crédité rétroactivement : CI verte au commit dd0d6bc. Plus de WebSecurityConfigurerAdapter.",
+          "retro_sha": "099adb8"
+        }
+      ],
+      "feedback": [],
+      "team_name": "Mélissa"
+    },
+    {
+      "ts": "2026-10-30T14:44:50Z",
+      "team_id": 3,
+      "sha": "7cf130c",
+      "msg": "MIG-01: preserve legacy JWT runtime support on Spring Boot 3",
+      "ci_state": "none",
+      "ci_detail": "aucun run GitHub Actions pour 7cf130c",
+      "ci_at": null,
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Mélissa"
+    },
+    {
       "ts": "2026-10-30T14:43:06Z",
       "team_id": 1,
       "sha": "20a74d3",
@@ -148,6 +301,54 @@
       ],
       "feedback": [],
       "team_name": "Han"
+    },
+    {
+      "ts": "2026-10-30T14:42:22Z",
+      "team_id": 3,
+      "sha": "099adb8",
+      "msg": "MIG-01: upgrade to Spring Boot 3.5.16 and restore compilation",
+      "ci_state": "none",
+      "ci_detail": "aucun run GitHub Actions pour 099adb8",
+      "ci_at": null,
+      "ci_touched": false,
+      "changes": [
+        {
+          "task_code": "MIG-01",
+          "title": "Spring Boot 2.4.4 → 3.x",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 4,
+          "capped": false,
+          "regression": false,
+          "reason": "Crédité rétroactivement : CI verte au commit dd0d6bc. spring-boot-starter-parent 3.5.16",
+          "retro_sha": "099adb8"
+        },
+        {
+          "task_code": "MIG-02",
+          "title": "javax.* → jakarta.* (99 fichiers confirmés)",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 8,
+          "capped": false,
+          "regression": false,
+          "reason": "Crédité rétroactivement : CI verte au commit dd0d6bc. 0 import javax.* restant.",
+          "retro_sha": "099adb8"
+        },
+        {
+          "task_code": "MIG-03",
+          "title": "WebSecurityConfig : migrer vers la DSL lambda Spring Security 6",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 5,
+          "capped": false,
+          "regression": false,
+          "reason": "Crédité rétroactivement : CI verte au commit dd0d6bc. Plus de WebSecurityConfigurerAdapter.",
+          "retro_sha": "099adb8"
+        }
+      ],
+      "not_graded": false,
+      "retro_by": "dd0d6bc",
+      "team_name": "Mélissa"
     },
     {
       "ts": "2026-10-30T14:36:50Z",
@@ -234,6 +435,54 @@
       "team_name": "Hamza"
     },
     {
+      "ts": "2026-10-30T14:30:50Z",
+      "team_id": 3,
+      "sha": "f3a00a0",
+      "msg": "Merge remote-tracking branch 'origin/main'",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur f3a00a0 (2 run(s))",
+      "ci_at": "2026-10-30T14:35:20Z",
+      "changes": [
+        {
+          "task_code": "SEC-03",
+          "title": "Nettoyer la doc des credentials de démo",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 2,
+          "capped": false,
+          "regression": false,
+          "reason": "Crédité rétroactivement : CI verte au commit f3a00a0. README nettoyé et flux /setup documenté",
+          "retro_sha": "e2836a6"
+        },
+        {
+          "task_code": "BUG-03",
+          "title": "415 sur un GET sans corps à cause d'un consumes de classe",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "Crédité rétroactivement : CI verte au commit f3a00a0. consumes retiré de la classe, POST/PUT toujours en JSON",
+          "retro_sha": "40b1494"
+        }
+      ],
+      "feedback": [],
+      "team_name": "Mélissa"
+    },
+    {
+      "ts": "2026-10-30T14:30:04Z",
+      "team_id": 3,
+      "sha": "041ea20",
+      "msg": "repare CI",
+      "ci_state": "none",
+      "ci_detail": "aucun run GitHub Actions pour 041ea20",
+      "ci_at": null,
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Mélissa"
+    },
+    {
       "ts": "2026-10-30T14:26:46Z",
       "team_id": 2,
       "sha": "f40f498",
@@ -273,6 +522,32 @@
       "team_name": "Han"
     },
     {
+      "ts": "2026-10-30T14:22:15Z",
+      "team_id": 3,
+      "sha": "40b1494",
+      "msg": "BUG-03: restrict JSON consumes to UserController POST methods",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur 40b1494 : Frontend CI",
+      "ci_at": "2026-10-30T14:26:53Z",
+      "ci_touched": false,
+      "changes": [
+        {
+          "task_code": "BUG-03",
+          "title": "415 sur un GET sans corps à cause d'un consumes de classe",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "Crédité rétroactivement : CI verte au commit f3a00a0. consumes retiré de la classe, POST/PUT toujours en JSON",
+          "retro_sha": "40b1494"
+        }
+      ],
+      "not_graded": false,
+      "retro_by": "f3a00a0",
+      "team_name": "Mélissa"
+    },
+    {
       "ts": "2026-10-30T14:21:26Z",
       "team_id": 2,
       "sha": "a164fea",
@@ -310,6 +585,32 @@
       "not_graded": false,
       "retro_by": "08176d9",
       "team_name": "Han"
+    },
+    {
+      "ts": "2026-10-30T14:16:44Z",
+      "team_id": 3,
+      "sha": "e2836a6",
+      "msg": "SEC-03: clarify first-launch admin setup and remove demo credentials",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur e2836a6 : Frontend CI",
+      "ci_at": "2026-10-30T14:20:12Z",
+      "ci_touched": false,
+      "changes": [
+        {
+          "task_code": "SEC-03",
+          "title": "Nettoyer la doc des credentials de démo",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 2,
+          "capped": false,
+          "regression": false,
+          "reason": "Crédité rétroactivement : CI verte au commit f3a00a0. README nettoyé et flux /setup documenté",
+          "retro_sha": "e2836a6"
+        }
+      ],
+      "not_graded": false,
+      "retro_by": "f3a00a0",
+      "team_name": "Mélissa"
     }
   ]
 }
