@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:29:12Z",
+  "updated_at": "2026-10-30T14:29:20Z",
   "max_points": 129,
   "teams": [
     {
@@ -22,7 +22,7 @@
       "points": 0,
       "tasks_done": 0,
       "tasks_total": 34,
-      "last_push": null
+      "last_push": "2026-10-30T14:21:26Z"
     },
     {
       "id": 3,
@@ -57,6 +57,39 @@
       "result": "PARTIEL",
       "points": 0,
       "reason": "[40b1494] consumes retiré de la classe, POST/PUT toujours en JSON | plafonné: CI rouge sur 40b1494 : Frontend CI",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:21:26Z",
+      "team_id": 2,
+      "team_name": "Hamza",
+      "task_code": "SEC-01",
+      "task_title": "Sortir .env du suivi Git",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[a164fea] .env est toujours suivi par git ; .env.example absent, <5 clés, ou contient de vraies valeurs de secrets",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:21:26Z",
+      "team_id": 2,
+      "team_name": "Hamza",
+      "task_code": "CI-01",
+      "task_title": "Pipeline CI backend",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[a164fea] Workflow backend complet (checkout, java ≥17, mvn test) | plafonné: aucun run GitHub Actions pour a164fea",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:21:26Z",
+      "team_id": 2,
+      "team_name": "Hamza",
+      "task_code": "CI-02",
+      "task_title": "Pipeline CI frontend",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[a164fea] Workflow frontend complet (node, npm ci, build) | plafonné: aucun run GitHub Actions pour a164fea",
       "source": "auto"
     },
     {
@@ -170,6 +203,48 @@
         }
       ],
       "team_name": "Mélissa"
+    },
+    {
+      "ts": "2026-10-30T14:21:26Z",
+      "team_id": 2,
+      "sha": "a164fea",
+      "msg": "SEC-01: merge sec-01-gitignore-env",
+      "ci_state": "none",
+      "ci_detail": "aucun run GitHub Actions pour a164fea",
+      "ci_at": null,
+      "changes": [
+        {
+          "task_code": "SEC-01",
+          "title": "Sortir .env du suivi Git",
+          "from": "FAIL",
+          "to": "PARTIEL",
+          "points": 1,
+          "capped": false,
+          "regression": false,
+          "reason": ".env est toujours suivi par git ; .env.example absent, <5 clés, ou contient de vraies valeurs de secrets"
+        },
+        {
+          "task_code": "CI-01",
+          "title": "Pipeline CI backend",
+          "from": "FAIL",
+          "to": "PARTIEL",
+          "points": 1,
+          "capped": true,
+          "regression": false,
+          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+        },
+        {
+          "task_code": "CI-02",
+          "title": "Pipeline CI frontend",
+          "from": "FAIL",
+          "to": "PARTIEL",
+          "points": 1,
+          "capped": true,
+          "regression": false,
+          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+        }
+      ],
+      "team_name": "Hamza"
     },
     {
       "ts": "2026-10-30T14:20:17Z",
