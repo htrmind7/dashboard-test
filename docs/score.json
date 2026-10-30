@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:08:45Z",
+  "updated_at": "2026-10-30T15:08:54Z",
   "max_points": 123,
   "teams": [
     {
@@ -8,10 +8,10 @@
       "members": [
         "Han"
       ],
-      "points": 0,
-      "tasks_done": 0,
+      "points": 9,
+      "tasks_done": 3,
       "tasks_total": 32,
-      "last_push": null
+      "last_push": "2026-10-30T14:43:06Z"
     },
     {
       "id": 2,
@@ -36,6 +36,143 @@
       "last_push": null
     }
   ],
-  "events": [],
-  "feed": []
+  "events": [
+    {
+      "ts": "2026-10-30T14:43:06Z",
+      "team_id": 1,
+      "team_name": "Han",
+      "task_code": "TEST-01",
+      "task_title": "Tests unitaires AuthService",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[20a74d3] 8 test(s) hors X-TZ.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:23:28Z",
+      "team_id": 1,
+      "team_name": "Han",
+      "task_code": "SEC-01",
+      "task_title": "Sortir .env du suivi Git",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[5d5330f] .env sorti du suivi, ignoré, .env.example propre",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:20:17Z",
+      "team_id": 1,
+      "team_name": "Han",
+      "task_code": "BUG-01",
+      "task_title": "NPE si le header X-TZ est absent au login",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[ba7482c] Garde ajoutée sur X-TZ et test présent",
+      "source": "auto"
+    }
+  ],
+  "feed": [
+    {
+      "ts": "2026-10-30T14:55:07Z",
+      "team_id": 1,
+      "sha": "7c93e6e",
+      "msg": "REF-01: extract IssueTransitionService from IssueService",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 7c93e6e (2 run(s))",
+      "ci_at": "2026-10-30T14:59:11Z",
+      "changes": [],
+      "feedback": [
+        {
+          "task_code": "REF-01",
+          "title": "Extraire IssueTransitionService",
+          "reason": "IssueTransitionService dépend de IssueService : simple délégation, pas une extraction"
+        }
+      ],
+      "team_name": "Han"
+    },
+    {
+      "ts": "2026-10-30T14:43:06Z",
+      "team_id": 1,
+      "sha": "20a74d3",
+      "msg": "TEST-01: add AuthService unit tests",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 20a74d3 (2 run(s))",
+      "ci_at": "2026-10-30T14:46:53Z",
+      "changes": [
+        {
+          "task_code": "TEST-01",
+          "title": "Tests unitaires AuthService",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "8 test(s) hors X-TZ."
+        }
+      ],
+      "feedback": [],
+      "team_name": "Han"
+    },
+    {
+      "ts": "2026-10-30T14:32:28Z",
+      "team_id": 1,
+      "sha": "08176d9",
+      "msg": "CI: fix frontend pipeline (test style path, add first spec)",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 08176d9 (2 run(s))",
+      "ci_at": "2026-10-30T14:36:02Z",
+      "changes": [
+        {
+          "task_code": "SEC-01",
+          "title": "Sortir .env du suivi Git",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "Rétroactif : critères déjà remplis au commit 5d5330f. .env sorti du suivi, ignoré, .env.example propre",
+          "retro_sha": "5d5330f"
+        },
+        {
+          "task_code": "BUG-01",
+          "title": "NPE si le header X-TZ est absent au login",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "Rétroactif : critères déjà remplis au commit ba7482c. Garde ajoutée sur X-TZ et test présent",
+          "retro_sha": "ba7482c"
+        }
+      ],
+      "feedback": [],
+      "team_name": "Han"
+    },
+    {
+      "ts": "2026-10-30T14:23:28Z",
+      "team_id": 1,
+      "sha": "5d5330f",
+      "msg": "SEC-01: untrack .env, ignore it and provide .env.example with placeholders",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur 5d5330f : Frontend CI",
+      "ci_at": "2026-10-30T14:27:30Z",
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Han"
+    },
+    {
+      "ts": "2026-10-30T14:20:17Z",
+      "team_id": 1,
+      "sha": "ba7482c",
+      "msg": "BUG-01: default to UTC when X-TZ header is missing at login",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur ba7482c : Frontend CI",
+      "ci_at": "2026-10-30T14:23:48Z",
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Han"
+    }
+  ]
 }
