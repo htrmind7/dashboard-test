@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:35:32Z",
+  "updated_at": "2026-10-30T14:36:26Z",
   "max_points": 129,
   "teams": [
     {
@@ -30,13 +30,57 @@
       "members": [
         "Mélissa"
       ],
-      "points": 0,
-      "tasks_done": 0,
+      "points": 11,
+      "tasks_done": 4,
       "tasks_total": 34,
-      "last_push": "2026-10-30T14:22:15Z"
+      "last_push": "2026-10-30T14:35:20Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-30T14:35:20Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "SEC-03",
+      "task_title": "Nettoyer la doc des credentials de démo",
+      "result": "PASS",
+      "points": 2,
+      "reason": "[f3a00a0] README nettoyé et flux /setup documenté",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:35:20Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "CI-01",
+      "task_title": "Pipeline CI backend",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[f3a00a0] Workflow backend complet (checkout, java ≥17, mvn test)",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:35:20Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "CI-02",
+      "task_title": "Pipeline CI frontend",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[f3a00a0] Workflow frontend complet (node, npm ci, build)",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:35:20Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "BUG-03",
+      "task_title": "415 sur un GET sans corps à cause d'un consumes de classe",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[f3a00a0] consumes retiré de la classe, POST/PUT toujours en JSON",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-30T14:23:28Z",
       "team_id": 1,
@@ -46,17 +90,6 @@
       "result": "PARTIEL",
       "points": 0,
       "reason": "[5d5330f] .env sorti du suivi, ignoré, .env.example propre | plafonné: CI rouge sur 5d5330f : Frontend CI",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-30T14:22:15Z",
-      "team_id": 3,
-      "team_name": "Mélissa",
-      "task_code": "BUG-03",
-      "task_title": "415 sur un GET sans corps à cause d'un consumes de classe",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[40b1494] consumes retiré de la classe, POST/PUT toujours en JSON | plafonné: CI rouge sur 40b1494 : Frontend CI",
       "source": "auto"
     },
     {
@@ -124,39 +157,6 @@
       "points": 0,
       "reason": "[ba7482c] Workflow frontend complet (node, npm ci, build) | plafonné: CI rouge sur ba7482c : Frontend CI",
       "source": "auto"
-    },
-    {
-      "ts": "2026-10-30T14:16:44Z",
-      "team_id": 3,
-      "team_name": "Mélissa",
-      "task_code": "SEC-03",
-      "task_title": "Nettoyer la doc des credentials de démo",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[e2836a6] README nettoyé et flux /setup documenté | plafonné: CI rouge sur e2836a6 : Frontend CI",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-30T14:16:44Z",
-      "team_id": 3,
-      "team_name": "Mélissa",
-      "task_code": "CI-01",
-      "task_title": "Pipeline CI backend",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[e2836a6] Workflow backend complet (checkout, java ≥17, mvn test) | plafonné: CI rouge sur e2836a6 : Frontend CI",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-30T14:16:44Z",
-      "team_id": 3,
-      "team_name": "Mélissa",
-      "task_code": "CI-02",
-      "task_title": "Pipeline CI frontend",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[e2836a6] Workflow frontend complet (node, npm ci, build) | plafonné: CI rouge sur e2836a6 : Frontend CI",
-      "source": "auto"
     }
   ],
   "feed": [
@@ -170,6 +170,58 @@
       "ci_at": "2026-10-30T14:33:49Z",
       "changes": [],
       "team_name": "Hamza"
+    },
+    {
+      "ts": "2026-10-30T14:30:50Z",
+      "team_id": 3,
+      "sha": "f3a00a0",
+      "msg": "Merge remote-tracking branch 'origin/main'",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur f3a00a0 (2 run(s))",
+      "ci_at": "2026-10-30T14:35:20Z",
+      "changes": [
+        {
+          "task_code": "SEC-03",
+          "title": "Nettoyer la doc des credentials de démo",
+          "from": "PARTIEL",
+          "to": "PASS",
+          "points": 2,
+          "capped": false,
+          "regression": false,
+          "reason": "README nettoyé et flux /setup documenté"
+        },
+        {
+          "task_code": "BUG-03",
+          "title": "415 sur un GET sans corps à cause d'un consumes de classe",
+          "from": "PARTIEL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "consumes retiré de la classe, POST/PUT toujours en JSON"
+        },
+        {
+          "task_code": "CI-01",
+          "title": "Pipeline CI backend",
+          "from": "PARTIEL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "Workflow backend complet (checkout, java ≥17, mvn test)"
+        },
+        {
+          "task_code": "CI-02",
+          "title": "Pipeline CI frontend",
+          "from": "PARTIEL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "Workflow frontend complet (node, npm ci, build)"
+        }
+      ],
+      "team_name": "Mélissa"
     },
     {
       "ts": "2026-10-30T14:30:04Z",
