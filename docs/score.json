@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:37:37Z",
+  "updated_at": "2026-10-30T14:41:43Z",
   "max_points": 129,
   "teams": [
     {
@@ -19,10 +19,10 @@
       "members": [
         "Hamza"
       ],
-      "points": 0,
-      "tasks_done": 0,
+      "points": 6,
+      "tasks_done": 2,
       "tasks_total": 34,
-      "last_push": "2026-10-30T14:21:26Z"
+      "last_push": "2026-10-30T14:41:31Z"
     },
     {
       "id": 3,
@@ -37,6 +37,28 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-30T14:41:31Z",
+      "team_id": 2,
+      "team_name": "Hamza",
+      "task_code": "CI-01",
+      "task_title": "Pipeline CI backend",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[f6224f8] Workflow backend complet (checkout, java ≥17, mvn test)",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:41:31Z",
+      "team_id": 2,
+      "team_name": "Hamza",
+      "task_code": "CI-02",
+      "task_title": "Pipeline CI frontend",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[f6224f8] Workflow frontend complet (node, npm ci, build)",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-30T14:36:02Z",
       "team_id": 1,
@@ -135,31 +157,41 @@
       "points": 0,
       "reason": "[a164fea] .env est toujours suivi par git ; .env.example absent, <5 clés, ou contient de vraies valeurs de secrets",
       "source": "auto"
-    },
-    {
-      "ts": "2026-10-30T14:21:26Z",
-      "team_id": 2,
-      "team_name": "Hamza",
-      "task_code": "CI-01",
-      "task_title": "Pipeline CI backend",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[a164fea] Workflow backend complet (checkout, java ≥17, mvn test) | plafonné: aucun run GitHub Actions pour a164fea",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-30T14:21:26Z",
-      "team_id": 2,
-      "team_name": "Hamza",
-      "task_code": "CI-02",
-      "task_title": "Pipeline CI frontend",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[a164fea] Workflow frontend complet (node, npm ci, build) | plafonné: aucun run GitHub Actions pour a164fea",
-      "source": "auto"
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T14:36:50Z",
+      "team_id": 2,
+      "sha": "f6224f8",
+      "msg": "CI: merge ci-fix-frontend-unit-tests",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur f6224f8 (2 run(s))",
+      "ci_at": "2026-10-30T14:41:31Z",
+      "changes": [
+        {
+          "task_code": "CI-01",
+          "title": "Pipeline CI backend",
+          "from": "PARTIEL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "Workflow backend complet (checkout, java ≥17, mvn test)"
+        },
+        {
+          "task_code": "CI-02",
+          "title": "Pipeline CI frontend",
+          "from": "PARTIEL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "Workflow frontend complet (node, npm ci, build)"
+        }
+      ],
+      "team_name": "Hamza"
+    },
     {
       "ts": "2026-10-30T14:33:23Z",
       "team_id": 2,
