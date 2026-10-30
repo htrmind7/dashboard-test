@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:21:39Z",
+  "updated_at": "2026-10-30T14:25:06Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,7 +11,7 @@
       "points": 0,
       "tasks_done": 0,
       "tasks_total": 34,
-      "last_push": null
+      "last_push": "2026-10-30T14:20:17Z"
     },
     {
       "id": 2,
@@ -37,6 +37,39 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-30T14:20:17Z",
+      "team_id": 1,
+      "team_name": "Han",
+      "task_code": "BUG-01",
+      "task_title": "NPE si le header X-TZ est absent au login",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[ba7482c] Garde ajoutée sur X-TZ et test présent | plafonné: CI rouge sur ba7482c : Frontend CI",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:20:17Z",
+      "team_id": 1,
+      "team_name": "Han",
+      "task_code": "CI-01",
+      "task_title": "Pipeline CI backend",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[ba7482c] Workflow backend complet (checkout, java ≥17, mvn test) | plafonné: CI rouge sur ba7482c : Frontend CI",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:20:17Z",
+      "team_id": 1,
+      "team_name": "Han",
+      "task_code": "CI-02",
+      "task_title": "Pipeline CI frontend",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[ba7482c] Workflow frontend complet (node, npm ci, build) | plafonné: CI rouge sur ba7482c : Frontend CI",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-30T14:16:44Z",
       "team_id": 3,
@@ -72,6 +105,48 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T14:20:17Z",
+      "team_id": 1,
+      "sha": "ba7482c",
+      "msg": "BUG-01: default to UTC when X-TZ header is missing at login",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur ba7482c : Frontend CI",
+      "ci_at": "2026-10-30T14:23:48Z",
+      "changes": [
+        {
+          "task_code": "BUG-01",
+          "title": "NPE si le header X-TZ est absent au login",
+          "from": "FAIL",
+          "to": "PARTIEL",
+          "points": 1,
+          "capped": true,
+          "regression": false,
+          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+        },
+        {
+          "task_code": "CI-01",
+          "title": "Pipeline CI backend",
+          "from": "FAIL",
+          "to": "PARTIEL",
+          "points": 1,
+          "capped": true,
+          "regression": false,
+          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+        },
+        {
+          "task_code": "CI-02",
+          "title": "Pipeline CI frontend",
+          "from": "FAIL",
+          "to": "PARTIEL",
+          "points": 1,
+          "capped": true,
+          "regression": false,
+          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+        }
+      ],
+      "team_name": "Han"
+    },
     {
       "ts": "2026-10-30T14:16:44Z",
       "team_id": 3,
