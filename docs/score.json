@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:28:01Z",
+  "updated_at": "2026-10-30T14:29:12Z",
   "max_points": 129,
   "teams": [
     {
@@ -11,7 +11,7 @@
       "points": 0,
       "tasks_done": 0,
       "tasks_total": 34,
-      "last_push": "2026-10-30T14:20:17Z"
+      "last_push": "2026-10-30T14:23:28Z"
     },
     {
       "id": 2,
@@ -37,6 +37,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-30T14:23:28Z",
+      "team_id": 1,
+      "team_name": "Han",
+      "task_code": "SEC-01",
+      "task_title": "Sortir .env du suivi Git",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[5d5330f] .env sorti du suivi, ignoré, .env.example propre | plafonné: CI rouge sur 5d5330f : Frontend CI",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-30T14:22:15Z",
       "team_id": 3,
@@ -116,6 +127,28 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T14:23:28Z",
+      "team_id": 1,
+      "sha": "5d5330f",
+      "msg": "SEC-01: untrack .env, ignore it and provide .env.example with placeholders",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur 5d5330f : Frontend CI",
+      "ci_at": "2026-10-30T14:27:30Z",
+      "changes": [
+        {
+          "task_code": "SEC-01",
+          "title": "Sortir .env du suivi Git",
+          "from": "FAIL",
+          "to": "PARTIEL",
+          "points": 1,
+          "capped": true,
+          "regression": false,
+          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+        }
+      ],
+      "team_name": "Han"
+    },
     {
       "ts": "2026-10-30T14:22:15Z",
       "team_id": 3,
