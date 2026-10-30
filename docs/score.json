@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:35:00Z",
+  "updated_at": "2026-10-30T15:36:13Z",
   "max_points": 123,
   "teams": [
     {
@@ -226,6 +226,24 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T15:30:58Z",
+      "team_id": 1,
+      "sha": "fd48b2f",
+      "msg": "API-01: paginate GET /issue/{project_key}/search",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur fd48b2f (2 run(s))",
+      "ci_at": "2026-10-30T15:34:20Z",
+      "changes": [],
+      "feedback": [
+        {
+          "task_code": "API-01",
+          "title": "Pagination sur la recherche d'issues",
+          "reason": "Recherche paginée (content, totalElements, totalPages, size=20) | tests : MISSING — aucun test unitaire exploitable"
+        }
+      ],
+      "team_name": "Han"
+    },
     {
       "ts": "2026-10-30T15:29:14Z",
       "team_id": 3,
