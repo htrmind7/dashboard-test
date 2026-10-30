@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:04:34Z",
+  "updated_at": "2026-10-30T15:06:47Z",
   "max_points": 123,
   "teams": [
     {
@@ -127,6 +127,19 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T15:00:20Z",
+      "team_id": 3,
+      "sha": "d836daa",
+      "msg": "TEST-03: enforce 15 percent backend line coverage with JaCoCo",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur d836daa : Backend CI",
+      "ci_at": "2026-10-30T15:05:04Z",
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Mélissa"
+    },
     {
       "ts": "2026-10-30T14:59:46Z",
       "team_id": 2,
