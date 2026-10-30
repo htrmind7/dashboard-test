@@ -287,7 +287,9 @@
   // New score.json: data.feed = one entry per judged commit. Older score.json (no feed):
   // rebuild an approximate feed from data.events so the page still works.
   function buildFeed(d) {
-    if (Array.isArray(d.feed) && d.feed.length) return d.feed;
+    // Only commits that name a task (e.g. "BUG-01: ...") are shown; "fix CI" style commits are hidden.
+    // They are still judged and still count for the score.
+    if (Array.isArray(d.feed) && d.feed.length) return d.feed.filter(e => /\b[A-Z]{2,4}-\d{2}\b/.test(e.msg || ''));
     const groups = new Map();
     for (const ev of (d.events || [])) {
       const m = /^\[([0-9a-f]{7})\]\s*/.exec(ev.reason || '');
