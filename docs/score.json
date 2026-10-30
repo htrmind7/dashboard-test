@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:00:39Z",
+  "updated_at": "2026-10-30T15:04:34Z",
   "max_points": 123,
   "teams": [
     {
@@ -127,6 +127,17 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T14:59:46Z",
+      "team_id": 2,
+      "sha": "d36c707",
+      "msg": "BUG-02: merge bug-02-device-fp-guard",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur d36c707 (2 run(s))",
+      "ci_at": "2026-10-30T15:03:38Z",
+      "changes": [],
+      "team_name": "Hamza"
+    },
     {
       "ts": "2026-10-30T14:55:07Z",
       "team_id": 1,
