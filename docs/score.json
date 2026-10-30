@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:32:07Z",
+  "updated_at": "2026-10-30T15:32:10Z",
   "max_points": 123,
   "teams": [
     {
@@ -19,10 +19,10 @@
       "members": [
         "Hamza"
       ],
-      "points": 17,
-      "tasks_done": 3,
+      "points": 20,
+      "tasks_done": 4,
       "tasks_total": 32,
-      "last_push": "2026-10-30T15:15:51Z"
+      "last_push": "2026-10-30T15:26:32Z"
     },
     {
       "id": 3,
@@ -37,6 +37,17 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-30T15:26:32Z",
+      "team_id": 2,
+      "team_name": "Hamza",
+      "task_code": "FE-02",
+      "task_title": "Migrer tslint vers eslint",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[7b109cc] tslint supprimé, eslint configuré",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-30T15:18:08Z",
       "team_id": 1,
@@ -221,6 +232,29 @@
         }
       ],
       "team_name": "Han"
+    },
+    {
+      "ts": "2026-10-30T15:26:32Z",
+      "team_id": 2,
+      "sha": "7b109cc",
+      "msg": "FE-02: merge fe-02-tslint-to-eslint",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 7b109cc (2 run(s))",
+      "ci_at": "2026-10-30T15:31:00Z",
+      "changes": [
+        {
+          "task_code": "FE-02",
+          "title": "Migrer tslint vers eslint",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "tslint supprimé, eslint configuré"
+        }
+      ],
+      "feedback": [],
+      "team_name": "Hamza"
     },
     {
       "ts": "2026-10-30T15:18:43Z",
