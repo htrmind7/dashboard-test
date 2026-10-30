@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:25:06Z",
+  "updated_at": "2026-10-30T14:28:01Z",
   "max_points": 129,
   "teams": [
     {
@@ -33,10 +33,21 @@
       "points": 0,
       "tasks_done": 0,
       "tasks_total": 34,
-      "last_push": "2026-10-30T14:16:44Z"
+      "last_push": "2026-10-30T14:22:15Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-30T14:22:15Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "BUG-03",
+      "task_title": "415 sur un GET sans corps à cause d'un consumes de classe",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[40b1494] consumes retiré de la classe, POST/PUT toujours en JSON | plafonné: CI rouge sur 40b1494 : Frontend CI",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-30T14:20:17Z",
       "team_id": 1,
@@ -105,6 +116,28 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T14:22:15Z",
+      "team_id": 3,
+      "sha": "40b1494",
+      "msg": "BUG-03: restrict JSON consumes to UserController POST methods",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur 40b1494 : Frontend CI",
+      "ci_at": "2026-10-30T14:26:53Z",
+      "changes": [
+        {
+          "task_code": "BUG-03",
+          "title": "415 sur un GET sans corps à cause d'un consumes de classe",
+          "from": "FAIL",
+          "to": "PARTIEL",
+          "points": 1,
+          "capped": true,
+          "regression": false,
+          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+        }
+      ],
+      "team_name": "Mélissa"
+    },
     {
       "ts": "2026-10-30T14:20:17Z",
       "team_id": 1,
