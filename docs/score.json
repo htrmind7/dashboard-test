@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:36:13Z",
+  "updated_at": "2026-10-30T15:40:19Z",
   "max_points": 123,
   "teams": [
     {
@@ -226,6 +226,24 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T15:36:15Z",
+      "team_id": 2,
+      "sha": "3b69519",
+      "msg": "API-02: merge api-02-project-stats",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 3b69519 (2 run(s))",
+      "ci_at": "2026-10-30T15:39:53Z",
+      "changes": [],
+      "feedback": [
+        {
+          "task_code": "API-02",
+          "title": "Endpoint de statistiques projet",
+          "reason": "404/403 non gérés dans l'endpoint stats"
+        }
+      ],
+      "team_name": "Hamza"
+    },
     {
       "ts": "2026-10-30T15:30:58Z",
       "team_id": 1,
