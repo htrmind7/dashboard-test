@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:34:22Z",
+  "updated_at": "2026-10-30T14:35:32Z",
   "max_points": 129,
   "teams": [
     {
@@ -160,6 +160,17 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T14:31:33Z",
+      "team_id": 2,
+      "sha": "a902227",
+      "msg": "SEC-02: docs: remove secret references from documentation",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur a902227 : Frontend CI",
+      "ci_at": "2026-10-30T14:33:49Z",
+      "changes": [],
+      "team_name": "Hamza"
+    },
     {
       "ts": "2026-10-30T14:30:04Z",
       "team_id": 3,
