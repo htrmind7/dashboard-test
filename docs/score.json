@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:29:20Z",
+  "updated_at": "2026-10-30T14:30:15Z",
   "max_points": 129,
   "teams": [
     {
@@ -160,6 +160,17 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T14:26:31Z",
+      "team_id": 3,
+      "sha": "717ce7f",
+      "msg": "repare CI",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur 717ce7f : Frontend CI",
+      "ci_at": "2026-10-30T14:28:56Z",
+      "changes": [],
+      "team_name": "Mélissa"
+    },
     {
       "ts": "2026-10-30T14:23:28Z",
       "team_id": 1,
