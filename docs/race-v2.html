@@ -252,7 +252,7 @@
   ];
   const RANK = { FAIL: 0, PARTIEL: 1, PASS: 2 };
   const STATUS_FILTERS = [
-    ['all', 'Tout'], ['pass', '✅ Validées'], ['partial', '🟡 Partielles'], ['ci', '🔴 CI rouge'], ['regress', '↘ Régressions'],
+    ['all', 'Tout'], ['pass', '✅ Validées'], ['ci', '🔴 CI rouge'], ['regress', '↘ Régressions'],
   ];
   const CI_LABEL = { success: 'CI verte', failure: 'CI rouge', pending: 'CI en cours', none: 'pas de CI', unknown: 'CI inconnue' };
 
@@ -321,7 +321,6 @@
   function statusMatch(c) {
     switch (filters.status) {
       case 'pass': return c.to === 'PASS';
-      case 'partial': return c.to === 'PARTIEL';
       case 'regress': return isRegression(c);
       default: return true;
     }
@@ -335,7 +334,7 @@
       const entryHit = q && [e.msg, e.sha, e.team_name].some(x => (x || '').toLowerCase().includes(q));
       let rows = e.changes.filter(statusMatch);
       if (q && !entryHit) rows = rows.filter(c => [c.task_code, c.title, c.reason].some(x => (x || '').toLowerCase().includes(q)));
-      const needsRows = ['pass', 'partial', 'regress'].includes(filters.status) || (q && !entryHit);
+      const needsRows = ['pass', 'regress'].includes(filters.status) || (q && !entryHit);
       if (needsRows && !rows.length) continue;
       if (filters.status === 'ci') rows = e.changes;
       out.push({ e, rows });
@@ -424,7 +423,7 @@
         return `<div class="lane" id="lane-${team.id}" style="--lane-color-a:${color[0]};--lane-color-b:${color[1]}">
           <div class="lane-label"><span class="n">${escapeHtml(team.name)}</span><span class="p"><span id="pts-${team.id}">${team.points}</span> / ${maxPoints}</span></div>
           <div class="track"><div class="track-fill" id="fill-${team.id}"></div><div class="finish-flag">🏁</div>
-            <div class="runner" id="runner-${team.id}"><div class="runner-badge${members.length ? ' has-members' : ''}"${titleAttr}>${escapeHtml(team.name).slice(-1)}</div></div>
+            <div class="runner" id="runner-${team.id}"><div class="runner-badge${members.length ? ' has-members' : ''}"${titleAttr}></div></div>
           </div></div>`;
       }).join('');
     }
