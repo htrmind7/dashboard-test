@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:21:56Z",
+  "updated_at": "2026-10-30T15:22:49Z",
   "max_points": 123,
   "teams": [
     {
@@ -30,10 +30,10 @@
       "members": [
         "Mélissa"
       ],
-      "points": 22,
-      "tasks_done": 5,
+      "points": 33,
+      "tasks_done": 8,
       "tasks_total": 32,
-      "last_push": "2026-10-30T14:42:22Z"
+      "last_push": "2026-10-30T15:13:15Z"
     }
   ],
   "events": [
@@ -79,6 +79,39 @@
       "result": "PASS",
       "points": 5,
       "reason": "[4d21287] Plus de WebSecurityConfigurerAdapter.",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T15:13:15Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "REF-03",
+      "task_title": "Réduire les dépendances directes de IssueService",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[e28cb87] 25 dépendances injectées (≤25).",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T15:07:46Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "REF-02",
+      "task_title": "Extraire IssueCommentService",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[48c45f5] IssueCommentService extrait, injecté, sans dépendance circulaire",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T15:06:35Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "REF-01",
+      "task_title": "Extraire IssueTransitionService",
+      "result": "PASS",
+      "points": 5,
+      "reason": "[17fba16] IssueTransitionService extrait, injecté, sans dépendance circulaire",
       "source": "auto"
     },
     {
@@ -195,6 +228,58 @@
       "team_name": "Han"
     },
     {
+      "ts": "2026-10-30T15:16:18Z",
+      "team_id": 3,
+      "sha": "a9f17fc",
+      "msg": "repare ci backend",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur a9f17fc (2 run(s))",
+      "ci_at": "2026-10-30T15:20:06Z",
+      "changes": [
+        {
+          "task_code": "REF-01",
+          "title": "Extraire IssueTransitionService",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 5,
+          "capped": false,
+          "regression": false,
+          "reason": "Crédité rétroactivement : CI verte au commit a9f17fc. IssueTransitionService extrait, injecté, sans dépendance circulaire",
+          "retro_sha": "17fba16"
+        },
+        {
+          "task_code": "REF-02",
+          "title": "Extraire IssueCommentService",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "Crédité rétroactivement : CI verte au commit a9f17fc. IssueCommentService extrait, injecté, sans dépendance circulaire",
+          "retro_sha": "48c45f5"
+        },
+        {
+          "task_code": "REF-03",
+          "title": "Réduire les dépendances directes de IssueService",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "Crédité rétroactivement : CI verte au commit a9f17fc. 25 dépendances injectées (≤25).",
+          "retro_sha": "e28cb87"
+        }
+      ],
+      "feedback": [
+        {
+          "task_code": "TEST-03",
+          "title": "Seuil de couverture JaCoCo backend",
+          "reason": "Règle JaCoCo présente mais seuil <0.15 ou non bloquant."
+        }
+      ],
+      "team_name": "Mélissa"
+    },
+    {
       "ts": "2026-10-30T15:15:51Z",
       "team_id": 2,
       "sha": "4d21287",
@@ -285,8 +370,21 @@
       "ci_detail": "CI rouge sur e28cb87 : Backend CI",
       "ci_at": "2026-10-30T15:17:43Z",
       "ci_touched": false,
-      "changes": [],
-      "not_graded": true,
+      "changes": [
+        {
+          "task_code": "REF-03",
+          "title": "Réduire les dépendances directes de IssueService",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "Crédité rétroactivement : CI verte au commit a9f17fc. 25 dépendances injectées (≤25).",
+          "retro_sha": "e28cb87"
+        }
+      ],
+      "not_graded": false,
+      "retro_by": "a9f17fc",
       "team_name": "Mélissa"
     },
     {
@@ -298,8 +396,21 @@
       "ci_detail": "aucun run GitHub Actions pour 48c45f5",
       "ci_at": null,
       "ci_touched": false,
-      "changes": [],
-      "not_graded": true,
+      "changes": [
+        {
+          "task_code": "REF-02",
+          "title": "Extraire IssueCommentService",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "Crédité rétroactivement : CI verte au commit a9f17fc. IssueCommentService extrait, injecté, sans dépendance circulaire",
+          "retro_sha": "48c45f5"
+        }
+      ],
+      "not_graded": false,
+      "retro_by": "a9f17fc",
       "team_name": "Mélissa"
     },
     {
@@ -311,8 +422,21 @@
       "ci_detail": "aucun run GitHub Actions pour 17fba16",
       "ci_at": null,
       "ci_touched": false,
-      "changes": [],
-      "not_graded": true,
+      "changes": [
+        {
+          "task_code": "REF-01",
+          "title": "Extraire IssueTransitionService",
+          "from": "FAIL",
+          "to": "PASS",
+          "points": 5,
+          "capped": false,
+          "regression": false,
+          "reason": "Crédité rétroactivement : CI verte au commit a9f17fc. IssueTransitionService extrait, injecté, sans dépendance circulaire",
+          "retro_sha": "17fba16"
+        }
+      ],
+      "not_graded": false,
+      "retro_by": "a9f17fc",
       "team_name": "Mélissa"
     },
     {
