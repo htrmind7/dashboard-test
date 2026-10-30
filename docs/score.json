@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:31:24Z",
+  "updated_at": "2026-10-30T14:34:22Z",
   "max_points": 129,
   "teams": [
     {
@@ -160,6 +160,17 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T14:30:04Z",
+      "team_id": 3,
+      "sha": "041ea20",
+      "msg": "repare CI",
+      "ci_state": "none",
+      "ci_detail": "aucun run GitHub Actions pour 041ea20",
+      "ci_at": null,
+      "changes": [],
+      "team_name": "Mélissa"
+    },
     {
       "ts": "2026-10-30T14:26:46Z",
       "team_id": 2,
