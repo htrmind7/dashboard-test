@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T15:07:39Z",
+  "updated_at": "2026-10-30T15:07:50Z",
   "max_points": 123,
   "teams": [
     {
@@ -73,6 +73,24 @@
   ],
   "feed": [
     {
+      "ts": "2026-10-30T14:59:46Z",
+      "team_id": 2,
+      "sha": "d36c707",
+      "msg": "BUG-02: merge bug-02-device-fp-guard",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur d36c707 (2 run(s))",
+      "ci_at": "2026-10-30T15:03:38Z",
+      "changes": [],
+      "feedback": [
+        {
+          "task_code": "BUG-02",
+          "title": "Aucun garde-fou sur le fingerprint d'appareil manquant",
+          "reason": "le filtre ne rejette pas (401) une requête sans fingerprint X-JD-D"
+        }
+      ],
+      "team_name": "Hamza"
+    },
+    {
       "ts": "2026-10-30T14:55:07Z",
       "team_id": 1,
       "sha": "7c93e6e",
@@ -89,6 +107,24 @@
         }
       ],
       "team_name": "Han"
+    },
+    {
+      "ts": "2026-10-30T14:48:46Z",
+      "team_id": 2,
+      "sha": "0289edd",
+      "msg": "SEC-05: merge sec-05-cors-origin-allowlist",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 0289edd (2 run(s))",
+      "ci_at": "2026-10-30T14:52:15Z",
+      "changes": [],
+      "feedback": [
+        {
+          "task_code": "SEC-05",
+          "title": "Corriger la validation d'origine CORS",
+          "reason": "Validation d'origine par égalité / allowlist stricte. | tests : MISSING — aucun test unitaire exploitable | tests : MISSING — aucun test unitaire exploitable"
+        }
+      ],
+      "team_name": "Hamza"
     },
     {
       "ts": "2026-10-30T14:43:06Z",
@@ -112,6 +148,42 @@
       ],
       "feedback": [],
       "team_name": "Han"
+    },
+    {
+      "ts": "2026-10-30T14:36:50Z",
+      "team_id": 2,
+      "sha": "f6224f8",
+      "msg": "CI: merge ci-fix-frontend-unit-tests",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur f6224f8 (2 run(s))",
+      "ci_at": "2026-10-30T14:41:31Z",
+      "changes": [],
+      "feedback": [
+        {
+          "task_code": "SEC-01",
+          "title": "Sortir .env du suivi Git",
+          "reason": ".env est toujours suivi par git; .env.example absent, <5 clés, ou contient de vraies valeurs de secrets"
+        },
+        {
+          "task_code": "SEC-02",
+          "title": "Purger l'historique Git des secrets",
+          "reason": "SEC-01 non fait : .env encore suivi."
+        }
+      ],
+      "team_name": "Hamza"
+    },
+    {
+      "ts": "2026-10-30T14:33:23Z",
+      "team_id": 2,
+      "sha": "7ea54e5",
+      "msg": "CI: merge ci-fix-frontend-theme-path",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur 7ea54e5 : Frontend CI",
+      "ci_at": "2026-10-30T14:35:37Z",
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Hamza"
     },
     {
       "ts": "2026-10-30T14:32:28Z",
@@ -149,6 +221,32 @@
       "team_name": "Han"
     },
     {
+      "ts": "2026-10-30T14:31:33Z",
+      "team_id": 2,
+      "sha": "a902227",
+      "msg": "SEC-02: docs: remove secret references from documentation",
+      "ci_state": "failure",
+      "ci_detail": "workflow CI modifié : commit non noté (comme une CI rouge)",
+      "ci_at": "2026-10-30T14:33:49Z",
+      "ci_touched": true,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Hamza"
+    },
+    {
+      "ts": "2026-10-30T14:26:46Z",
+      "team_id": 2,
+      "sha": "f40f498",
+      "msg": "SEC-02: merge sec-02-purge-secrets",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur f40f498 : Frontend CI",
+      "ci_at": "2026-10-30T14:30:56Z",
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Hamza"
+    },
+    {
       "ts": "2026-10-30T14:23:28Z",
       "team_id": 1,
       "sha": "5d5330f",
@@ -160,6 +258,19 @@
       "changes": [],
       "not_graded": true,
       "team_name": "Han"
+    },
+    {
+      "ts": "2026-10-30T14:21:26Z",
+      "team_id": 2,
+      "sha": "a164fea",
+      "msg": "SEC-01: merge sec-01-gitignore-env",
+      "ci_state": "none",
+      "ci_detail": "aucun run GitHub Actions pour a164fea",
+      "ci_at": null,
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Hamza"
     },
     {
       "ts": "2026-10-30T14:20:17Z",
