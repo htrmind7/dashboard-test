@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:36:26Z",
+  "updated_at": "2026-10-30T14:37:23Z",
   "max_points": 129,
   "teams": [
     {
@@ -8,10 +8,10 @@
       "members": [
         "Han"
       ],
-      "points": 0,
-      "tasks_done": 0,
+      "points": 12,
+      "tasks_done": 4,
       "tasks_total": 34,
-      "last_push": "2026-10-30T14:23:28Z"
+      "last_push": "2026-10-30T14:36:02Z"
     },
     {
       "id": 2,
@@ -37,6 +37,50 @@
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-30T14:36:02Z",
+      "team_id": 1,
+      "team_name": "Han",
+      "task_code": "BUG-01",
+      "task_title": "NPE si le header X-TZ est absent au login",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[08176d9] Garde ajoutée sur X-TZ et test présent",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:36:02Z",
+      "team_id": 1,
+      "team_name": "Han",
+      "task_code": "CI-01",
+      "task_title": "Pipeline CI backend",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[08176d9] Workflow backend complet (checkout, java ≥17, mvn test)",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:36:02Z",
+      "team_id": 1,
+      "team_name": "Han",
+      "task_code": "CI-02",
+      "task_title": "Pipeline CI frontend",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[08176d9] Workflow frontend complet (node, npm ci, build)",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:36:02Z",
+      "team_id": 1,
+      "team_name": "Han",
+      "task_code": "SEC-01",
+      "task_title": "Sortir .env du suivi Git",
+      "result": "PASS",
+      "points": 3,
+      "reason": "[08176d9] .env sorti du suivi, ignoré, .env.example propre",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-30T14:35:20Z",
       "team_id": 3,
@@ -82,17 +126,6 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-30T14:23:28Z",
-      "team_id": 1,
-      "team_name": "Han",
-      "task_code": "SEC-01",
-      "task_title": "Sortir .env du suivi Git",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[5d5330f] .env sorti du suivi, ignoré, .env.example propre | plafonné: CI rouge sur 5d5330f : Frontend CI",
-      "source": "auto"
-    },
-    {
       "ts": "2026-10-30T14:21:26Z",
       "team_id": 2,
       "team_name": "Hamza",
@@ -124,42 +157,61 @@
       "points": 0,
       "reason": "[a164fea] Workflow frontend complet (node, npm ci, build) | plafonné: aucun run GitHub Actions pour a164fea",
       "source": "auto"
-    },
-    {
-      "ts": "2026-10-30T14:20:17Z",
-      "team_id": 1,
-      "team_name": "Han",
-      "task_code": "BUG-01",
-      "task_title": "NPE si le header X-TZ est absent au login",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[ba7482c] Garde ajoutée sur X-TZ et test présent | plafonné: CI rouge sur ba7482c : Frontend CI",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-30T14:20:17Z",
-      "team_id": 1,
-      "team_name": "Han",
-      "task_code": "CI-01",
-      "task_title": "Pipeline CI backend",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[ba7482c] Workflow backend complet (checkout, java ≥17, mvn test) | plafonné: CI rouge sur ba7482c : Frontend CI",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-30T14:20:17Z",
-      "team_id": 1,
-      "team_name": "Han",
-      "task_code": "CI-02",
-      "task_title": "Pipeline CI frontend",
-      "result": "PARTIEL",
-      "points": 0,
-      "reason": "[ba7482c] Workflow frontend complet (node, npm ci, build) | plafonné: CI rouge sur ba7482c : Frontend CI",
-      "source": "auto"
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T14:32:28Z",
+      "team_id": 1,
+      "sha": "08176d9",
+      "msg": "CI: fix frontend pipeline (test style path, add first spec)",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 08176d9 (2 run(s))",
+      "ci_at": "2026-10-30T14:36:02Z",
+      "changes": [
+        {
+          "task_code": "SEC-01",
+          "title": "Sortir .env du suivi Git",
+          "from": "PARTIEL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": ".env sorti du suivi, ignoré, .env.example propre"
+        },
+        {
+          "task_code": "BUG-01",
+          "title": "NPE si le header X-TZ est absent au login",
+          "from": "PARTIEL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "Garde ajoutée sur X-TZ et test présent"
+        },
+        {
+          "task_code": "CI-01",
+          "title": "Pipeline CI backend",
+          "from": "PARTIEL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "Workflow backend complet (checkout, java ≥17, mvn test)"
+        },
+        {
+          "task_code": "CI-02",
+          "title": "Pipeline CI frontend",
+          "from": "PARTIEL",
+          "to": "PASS",
+          "points": 3,
+          "capped": false,
+          "regression": false,
+          "reason": "Workflow frontend complet (node, npm ci, build)"
+        }
+      ],
+      "team_name": "Han"
+    },
     {
       "ts": "2026-10-30T14:31:33Z",
       "team_id": 2,
