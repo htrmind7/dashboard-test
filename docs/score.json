@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:43:38Z",
+  "updated_at": "2026-10-30T14:46:30Z",
   "max_points": 123,
   "teams": [
     {
@@ -30,13 +30,68 @@
       "members": [
         "Mélissa"
       ],
-      "points": 5,
-      "tasks_done": 2,
+      "points": 0,
+      "tasks_done": 0,
       "tasks_total": 32,
-      "last_push": "2026-10-30T14:35:20Z"
+      "last_push": "2026-10-30T14:42:22Z"
     }
   ],
   "events": [
+    {
+      "ts": "2026-10-30T14:42:22Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "SEC-03",
+      "task_title": "Nettoyer la doc des credentials de démo",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[099adb8] README nettoyé et flux /setup documenté | plafonné: aucun run GitHub Actions pour 099adb8",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:42:22Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "BUG-03",
+      "task_title": "415 sur un GET sans corps à cause d'un consumes de classe",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[099adb8] consumes retiré de la classe, POST/PUT toujours en JSON | plafonné: aucun run GitHub Actions pour 099adb8",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:42:22Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "MIG-01",
+      "task_title": "Spring Boot 2.4.4 → 3.x",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[099adb8] spring-boot-starter-parent 3.5.16 | plafonné: aucun run GitHub Actions pour 099adb8",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:42:22Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "MIG-02",
+      "task_title": "javax.* → jakarta.* (99 fichiers confirmés)",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[099adb8] 0 import javax.* restant. | plafonné: aucun run GitHub Actions pour 099adb8",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:42:22Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "MIG-03",
+      "task_title": "WebSecurityConfig : migrer vers la DSL lambda Spring Security 6",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[099adb8] Plus de WebSecurityConfigurerAdapter. | plafonné: aucun run GitHub Actions pour 099adb8",
+      "source": "auto"
+    },
     {
       "ts": "2026-10-30T14:36:02Z",
       "team_id": 1,
@@ -60,28 +115,6 @@
       "source": "auto"
     },
     {
-      "ts": "2026-10-30T14:35:20Z",
-      "team_id": 3,
-      "team_name": "Mélissa",
-      "task_code": "SEC-03",
-      "task_title": "Nettoyer la doc des credentials de démo",
-      "result": "PASS",
-      "points": 2,
-      "reason": "[f3a00a0] README nettoyé et flux /setup documenté",
-      "source": "auto"
-    },
-    {
-      "ts": "2026-10-30T14:35:20Z",
-      "team_id": 3,
-      "team_name": "Mélissa",
-      "task_code": "BUG-03",
-      "task_title": "415 sur un GET sans corps à cause d'un consumes de classe",
-      "result": "PASS",
-      "points": 3,
-      "reason": "[f3a00a0] consumes retiré de la classe, POST/PUT toujours en JSON",
-      "source": "auto"
-    },
-    {
       "ts": "2026-10-30T14:21:26Z",
       "team_id": 2,
       "team_name": "Hamza",
@@ -94,6 +127,68 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T14:42:22Z",
+      "team_id": 3,
+      "sha": "099adb8",
+      "msg": "MIG-01: upgrade to Spring Boot 3.5.16 and restore compilation",
+      "ci_state": "none",
+      "ci_detail": "aucun run GitHub Actions pour 099adb8",
+      "ci_at": null,
+      "changes": [
+        {
+          "task_code": "SEC-03",
+          "title": "Nettoyer la doc des credentials de démo",
+          "from": "PASS",
+          "to": "PARTIEL",
+          "points": 1,
+          "capped": true,
+          "regression": true,
+          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+        },
+        {
+          "task_code": "BUG-03",
+          "title": "415 sur un GET sans corps à cause d'un consumes de classe",
+          "from": "PASS",
+          "to": "PARTIEL",
+          "points": 1,
+          "capped": true,
+          "regression": true,
+          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+        },
+        {
+          "task_code": "MIG-01",
+          "title": "Spring Boot 2.4.4 → 3.x",
+          "from": "FAIL",
+          "to": "PARTIEL",
+          "points": 2,
+          "capped": true,
+          "regression": false,
+          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+        },
+        {
+          "task_code": "MIG-02",
+          "title": "javax.* → jakarta.* (99 fichiers confirmés)",
+          "from": "FAIL",
+          "to": "PARTIEL",
+          "points": 4,
+          "capped": true,
+          "regression": false,
+          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+        },
+        {
+          "task_code": "MIG-03",
+          "title": "WebSecurityConfig : migrer vers la DSL lambda Spring Security 6",
+          "from": "FAIL",
+          "to": "PARTIEL",
+          "points": 2,
+          "capped": true,
+          "regression": false,
+          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+        }
+      ],
+      "team_name": "Mélissa"
+    },
     {
       "ts": "2026-10-30T14:36:50Z",
       "team_id": 2,
