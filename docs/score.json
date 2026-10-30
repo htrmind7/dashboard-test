@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:06:31Z",
+  "updated_at": "2026-10-30T14:21:39Z",
   "max_points": 129,
   "teams": [
     {
@@ -33,9 +33,86 @@
       "points": 0,
       "tasks_done": 0,
       "tasks_total": 34,
-      "last_push": null
+      "last_push": "2026-10-30T14:16:44Z"
     }
   ],
-  "events": [],
-  "feed": []
+  "events": [
+    {
+      "ts": "2026-10-30T14:16:44Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "SEC-03",
+      "task_title": "Nettoyer la doc des credentials de démo",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[e2836a6] README nettoyé et flux /setup documenté | plafonné: CI rouge sur e2836a6 : Frontend CI",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:16:44Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "CI-01",
+      "task_title": "Pipeline CI backend",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[e2836a6] Workflow backend complet (checkout, java ≥17, mvn test) | plafonné: CI rouge sur e2836a6 : Frontend CI",
+      "source": "auto"
+    },
+    {
+      "ts": "2026-10-30T14:16:44Z",
+      "team_id": 3,
+      "team_name": "Mélissa",
+      "task_code": "CI-02",
+      "task_title": "Pipeline CI frontend",
+      "result": "PARTIEL",
+      "points": 0,
+      "reason": "[e2836a6] Workflow frontend complet (node, npm ci, build) | plafonné: CI rouge sur e2836a6 : Frontend CI",
+      "source": "auto"
+    }
+  ],
+  "feed": [
+    {
+      "ts": "2026-10-30T14:16:44Z",
+      "team_id": 3,
+      "sha": "e2836a6",
+      "msg": "SEC-03: clarify first-launch admin setup and remove demo credentials",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur e2836a6 : Frontend CI",
+      "ci_at": "2026-10-30T14:20:12Z",
+      "changes": [
+        {
+          "task_code": "SEC-03",
+          "title": "Nettoyer la doc des credentials de démo",
+          "from": "FAIL",
+          "to": "PARTIEL",
+          "points": 1,
+          "capped": true,
+          "regression": false,
+          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+        },
+        {
+          "task_code": "CI-01",
+          "title": "Pipeline CI backend",
+          "from": "FAIL",
+          "to": "PARTIEL",
+          "points": 1,
+          "capped": true,
+          "regression": false,
+          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+        },
+        {
+          "task_code": "CI-02",
+          "title": "Pipeline CI frontend",
+          "from": "FAIL",
+          "to": "PARTIEL",
+          "points": 1,
+          "capped": true,
+          "regression": false,
+          "reason": "Critères remplis, mais la CI de ce commit n'est pas verte : tâche plafonnée à 50 %."
+        }
+      ],
+      "team_name": "Mélissa"
+    }
+  ]
 }
