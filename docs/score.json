@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-30T14:47:59Z",
+  "updated_at": "2026-10-30T14:48:34Z",
   "max_points": 123,
   "teams": [
     {
@@ -138,6 +138,17 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-10-30T14:44:50Z",
+      "team_id": 3,
+      "sha": "7cf130c",
+      "msg": "MIG-01: preserve legacy JWT runtime support on Spring Boot 3",
+      "ci_state": "none",
+      "ci_detail": "aucun run GitHub Actions pour 7cf130c",
+      "ci_at": null,
+      "changes": [],
+      "team_name": "Mélissa"
+    },
     {
       "ts": "2026-10-30T14:43:06Z",
       "team_id": 1,
