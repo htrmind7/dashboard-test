@@ -361,7 +361,9 @@
     const ciPill = e.legacy ? '' : `<span class="ci ${e.ci_state}">${CI_LABEL[e.ci_state] || e.ci_state}</span>`;
     const sha = e.sha ? `<span class="sha mono">${escapeHtml(e.sha)}</span>` : '';
     const msg = e.msg || (e.legacy ? 'Tâche validée' : 'Commit');
-    const note = (e.ci_state === 'failure' || e.ci_touched)
+    const retroNote = e.retro_by ? `<div class="ci-note" style="color:var(--good)">✅ Crédité rétroactivement : la CI est repassée au vert au commit <span class="mono">${escapeHtml(e.retro_by)}</span>.</div>` : '';
+    const retroOut = (e.retro_credits || []).length ? `<div class="no-change">↩ Crédits rétroactifs : ${e.retro_credits.map(r => escapeHtml(r.task_code) + ' (commit ' + escapeHtml(r.sha) + ')').join(', ')}</div>` : '';
+    const note = e.retro_by ? retroNote : (e.ci_state === 'failure' || e.ci_touched)
       ? `<div class="ci-note">⚠ ${escapeHtml(e.ci_detail || 'CI rouge')} — commit non noté tant que la CI n'est pas verte (crédit rétroactif ensuite).</div>` : '';
     const body = rows.length ? `<div class="changes">${rows.map(renderChange).join('')}</div>`
       : `<div class="no-change">Aucun changement de verdict sur ce commit.</div>`;
@@ -374,7 +376,7 @@
         <span class="when" title="${escapeHtml(e.ts)}">${fmtTime(e.ts)} · ${relTime(e.ts)}</span>
         ${ciPill}
       </div>
-      ${note}${body}${fb}
+      ${note}${body}${retroOut}${fb}
     </article>`;
   }
 
