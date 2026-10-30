@@ -359,8 +359,8 @@
     const ciPill = e.legacy ? '' : `<span class="ci ${e.ci_state}">${CI_LABEL[e.ci_state] || e.ci_state}</span>`;
     const sha = e.sha ? `<span class="sha mono">${escapeHtml(e.sha)}</span>` : '';
     const msg = e.msg || (e.legacy ? 'Tâche validée' : 'Commit');
-    const note = e.ci_state === 'failure'
-      ? `<div class="ci-note">⚠ ${escapeHtml(e.ci_detail || 'CI rouge')} — les tâches de ce commit sont plafonnées à PARTIEL tant que la CI n'est pas verte.</div>` : '';
+    const note = (e.ci_state === 'failure' || e.ci_touched)
+      ? `<div class="ci-note">⚠ ${escapeHtml(e.ci_detail || 'CI rouge')} — commit non noté tant que la CI n'est pas verte (crédit rétroactif ensuite).</div>` : '';
     const body = rows.length ? `<div class="changes">${rows.map(renderChange).join('')}</div>`
       : `<div class="no-change">Aucun changement de verdict sur ce commit.</div>`;
     return `<article class="commit${e.ci_state === 'failure' ? ' ci-failure' : ''}${fresh ? ' fresh' : ''}" style="--team-color:${color}">
