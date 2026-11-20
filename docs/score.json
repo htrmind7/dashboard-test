@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T16:05:23Z",
+  "updated_at": "2026-11-20T16:07:29Z",
   "max_points": 386,
   "teams": [
     {
@@ -41,6 +41,25 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-11-20T16:07:28Z",
+      "commit_at": "2026-11-20T16:03:25Z",
+      "team_id": 1,
+      "sha": "0ff7cf4",
+      "msg": "PRD-02: deplacement d'une issue entre projets (dryRun, cle, type, statut preserves)",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 0ff7cf4 (2 run(s))",
+      "ci_at": "2026-11-20T16:07:02Z",
+      "changes": [],
+      "feedback": [
+        {
+          "task_code": "PRD-02",
+          "title": "Déplacer une issue entre projets",
+          "reason": "comportement attendu non constaté"
+        }
+      ],
+      "team_name": "Han (Haiku 5.5)"
+    },
     {
       "ts": "2026-11-20T16:05:23Z",
       "commit_at": "2026-11-20T15:53:51Z",
