@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T15:43:10Z",
+  "updated_at": "2026-11-20T15:47:07Z",
   "max_points": 386,
   "teams": [
     {
@@ -28,5 +28,24 @@
     }
   ],
   "events": [],
-  "feed": []
+  "feed": [
+    {
+      "ts": "2026-11-20T15:34:31Z",
+      "team_id": 2,
+      "sha": "74b388e",
+      "msg": "PRD-01: Un nouveau projet reste inutilisable",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 74b388e (2 run(s))",
+      "ci_at": "2026-11-20T15:38:58Z",
+      "changes": [],
+      "feedback": [
+        {
+          "task_code": "PRD-01",
+          "title": "Un nouveau projet reste inutilisable",
+          "reason": "l'application ne se construit pas / ne démarre pas"
+        }
+      ],
+      "team_name": "Hamza"
+    }
+  ]
 }
