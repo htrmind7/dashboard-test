@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T15:47:07Z",
+  "updated_at": "2026-11-20T15:49:20Z",
   "max_points": 386,
   "teams": [
     {
@@ -29,6 +29,19 @@
   ],
   "events": [],
   "feed": [
+    {
+      "ts": "2026-11-20T15:45:44Z",
+      "team_id": 1,
+      "sha": "783a6d6",
+      "msg": "PRD-03: archive/restore de projet",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur 783a6d6 : Frontend CI",
+      "ci_at": "2026-11-20T15:47:55Z",
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Han (Haiku 5.5)"
+    },
     {
       "ts": "2026-11-20T15:34:31Z",
       "team_id": 2,
