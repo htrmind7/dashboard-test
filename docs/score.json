@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T16:11:02Z",
+  "updated_at": "2026-11-20T16:11:36Z",
   "max_points": 386,
   "teams": [
     {
@@ -53,6 +53,25 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-11-20T16:11:35Z",
+      "commit_at": "2026-11-20T16:06:42Z",
+      "team_id": 1,
+      "sha": "3d269a7",
+      "msg": "PRD-11: recherche insensible aux accents, tolerante aux fautes, requetes parametrees, index a l'enregistrement",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 3d269a7 (2 run(s))",
+      "ci_at": "2026-11-20T16:10:06Z",
+      "changes": [],
+      "feedback": [
+        {
+          "task_code": "PRD-11",
+          "title": "Recherche qui ignore le français",
+          "reason": "comportement attendu non constaté"
+        }
+      ],
+      "team_name": "Han (Haiku 5.5)"
+    },
     {
       "ts": "2026-11-20T16:07:28Z",
       "commit_at": "2026-11-20T16:03:25Z",
