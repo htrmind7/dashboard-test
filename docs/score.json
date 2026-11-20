@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T15:49:20Z",
+  "updated_at": "2026-11-20T15:55:30Z",
   "max_points": 386,
   "teams": [
     {
@@ -29,6 +29,42 @@
   ],
   "events": [],
   "feed": [
+    {
+      "ts": "2026-11-20T15:51:13Z",
+      "team_id": 1,
+      "sha": "c7cfecd",
+      "msg": "PRD-01: creation de projet depuis un modele (kanban, scrum, bug-tracking, support) avec membres",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur c7cfecd (2 run(s))",
+      "ci_at": "2026-11-20T15:54:36Z",
+      "changes": [],
+      "feedback": [
+        {
+          "task_code": "PRD-01",
+          "title": "Un nouveau projet reste inutilisable",
+          "reason": "comportement attendu non constaté"
+        },
+        {
+          "task_code": "PRD-03",
+          "title": "Archiver un projet terminé",
+          "reason": "comportement attendu non constaté"
+        }
+      ],
+      "team_name": "Han (Haiku 5.5)"
+    },
+    {
+      "ts": "2026-11-20T15:51:12Z",
+      "team_id": 1,
+      "sha": "e6a2f78",
+      "msg": "CI: fix frontend CI (theme stylesheet path in angular.json, first unit spec)",
+      "ci_state": "none",
+      "ci_detail": "aucun run GitHub Actions pour e6a2f78",
+      "ci_at": null,
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Han (Haiku 5.5)"
+    },
     {
       "ts": "2026-11-20T15:45:44Z",
       "team_id": 1,
