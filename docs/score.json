@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-20T15:30:23Z",
-  "max_points": 151,
+  "updated_at": "2026-11-20T15:35:33Z",
+  "max_points": 386,
   "teams": [
     {
       "id": 2,
@@ -10,7 +10,7 @@
       ],
       "points": 0,
       "tasks_done": 0,
-      "tasks_total": 11,
+      "tasks_total": 54,
       "last_push": null,
       "jury_points": 0
     }
