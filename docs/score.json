@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T16:20:09Z",
+  "updated_at": "2026-11-20T16:20:24Z",
   "max_points": 386,
   "teams": [
     {
@@ -53,6 +53,44 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-11-20T16:20:24Z",
+      "commit_at": "2026-11-20T16:11:36Z",
+      "team_id": 1,
+      "sha": "c60efd7",
+      "msg": "PRD-05: changement de workflow d'un type d'issue sans perte (dryRun, mapping) + validation structurelle du workflow",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur c60efd7 (2 run(s))",
+      "ci_at": "2026-11-20T16:15:22Z",
+      "changes": [],
+      "feedback": [
+        {
+          "task_code": "PRD-05",
+          "title": "Changer le workflow d'un type d'issue en service",
+          "reason": "comportement attendu non constaté"
+        }
+      ],
+      "team_name": "Han (Haiku 5.5)"
+    },
+    {
+      "ts": "2026-11-20T16:20:22Z",
+      "commit_at": "2026-11-20T16:09:28Z",
+      "team_id": 1,
+      "sha": "ccaa709",
+      "msg": "PRD-10: dates calendaires justes (recherche par echeance sans decalage UTC, null efface la date, fuseau par defaut des nouveaux comptes)",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur ccaa709 (2 run(s))",
+      "ci_at": "2026-11-20T16:13:27Z",
+      "changes": [],
+      "feedback": [
+        {
+          "task_code": "PRD-10",
+          "title": "Dates fausses selon le fuseau horaire",
+          "reason": "comportement attendu non constaté"
+        }
+      ],
+      "team_name": "Han (Haiku 5.5)"
+    },
     {
       "ts": "2026-11-20T16:20:08Z",
       "commit_at": "2026-11-20T16:15:55Z",
