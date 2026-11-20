@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T16:11:36Z",
+  "updated_at": "2026-11-20T16:20:09Z",
   "max_points": 386,
   "teams": [
     {
@@ -53,6 +53,20 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-11-20T16:20:08Z",
+      "commit_at": "2026-11-20T16:15:55Z",
+      "team_id": 4,
+      "sha": "3722215",
+      "msg": "PRD-03: archive/restore de projet, lecture seule (409 sur toute ecriture)",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur 3722215 : Frontend CI",
+      "ci_at": "2026-11-20T16:18:13Z",
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Sonnet 5.5"
+    },
     {
       "ts": "2026-11-20T16:11:35Z",
       "commit_at": "2026-11-20T16:06:42Z",
