@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T15:56:31Z",
+  "updated_at": "2026-11-20T15:58:52Z",
   "max_points": 386,
   "teams": [
     {
@@ -29,6 +29,25 @@
   ],
   "events": [],
   "feed": [
+    {
+      "ts": "2026-11-20T15:56:31Z",
+      "team_id": 2,
+      "sha": "58628ff",
+      "msg": "PRD-02: Déplacer une issue entre projets",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 58628ff (2 run(s))",
+      "ci_at": "2026-11-20T15:50:03Z",
+      "changes": [],
+      "feedback": [
+        {
+          "task_code": "PRD-02",
+          "title": "Déplacer une issue entre projets",
+          "reason": "l'application ne se construit pas / ne démarre pas"
+        }
+      ],
+      "commit_at": "2026-11-20T15:45:44Z",
+      "team_name": "Hamza"
+    },
     {
       "ts": "2026-11-20T15:51:13Z",
       "team_id": 1,
@@ -66,38 +85,7 @@
       "team_name": "Han (Haiku 5.5)"
     },
     {
-      "ts": "2026-11-20T15:45:44Z",
-      "team_id": 1,
-      "sha": "783a6d6",
-      "msg": "PRD-03: archive/restore de projet",
-      "ci_state": "failure",
-      "ci_detail": "CI rouge sur 783a6d6 : Frontend CI",
-      "ci_at": "2026-11-20T15:47:55Z",
-      "ci_touched": false,
-      "changes": [],
-      "not_graded": true,
-      "team_name": "Han (Haiku 5.5)"
-    },
-    {
-      "ts": "2026-11-20T15:45:44Z",
-      "team_id": 2,
-      "sha": "58628ff",
-      "msg": "PRD-02: Déplacer une issue entre projets",
-      "ci_state": "success",
-      "ci_detail": "CI verte sur 58628ff (2 run(s))",
-      "ci_at": "2026-11-20T15:50:03Z",
-      "changes": [],
-      "feedback": [
-        {
-          "task_code": "PRD-02",
-          "title": "Déplacer une issue entre projets",
-          "reason": "l'application ne se construit pas / ne démarre pas"
-        }
-      ],
-      "team_name": "Hamza"
-    },
-    {
-      "ts": "2026-11-20T15:34:31Z",
+      "ts": "2026-11-20T15:47:07Z",
       "team_id": 2,
       "sha": "74b388e",
       "msg": "PRD-01: Un nouveau projet reste inutilisable",
@@ -112,7 +100,21 @@
           "reason": "l'application ne se construit pas / ne démarre pas"
         }
       ],
+      "commit_at": "2026-11-20T15:34:31Z",
       "team_name": "Hamza"
+    },
+    {
+      "ts": "2026-11-20T15:45:44Z",
+      "team_id": 1,
+      "sha": "783a6d6",
+      "msg": "PRD-03: archive/restore de projet",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur 783a6d6 : Frontend CI",
+      "ci_at": "2026-11-20T15:47:55Z",
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Han (Haiku 5.5)"
     }
   ]
 }
