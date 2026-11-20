@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T15:55:30Z",
+  "updated_at": "2026-11-20T15:56:31Z",
   "max_points": 386,
   "teams": [
     {
@@ -77,6 +77,24 @@
       "changes": [],
       "not_graded": true,
       "team_name": "Han (Haiku 5.5)"
+    },
+    {
+      "ts": "2026-11-20T15:45:44Z",
+      "team_id": 2,
+      "sha": "58628ff",
+      "msg": "PRD-02: Déplacer une issue entre projets",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur 58628ff (2 run(s))",
+      "ci_at": "2026-11-20T15:50:03Z",
+      "changes": [],
+      "feedback": [
+        {
+          "task_code": "PRD-02",
+          "title": "Déplacer une issue entre projets",
+          "reason": "l'application ne se construit pas / ne démarre pas"
+        }
+      ],
+      "team_name": "Hamza"
     },
     {
       "ts": "2026-11-20T15:34:31Z",
