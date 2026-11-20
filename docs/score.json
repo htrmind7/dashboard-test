@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-20T16:20:24Z",
+  "updated_at": "2026-11-20T16:22:15Z",
   "max_points": 386,
   "teams": [
     {
@@ -53,6 +53,20 @@
     }
   ],
   "feed": [
+    {
+      "ts": "2026-11-20T16:22:15Z",
+      "commit_at": "2026-11-20T16:18:12Z",
+      "team_id": 4,
+      "sha": "7fd49c6",
+      "msg": "PRD-01: creation de projet depuis un modele (kanban, scrum, bug-tracking, support) avec membres",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur 7fd49c6 : Frontend CI",
+      "ci_at": "2026-11-20T16:20:32Z",
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Sonnet 5.5"
+    },
     {
       "ts": "2026-11-20T16:20:24Z",
       "commit_at": "2026-11-20T16:11:36Z",
