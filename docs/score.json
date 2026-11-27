@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-27T14:11:32Z",
+  "updated_at": "2026-11-27T14:13:17Z",
   "max_points": 386,
   "teams": [
     {
       "id": 1,
       "name": "G1",
       "members": [
-        "Nicolas BORDIER (Lead, DevOps)",
+        "Nicolas BORDIER (Lead)",
         "Gábor MADARASZ",
         "Mohamed Yassine NASRI",
         "Hugo LAVAILL",
@@ -22,7 +22,7 @@
       "id": 2,
       "name": "G2",
       "members": [
-        "Joël PEREZ (Lead, DevOps)",
+        "Joël PEREZ (Lead)",
         "Ghilas MAOUCHE",
         "Mathieu DE JESUS",
         "Akram CHAMI"
@@ -39,7 +39,7 @@
       "members": [
         "Paul MEYER (Lead)",
         "Ghada FLISSI",
-        "Raphaël MEISSONNIER (DevOps)",
+        "Raphaël MEISSONNIER",
         "Ismail ALI OMAR",
         "Romain HERANNEY"
       ],
@@ -54,7 +54,7 @@
       "name": "G4",
       "members": [
         "Eudes CHABBI (Lead)",
-        "Ala OULED AHMED (DevOps)",
+        "Ala OULED AHMED",
         "Hatem HEBIRI",
         "Mohamed SARR"
       ],
@@ -70,7 +70,7 @@
       "members": [
         "Aslam SENOUCI BEREKSI (Lead)",
         "Nadir CHELBI",
-        "Hamza EL HADDAOUI (DevOps)",
+        "Hamza EL HADDAOUI",
         "Ilyas MAZRI"
       ],
       "points": 0,
@@ -83,8 +83,8 @@
       "id": 6,
       "name": "G6",
       "members": [
-        "Audry NYSSEN (DevOps)",
         "Lyes HADJED (Lead)",
+        "Audry NYSSEN",
         "Alice CROSIER",
         "Julian BARATHIEU",
         "Rizlane ABALIL"
