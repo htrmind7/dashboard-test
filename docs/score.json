@@ -1,24 +1,47 @@
 {
-  "updated_at": "2026-11-20T16:23:39Z",
+  "updated_at": "2026-11-27T14:11:32Z",
   "max_points": 386,
   "teams": [
     {
       "id": 1,
-      "name": "Han (Haiku 5.5)",
+      "name": "G1",
       "members": [
-        "Han"
+        "Nicolas BORDIER (Lead, DevOps)",
+        "Gábor MADARASZ",
+        "Mohamed Yassine NASRI",
+        "Hugo LAVAILL",
+        "Bastien BOULET"
       ],
-      "points": 13,
-      "tasks_done": 1,
+      "points": 0,
+      "tasks_done": 0,
       "tasks_total": 54,
-      "last_push": "2026-11-20T15:53:51Z",
+      "last_push": null,
       "jury_points": 0
     },
     {
       "id": 2,
-      "name": "Hamza",
+      "name": "G2",
       "members": [
-        "Hamza"
+        "Joël PEREZ (Lead, DevOps)",
+        "Ghilas MAOUCHE",
+        "Mathieu DE JESUS",
+        "Akram CHAMI"
+      ],
+      "points": 0,
+      "tasks_done": 0,
+      "tasks_total": 54,
+      "last_push": null,
+      "jury_points": 0
+    },
+    {
+      "id": 3,
+      "name": "G3",
+      "members": [
+        "Paul MEYER (Lead)",
+        "Ghada FLISSI",
+        "Raphaël MEISSONNIER (DevOps)",
+        "Ismail ALI OMAR",
+        "Romain HERANNEY"
       ],
       "points": 0,
       "tasks_done": 0,
@@ -28,9 +51,43 @@
     },
     {
       "id": 4,
-      "name": "Sonnet 5.5",
+      "name": "G4",
       "members": [
-        "Han"
+        "Eudes CHABBI (Lead)",
+        "Ala OULED AHMED (DevOps)",
+        "Hatem HEBIRI",
+        "Mohamed SARR"
+      ],
+      "points": 0,
+      "tasks_done": 0,
+      "tasks_total": 54,
+      "last_push": null,
+      "jury_points": 0
+    },
+    {
+      "id": 5,
+      "name": "G5",
+      "members": [
+        "Aslam SENOUCI BEREKSI (Lead)",
+        "Nadir CHELBI",
+        "Hamza EL HADDAOUI (DevOps)",
+        "Ilyas MAZRI"
+      ],
+      "points": 0,
+      "tasks_done": 0,
+      "tasks_total": 54,
+      "last_push": null,
+      "jury_points": 0
+    },
+    {
+      "id": 6,
+      "name": "G6",
+      "members": [
+        "Audry NYSSEN (DevOps)",
+        "Lyes HADJED (Lead)",
+        "Alice CROSIER",
+        "Julian BARATHIEU",
+        "Rizlane ABALIL"
       ],
       "points": 0,
       "tasks_done": 0,
@@ -39,272 +96,6 @@
       "jury_points": 0
     }
   ],
-  "events": [
-    {
-      "ts": "2026-11-20T15:53:51Z",
-      "team_id": 1,
-      "team_name": "Han (Haiku 5.5)",
-      "task_code": "PRD-04",
-      "task_title": "Règles de transition ignorées",
-      "result": "PASS",
-      "points": 13,
-      "reason": "[74b06bd] CONDITION_CURRENT_USER=-reporter- bloque desormais un autre membre (412, etat inchange), les 3 nouvelles conditions bloquent puis passent une fois remplies, endpoint requirements coherent, resolution posee par Complete. Tests unitaires du TransitionConditionEvaluator reels (vrai evaluateur, repos mockes, cas bloque et passant).",
-      "source": "auto"
-    }
-  ],
-  "feed": [
-    {
-      "ts": "2026-11-20T16:23:39Z",
-      "commit_at": "2026-11-20T16:14:15Z",
-      "team_id": 2,
-      "sha": "216a6b8",
-      "msg": "PRD-01: fix app starting issue",
-      "ci_state": "success",
-      "ci_detail": "CI verte sur 216a6b8 (2 run(s))",
-      "ci_at": "2026-11-20T16:19:27Z",
-      "changes": [],
-      "feedback": [
-        {
-          "task_code": "PRD-01",
-          "title": "Un nouveau projet reste inutilisable",
-          "reason": "l'application ne se construit pas / ne démarre pas"
-        }
-      ],
-      "team_name": "Hamza"
-    },
-    {
-      "ts": "2026-11-20T16:22:32Z",
-      "commit_at": "2026-11-20T16:14:41Z",
-      "team_id": 1,
-      "sha": "239c808",
-      "msg": "PRD-06: niveaux epic/standard/subtask, parent, story points, rollup, backlog ordonne et rank",
-      "ci_state": "success",
-      "ci_detail": "CI verte sur 239c808 (2 run(s))",
-      "ci_at": "2026-11-20T16:19:09Z",
-      "changes": [],
-      "feedback": [
-        {
-          "task_code": "PRD-06",
-          "title": "Backlog sans structure ni ordre commun",
-          "reason": "comportement attendu non constaté"
-        }
-      ],
-      "team_name": "Han (Haiku 5.5)"
-    },
-    {
-      "ts": "2026-11-20T16:22:15Z",
-      "commit_at": "2026-11-20T16:18:12Z",
-      "team_id": 4,
-      "sha": "7fd49c6",
-      "msg": "PRD-01: creation de projet depuis un modele (kanban, scrum, bug-tracking, support) avec membres",
-      "ci_state": "failure",
-      "ci_detail": "CI rouge sur 7fd49c6 : Frontend CI",
-      "ci_at": "2026-11-20T16:20:32Z",
-      "ci_touched": false,
-      "changes": [],
-      "not_graded": true,
-      "team_name": "Sonnet 5.5"
-    },
-    {
-      "ts": "2026-11-20T16:20:24Z",
-      "commit_at": "2026-11-20T16:11:36Z",
-      "team_id": 1,
-      "sha": "c60efd7",
-      "msg": "PRD-05: changement de workflow d'un type d'issue sans perte (dryRun, mapping) + validation structurelle du workflow",
-      "ci_state": "success",
-      "ci_detail": "CI verte sur c60efd7 (2 run(s))",
-      "ci_at": "2026-11-20T16:15:22Z",
-      "changes": [],
-      "feedback": [
-        {
-          "task_code": "PRD-05",
-          "title": "Changer le workflow d'un type d'issue en service",
-          "reason": "comportement attendu non constaté"
-        }
-      ],
-      "team_name": "Han (Haiku 5.5)"
-    },
-    {
-      "ts": "2026-11-20T16:20:22Z",
-      "commit_at": "2026-11-20T16:09:28Z",
-      "team_id": 1,
-      "sha": "ccaa709",
-      "msg": "PRD-10: dates calendaires justes (recherche par echeance sans decalage UTC, null efface la date, fuseau par defaut des nouveaux comptes)",
-      "ci_state": "success",
-      "ci_detail": "CI verte sur ccaa709 (2 run(s))",
-      "ci_at": "2026-11-20T16:13:27Z",
-      "changes": [],
-      "feedback": [
-        {
-          "task_code": "PRD-10",
-          "title": "Dates fausses selon le fuseau horaire",
-          "reason": "comportement attendu non constaté"
-        }
-      ],
-      "team_name": "Han (Haiku 5.5)"
-    },
-    {
-      "ts": "2026-11-20T16:20:08Z",
-      "commit_at": "2026-11-20T16:15:55Z",
-      "team_id": 4,
-      "sha": "3722215",
-      "msg": "PRD-03: archive/restore de projet, lecture seule (409 sur toute ecriture)",
-      "ci_state": "failure",
-      "ci_detail": "CI rouge sur 3722215 : Frontend CI",
-      "ci_at": "2026-11-20T16:18:13Z",
-      "ci_touched": false,
-      "changes": [],
-      "not_graded": true,
-      "team_name": "Sonnet 5.5"
-    },
-    {
-      "ts": "2026-11-20T16:11:35Z",
-      "commit_at": "2026-11-20T16:06:42Z",
-      "team_id": 1,
-      "sha": "3d269a7",
-      "msg": "PRD-11: recherche insensible aux accents, tolerante aux fautes, requetes parametrees, index a l'enregistrement",
-      "ci_state": "success",
-      "ci_detail": "CI verte sur 3d269a7 (2 run(s))",
-      "ci_at": "2026-11-20T16:10:06Z",
-      "changes": [],
-      "feedback": [
-        {
-          "task_code": "PRD-11",
-          "title": "Recherche qui ignore le français",
-          "reason": "comportement attendu non constaté"
-        }
-      ],
-      "team_name": "Han (Haiku 5.5)"
-    },
-    {
-      "ts": "2026-11-20T16:07:28Z",
-      "commit_at": "2026-11-20T16:03:25Z",
-      "team_id": 1,
-      "sha": "0ff7cf4",
-      "msg": "PRD-02: deplacement d'une issue entre projets (dryRun, cle, type, statut preserves)",
-      "ci_state": "success",
-      "ci_detail": "CI verte sur 0ff7cf4 (2 run(s))",
-      "ci_at": "2026-11-20T16:07:02Z",
-      "changes": [],
-      "feedback": [
-        {
-          "task_code": "PRD-02",
-          "title": "Déplacer une issue entre projets",
-          "reason": "comportement attendu non constaté"
-        }
-      ],
-      "team_name": "Han (Haiku 5.5)"
-    },
-    {
-      "ts": "2026-11-20T16:05:23Z",
-      "commit_at": "2026-11-20T15:53:51Z",
-      "team_id": 1,
-      "sha": "74b06bd",
-      "msg": "PRD-04: regles de transition appliquees (filtre sur le type) + conditions linked/regex/worklog + endpoint requirements",
-      "ci_state": "success",
-      "ci_detail": "CI verte sur 74b06bd (2 run(s))",
-      "ci_at": "2026-11-20T15:58:13Z",
-      "changes": [
-        {
-          "task_code": "PRD-04",
-          "title": "Règles de transition ignorées",
-          "from": "FAIL",
-          "to": "PASS",
-          "points": 13,
-          "capped": false,
-          "regression": false,
-          "reason": "CONDITION_CURRENT_USER=-reporter- bloque desormais un autre membre (412, etat inchange), les 3 nouvelles conditions bloquent puis passent une fois remplies, endpoint requirements coherent, resolution posee par Complete. Tests unitaires du TransitionConditionEvaluator reels (vrai evaluateur, repos mockes, cas bloque et passant)."
-        }
-      ],
-      "feedback": [],
-      "team_name": "Han (Haiku 5.5)"
-    },
-    {
-      "ts": "2026-11-20T15:56:31Z",
-      "team_id": 2,
-      "sha": "58628ff",
-      "msg": "PRD-02: Déplacer une issue entre projets",
-      "ci_state": "success",
-      "ci_detail": "CI verte sur 58628ff (2 run(s))",
-      "ci_at": "2026-11-20T15:50:03Z",
-      "changes": [],
-      "feedback": [
-        {
-          "task_code": "PRD-02",
-          "title": "Déplacer une issue entre projets",
-          "reason": "l'application ne se construit pas / ne démarre pas"
-        }
-      ],
-      "commit_at": "2026-11-20T15:45:44Z",
-      "team_name": "Hamza"
-    },
-    {
-      "ts": "2026-11-20T15:51:13Z",
-      "team_id": 1,
-      "sha": "c7cfecd",
-      "msg": "PRD-01: creation de projet depuis un modele (kanban, scrum, bug-tracking, support) avec membres",
-      "ci_state": "success",
-      "ci_detail": "CI verte sur c7cfecd (2 run(s))",
-      "ci_at": "2026-11-20T15:54:36Z",
-      "changes": [],
-      "feedback": [
-        {
-          "task_code": "PRD-01",
-          "title": "Un nouveau projet reste inutilisable",
-          "reason": "comportement attendu non constaté"
-        },
-        {
-          "task_code": "PRD-03",
-          "title": "Archiver un projet terminé",
-          "reason": "comportement attendu non constaté"
-        }
-      ],
-      "team_name": "Han (Haiku 5.5)"
-    },
-    {
-      "ts": "2026-11-20T15:51:12Z",
-      "team_id": 1,
-      "sha": "e6a2f78",
-      "msg": "CI: fix frontend CI (theme stylesheet path in angular.json, first unit spec)",
-      "ci_state": "none",
-      "ci_detail": "aucun run GitHub Actions pour e6a2f78",
-      "ci_at": null,
-      "ci_touched": false,
-      "changes": [],
-      "not_graded": true,
-      "team_name": "Han (Haiku 5.5)"
-    },
-    {
-      "ts": "2026-11-20T15:47:07Z",
-      "team_id": 2,
-      "sha": "74b388e",
-      "msg": "PRD-01: Un nouveau projet reste inutilisable",
-      "ci_state": "success",
-      "ci_detail": "CI verte sur 74b388e (2 run(s))",
-      "ci_at": "2026-11-20T15:38:58Z",
-      "changes": [],
-      "feedback": [
-        {
-          "task_code": "PRD-01",
-          "title": "Un nouveau projet reste inutilisable",
-          "reason": "l'application ne se construit pas / ne démarre pas"
-        }
-      ],
-      "commit_at": "2026-11-20T15:34:31Z",
-      "team_name": "Hamza"
-    },
-    {
-      "ts": "2026-11-20T15:45:44Z",
-      "team_id": 1,
-      "sha": "783a6d6",
-      "msg": "PRD-03: archive/restore de projet",
-      "ci_state": "failure",
-      "ci_detail": "CI rouge sur 783a6d6 : Frontend CI",
-      "ci_at": "2026-11-20T15:47:55Z",
-      "ci_touched": false,
-      "changes": [],
-      "not_graded": true,
-      "team_name": "Han (Haiku 5.5)"
-    }
-  ]
+  "events": [],
+  "feed": []
 }
