@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-27T16:17:48Z",
-  "max_points": 386,
+  "updated_at": "2026-11-27T16:33:39Z",
+  "max_points": 412,
   "teams": [
     {
       "id": 1,
@@ -10,7 +10,7 @@
       ],
       "points": 0,
       "tasks_done": 0,
-      "tasks_total": 54,
+      "tasks_total": 56,
       "last_push": null,
       "jury_points": 0
     },
@@ -22,11 +22,26 @@
       ],
       "points": 0,
       "tasks_done": 0,
-      "tasks_total": 54,
+      "tasks_total": 56,
       "last_push": null,
       "jury_points": 0
     }
   ],
   "events": [],
-  "feed": []
+  "feed": [
+    {
+      "ts": "2026-11-27T16:33:38Z",
+      "commit_at": "2026-11-27T16:30:51Z",
+      "team_id": 1,
+      "sha": "80cc4e7",
+      "msg": "MIG-08: version the database schema with Flyway (baseline V1, existing databases baselined)",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur 80cc4e7 : Frontend CI",
+      "ci_at": "2026-11-27T16:32:34Z",
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Han (Sonnet 5.5)"
+    }
+  ]
 }
