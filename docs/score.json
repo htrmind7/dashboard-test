@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T16:35:46Z",
+  "updated_at": "2026-11-27T16:54:30Z",
   "max_points": 412,
   "teams": [
     {
@@ -29,6 +29,25 @@
   ],
   "events": [],
   "feed": [
+    {
+      "ts": "2026-11-27T16:54:30Z",
+      "commit_at": "2026-11-27T16:30:10Z",
+      "team_id": 2,
+      "sha": "bddf95b",
+      "msg": "MIG-09: install flyway",
+      "ci_state": "success",
+      "ci_detail": "CI verte sur bddf95b (2 run(s))",
+      "ci_at": "2026-11-27T16:34:44Z",
+      "changes": [],
+      "feedback": [
+        {
+          "task_code": "MIG-09",
+          "title": "Base de données en fin de vie",
+          "reason": "l'application ne se construit pas / ne démarre pas"
+        }
+      ],
+      "team_name": "Hamza"
+    },
     {
       "ts": "2026-11-27T16:35:45Z",
       "commit_at": "2026-11-27T16:32:36Z",
