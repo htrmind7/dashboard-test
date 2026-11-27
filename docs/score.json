@@ -1,16 +1,12 @@
 {
-  "updated_at": "2026-11-27T14:17:46Z",
+  "updated_at": "2026-11-27T16:17:48Z",
   "max_points": 386,
   "teams": [
     {
       "id": 1,
-      "name": "G1",
+      "name": "Han (Sonnet 5.5)",
       "members": [
-        "Nicolas BORDIER (Lead)",
-        "Gábor MADARASZ",
-        "Mohamed Yassine NASRI",
-        "Hugo LAVAILL",
-        "Bastien BOULET"
+        "Han"
       ],
       "points": 0,
       "tasks_done": 0,
@@ -20,78 +16,9 @@
     },
     {
       "id": 2,
-      "name": "G2",
+      "name": "Hamza",
       "members": [
-        "Joël PEREZ (Lead)",
-        "Ghilas MAOUCHE",
-        "Mathieu DE JESUS",
-        "Akram CHAMI"
-      ],
-      "points": 0,
-      "tasks_done": 0,
-      "tasks_total": 54,
-      "last_push": null,
-      "jury_points": 0
-    },
-    {
-      "id": 3,
-      "name": "Peaky Prompters",
-      "members": [
-        "Paul MEYER (Lead)",
-        "Ghada FLISSI",
-        "Raphaël MEISSONNIER",
-        "Ismail ALI OMAR",
-        "Romain HERANNEY"
-      ],
-      "points": 0,
-      "tasks_done": 0,
-      "tasks_total": 54,
-      "last_push": null,
-      "jury_points": 0,
-      "avatar": "avatars/g3.jpg",
-      "badge": "avatars/g3-badge.jpg"
-    },
-    {
-      "id": 4,
-      "name": "G4",
-      "members": [
-        "Eudes CHABBI (Lead)",
-        "Ala OULED AHMED",
-        "Hatem HEBIRI",
-        "Mohamed SARR"
-      ],
-      "points": 0,
-      "tasks_done": 0,
-      "tasks_total": 54,
-      "last_push": null,
-      "jury_points": 0
-    },
-    {
-      "id": 5,
-      "name": "Z'Lab'IA",
-      "members": [
-        "Aslam SENOUCI BEREKSI (Lead)",
-        "Nadir CHELBI",
-        "Hamza EL HADDAOUI",
-        "Ilyas MAZRI"
-      ],
-      "points": 0,
-      "tasks_done": 0,
-      "tasks_total": 54,
-      "last_push": null,
-      "jury_points": 0,
-      "avatar": "avatars/g5.jpg",
-      "badge": "avatars/g5-badge.jpg"
-    },
-    {
-      "id": 6,
-      "name": "G6",
-      "members": [
-        "Lyes HADJED (Lead)",
-        "Audry NYSSEN",
-        "Alice CROSIER",
-        "Julian BARATHIEU",
-        "Rizlane ABALIL"
+        "Hamza"
       ],
       "points": 0,
       "tasks_done": 0,
