@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T14:13:17Z",
+  "updated_at": "2026-11-27T14:17:46Z",
   "max_points": 386,
   "teams": [
     {
@@ -35,7 +35,7 @@
     },
     {
       "id": 3,
-      "name": "G3",
+      "name": "Peaky Prompters",
       "members": [
         "Paul MEYER (Lead)",
         "Ghada FLISSI",
@@ -66,7 +66,7 @@
     },
     {
       "id": 5,
-      "name": "G5",
+      "name": "Z'Lab'IA",
       "members": [
         "Aslam SENOUCI BEREKSI (Lead)",
         "Nadir CHELBI",
