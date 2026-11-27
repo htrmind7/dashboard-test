@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-27T16:33:39Z",
+  "updated_at": "2026-11-27T16:35:46Z",
   "max_points": 412,
   "teams": [
     {
@@ -29,6 +29,20 @@
   ],
   "events": [],
   "feed": [
+    {
+      "ts": "2026-11-27T16:35:45Z",
+      "commit_at": "2026-11-27T16:32:36Z",
+      "team_id": 1,
+      "sha": "8674c4c",
+      "msg": "MIG-09: PostgreSQL 18 (new data volume layout) and scripts/upgrade-db.sh to migrate existing installations",
+      "ci_state": "failure",
+      "ci_detail": "CI rouge sur 8674c4c : Frontend CI",
+      "ci_at": "2026-11-27T16:34:18Z",
+      "ci_touched": false,
+      "changes": [],
+      "not_graded": true,
+      "team_name": "Han (Sonnet 5.5)"
+    },
     {
       "ts": "2026-11-27T16:33:38Z",
       "commit_at": "2026-11-27T16:30:51Z",
