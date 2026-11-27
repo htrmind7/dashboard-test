@@ -47,7 +47,9 @@
       "tasks_done": 0,
       "tasks_total": 54,
       "last_push": null,
-      "jury_points": 0
+      "jury_points": 0,
+      "avatar": "avatars/g3.jpg",
+      "badge": "avatars/g3-badge.jpg"
     },
     {
       "id": 4,
@@ -77,7 +79,9 @@
       "tasks_done": 0,
       "tasks_total": 54,
       "last_push": null,
-      "jury_points": 0
+      "jury_points": 0,
+      "avatar": "avatars/g5.jpg",
+      "badge": "avatars/g5-badge.jpg"
     },
     {
       "id": 6,

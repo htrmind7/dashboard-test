@@ -91,6 +91,7 @@
     box-shadow: 0 2px 8px -2px rgba(0,0,0,0.6), 0 0 0 2px rgba(10,14,23,0.9);
   }
   .runner-badge.has-members { cursor: help; }
+  .runner-badge.has-avatar { background-size: cover; background-position: center; background-repeat: no-repeat; background-color: #0a0e17; }
   .lane.leader .runner-badge { box-shadow: 0 0 0 2px rgba(10,14,23,0.9), 0 0 14px 2px var(--lane-color-a); }
   .runner-crown { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); font-size: 12px; z-index: 4; }
   /* leader: enlarged lane, like the podium */
@@ -355,17 +356,17 @@
   }
 
   function renderChange(c) {
-    const ico = c.to === 'PASS' ? '✅' : c.to === 'PARTIEL' ? '🟡' : '❌';
+    const ico = c.task_code === 'JURY' ? '⚖️' : c.bonus ? '🎁' : c.to === 'PASS' ? '✅' : c.to === 'PARTIEL' ? '🟡' : '❌';
     const arrow = c.from ? `<span class="v-${c.from}">${c.from}</span><span class="arrow">→</span>` : '';
     const sign = c.points > 0 ? '+' : '';
     const reg = (c.regression || isRegression(c)) ? '<span class="cap-tag" title="Ce commit a dégradé une tâche déjà validée">↘ régression</span>' : '';
     const retro = c.retro_sha ? `<span class="cap-tag" style="color:var(--good)" title="Critères remplis dès ce commit, crédités quand la CI est repassée au vert">↩ rétroactif (commit ${escapeHtml(c.retro_sha)})</span>` : '';
     const cap = c.capped ? '<span class="cap-tag" title="Tâche faite mais plafonnée à 50 % : la CI de ce commit est rouge">plafonné — CI rouge</span>' : '';
-    const reason = c.reason ? escapeHtml(c.reason) : (c.to === 'PASS' ? 'Tous les critères sont remplis.' : '');
+    const reason = c.reason ? escapeHtml(c.reason) : c.bonus ? '' : (c.to === 'PASS' ? 'Tous les critères sont remplis.' : '');
     return `<div class="change to-${c.to}">
       <div class="ico">${ico}</div>
       <div class="task"><b>${escapeHtml(c.task_code)}</b><span>${escapeHtml(c.title)}</span></div>
-      <div class="verdict">${arrow}<span class="v-${c.to}">${c.to}</span>${reg}${cap}${retro}</div>
+      <div class="verdict">${arrow}<span class="v-${c.to}">${c.task_code === 'JURY' ? 'JURY' : c.bonus ? (c.points < 0 ? 'MALUS' : 'BONUS') : c.to}</span>${reg}${cap}${retro}</div>
       <div class="pts">${sign}${c.points} pt${Math.abs(c.points) > 1 ? 's' : ''}</div>
       <div class="reason">${reason}</div>
     </div>`;
@@ -373,8 +374,8 @@
 
   function renderEntry(e, rows, fresh) {
     const color = teamColor[e.team_id] ? teamColor[e.team_id][0] : '#4ad0ff';
-    const ciPill = e.legacy ? '' : `<span class="ci ${e.ci_state}">${CI_LABEL[e.ci_state] || e.ci_state}</span>`;
-    const sha = e.sha ? `<span class="sha mono">${escapeHtml(e.sha)}</span>` : '';
+    const ciPill = (e.legacy || e.bonus) ? '' : `<span class="ci ${e.ci_state}">${CI_LABEL[e.ci_state] || e.ci_state}</span>`;
+    const sha = (e.sha && !e.bonus) ? `<span class="sha mono">${escapeHtml(e.sha)}</span>` : '';
     const msg = e.msg || (e.legacy ? 'Tâche validée' : 'Commit');
     const retroNote = e.retro_by ? `<div class="ci-note" style="color:var(--good)">✅ Crédité rétroactivement : la CI est repassée au vert au commit <span class="mono">${escapeHtml(e.retro_by)}</span>.</div>` : '';
     const retroOut = (e.retro_credits || []).length ? `<div class="no-change">↩ Crédits rétroactifs : ${e.retro_credits.map(r => escapeHtml(r.task_code) + ' (commit ' + escapeHtml(r.sha) + ')').join(', ')}</div>` : '';
@@ -420,10 +421,11 @@
         const color = teamColor[team.id];
         const members = Array.isArray(team.members) ? team.members.filter(Boolean) : [];
         const titleAttr = members.length ? ` title="${escapeHtml(members.join(', '))}"` : '';
+        const bgAttr = team.badge ? ` style="background-image:url('${escapeHtml(team.badge)}')"` : '';
         return `<div class="lane" id="lane-${team.id}" style="--lane-color-a:${color[0]};--lane-color-b:${color[1]}">
           <div class="lane-label"><span class="n">${escapeHtml(team.name)}</span><span class="p"><span id="pts-${team.id}">${team.points}</span> / ${maxPoints}</span></div>
           <div class="track"><div class="track-fill" id="fill-${team.id}"></div><div class="finish-flag">🏁</div>
-            <div class="runner" id="runner-${team.id}"><div class="runner-badge${members.length ? ' has-members' : ''}"${titleAttr}></div></div>
+            <div class="runner" id="runner-${team.id}"><div class="runner-badge${members.length ? ' has-members' : ''}${team.badge ? ' has-avatar' : ''}"${titleAttr}${bgAttr}></div></div>
           </div></div>`;
       }).join('');
     }
